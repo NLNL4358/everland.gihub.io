@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --orange: #FF9000;
+  --yellow: #FFE137;
+  --blue: #009CEA;
+  --purple: #AB47FF;
+  --black: #1B1D1F;
+  /* fontsize */
+}
+/* font */
+html {
+  font-size: 16px;
+}
+.inner {
+  width: 88.54%;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .inner {
+    width: 90%;
+    margin: auto;
+  }
+}
