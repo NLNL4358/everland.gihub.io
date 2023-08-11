@@ -1,3 +1,9 @@
+/* 임시 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans+KR&display=swap');
+body, input, button {
+  font-family: 'Montserrat', 'Noto Sans KR' !important;
+}
+/* 임시 끝 */
 img {
   width: 100%;
   height: 100%;
@@ -27,6 +33,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   animation: move 2s infinite alternate-reverse linear;
 }
 .swiper-slide:last-child .main_slide_img {
@@ -42,10 +49,35 @@ img {
 }
 .main_castle_img {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 580px;
   pointer-events: none;
   z-index: 1;
+}
+/* weather_map_api */
+/* smart_reservation */
+.smart_reservation {
+  display: flex;
+  height: 621px;
+  justify-content: space-between;
+  transform: translateY(-100px);
+  position: relative;
+  z-index: 2;
+}
+.reservation {
+  position: relative;
+  width: 61.53%;
+}
+.promotion {
+  position: relative;
+  width: 38%;
+}
+.smart_reservation img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+  z-index: -1;
 }
