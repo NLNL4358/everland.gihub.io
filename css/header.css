@@ -1,16 +1,23 @@
 .header{
+  position: fixed;
+  top: 3.125rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  z-index: 5;
   height: 6.875rem;
-  background-color: rgba(255,255,255,0.7);
 }
 
 .header_inner{
   height: 100%;
-  border : 1px solid;
   border-radius: 60px;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 0px 0px 4px rgba(27,29,31,0.2);
 }
 .header_wrap{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 0px 3.125rem;
   height: 100%;
 }
@@ -27,9 +34,11 @@
   width: auto;
 }
 .nav_wrap{
-  width: 60%;
+  margin-right: auto;
+  width: 55%;
   height: 100%;
 }
+
 .gnb_ul{
   width: 100%;
   height: 100%;
@@ -59,56 +68,72 @@
 
 .snb_ul{  
   position: absolute;
-  width: 60%;
+  width: 120%;
   left: 50%;
-  bottom: -20px;
+  bottom: 0px;
   transform: translate(-50%, 100%);
   z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* transition: 0.3s; 트랜지션 걸면 이상함*/   
 
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 0px;
-  translate: 0.3s;
 }
-.gnb_li.on .snb_ul{  
-  height: fit-content;
-}
-.snb_ul::before{  
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 0px;
-  width: 0px;
-  height: 0px;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid red;
-  z-index: 5;
+  .gnb_li.on .snb_ul{  
+    padding-top: 20px;
+    height: fit-content;
+  }
+  .gnb_li.on::before{ 
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(255,255,255,0.7);  
+    z-index: 5;
 
-  transform: translate(-50%, -20px);
+    transform: translate(-50%, 100%);
+  }
+.snb_ul>.snb_li:first-child{
+  border-radius: 20px 20px 0px 0px;
+}
+.snb_ul>.snb_li:last-child{
+  border-radius: 0px 0px 20px 20px;
 }
 .snb_li{
   width: 100%;
+  background-color: rgba( 255,255,255,0.7);
   height: 100%;
-  padding: 0.5rem 0px;
 }
+  .gnb_li.on .snb_li{
+    padding: 1rem 0px;
+  }
+
+
 .snb_li a{
   display: block;
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 0%;
+  overflow: hidden;
   cursor: pointer;
 
   font-weight: 600;
 }
+  .gnb_li.on .snb_li a{
+    height: 100%;
+  }
 
-.header_right{
-  width: 20%;
+.header_right{  
   display: flex;
+  gap: 1.25rem;
   justify-content: space-around;
   align-items: center;
 }
@@ -123,6 +148,81 @@
   font-weight: bold;
   color : var(--orange)
 }
+
+
+.modal_search_bar{
+  position: absolute;
+  width: 25rem;
+  height: 0rem;
+  top : 6rem;
+  background-color: #fff;
+  z-index: 20;
+  right: 0;
+  border-radius: 40px;
+  transform: translate(-50%);
+  overflow: hidden;
+
+  transition: 0.2s;
+}
+  .modal_search_bar.visible{
+    height: 4rem;
+  }
+.modal_arrow{
+  background-color: white;
+  position: relative;
+}
+.modal_arrow::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  transform: rotate(-45deg);
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 0.15);
+  box-shadow: 0px 0px 3px rgba(187, 187, 187, 0.15);
+}
+.search_bar_wrap{
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(187, 187, 187, 0.15);
+  box-shadow: 0px 0px 3px rgba(187, 187, 187, 0.15);
+  width: 100%;
+  height: 100%;
+}
+.search_bar{
+  width: 80%;
+  height: 100%;
+  padding :5px 10px;
+  border : none;
+  padding-left: 30px;
+  background-color: rgba(187, 187, 187, 0.15);
+  border-radius: 5px;
+}
+  .search_bar:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    background-color: white;
+  }
+.search_bar_search_button,.search_bar_close_button,.mobile_search_bar_close_button{
+  z-index: 20;
+  padding :5px 10px;
+  height: 100%;
+  background-color: white;
+  width: 20%;
+}
+.search_bar_search_button, .search_bar_close_button{
+  border: 0px;
+  border-right: 1px solid rgba(187, 187, 187, 0.15);
+}
+.search_bar_close_button i,.mobile_search_bar_close_button i{
+  font-size: var(--span-size);
+}
+
+
+
 .header_right a{
   font-weight: 500;
   font-size: 1.125rem;
@@ -139,3 +239,4 @@
   font-weight: 700;
 
 }
+
