@@ -62,10 +62,93 @@
   <!-- weather_map_api -->
   <div class="weather_map_api">
     <div class="weather">
-      <div class="CurrIcon"></div>
-      <div class="CurrTemp"></div>
+      <div class="CurrIcon">
+        <img src="" alt="">
+      </div>
+      <div class="CurrTemp"><span></span>℃</div>
     </div>
-    <div class="map"></div>
+    <div class="map">
+      <p>오시는 길</p>
+      <img src="img/icon/map_icon.png" alt="">
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="map_modal">
+    <div class="map_modal_inner">
+      <div class="map_area">
+        <div id="kakao_map">
+
+        </div>
+      </div>
+      <div class="text_area">
+        <ul>
+          <li class="subway">
+            <img src="img/icon/subway_icon.png" alt="지하철 아이콘">
+            <div>
+              <h4>지하철</h4>
+              <p>
+                분당선 기흥역까지 오셔서
+                <br>
+                에버라인(경전철)으로 환승하세요!
+              </p>
+              <p>
+                - 에버라인 종점에 내려서 셔틀버스(무료)로 
+                <br>
+                에버랜드, 캐리비안 베이까지 이동
+                <br>
+                - 에버라인 운행시간 05:30~23:30
+              </p>
+            </div>
+          </li>
+          <li class="bus">
+            <img src="img/icon/bus_icon.png" alt="버스 아이콘">
+            <div>
+              <h4>버스</h4>
+              <p>
+                서울 출발
+                <br>
+                일반버스
+                <br>
+                5002번, 5700번, 1500-2번, 1113번
+              </p>
+              <p>
+                인천 및 경기도 출발
+                <br>
+                직행버스
+                <br>
+                8862번, 8839번
+                <br>
+                일반버스
+                <br>
+                66번, 66-4번, 670번
+              </p>
+            </div>
+          </li>
+          <li class="location">
+            <img src="img/icon/location_icon.png" alt="주소 아이콘">
+            <div>
+              <h4>주소</h4>
+              <p>
+                경기도 용인시 에버랜드로 199
+              </p>
+            </div>
+          </li>
+          <li class="telephone">
+            <img src="img/icon/phone_icon.png" alt="전화번호 아이콘">
+            <div>
+              <h4>전화번호</h4>
+              <p>
+                031-320-5000
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="close">
+        <p></p>
+        <p></p>
+      </div>
+    </div>
   </div>
   <!-- smart_reservation -->
   <section class="smart_reservation inner">
@@ -120,7 +203,7 @@
           </h3>
           <button>공연시간 더보기</button>
           <button>어트랙션 운휴안내</button>
-          <h4>8월 3일 (목)</h4> <!-- 오늘날짜 나오게 -->
+          <h4 class="getToday">8월 3일 (목)</h4>
           <h2>10 : 00 - 22 : 00</h2>
         </div>
         <!-- 어트랙션시간표 -->
@@ -157,8 +240,12 @@
     </div>
   </section>
 
+  <!-- kakaoMap -->
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=3e615b4fbdbb8f9484347fb16bd099ab&libraries=services,clusterer"></script> 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- jQuery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- js -->
   <script src="js/main.js"></script>
 </body>
