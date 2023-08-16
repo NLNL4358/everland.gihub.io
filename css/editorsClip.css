@@ -1,0 +1,204 @@
+.editors_clip{
+  height: 963px;
+}
+.editors_clip_inner{
+  width: 100vw;
+  height: 100%;
+}
+.section_name_wrap{
+  width: 100%;
+  height: 30%;
+  
+}
+.tab_video_wrap{
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+.tab_button_wrap{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(0, -50%);
+  display: flex;
+  gap : 5px;
+}
+.tab_button{
+  width: 10rem;
+  height: 5rem;
+  border-radius: 10rem;  
+  border: 0px;
+}
+
+.clip_image_wrap{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 5;
+  position: relative;
+
+}
+.tab_inner_contents_wrap{
+  position: absolute;
+  left: 0%;
+  top : 0%;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 1.5s;
+}
+  .tab_inner_contents_wrap.selected{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .tab_inner_contents_wrap.first_tab{
+    background-image: url(../img/editorsClip/tab_01_background_deep.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+/* 클립배경 */
+.clip_background_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.clip_background_image{
+  /* background-color: white; */
+  position: absolute;
+  /* height: 100%; */
+  width: 100%;
+  bottom: 0;
+}
+.clip_background_image.reverse{
+  transform: scaleX(-1);
+}
+
+
+
+
+/* 클립 섬네일 */
+.clip_thumbnail_wrap{
+  position: absolute;
+  width: 45%;
+  height: 70%;
+  right: 10%;
+  bottom : 5%;
+  border-radius: 1rem;
+
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.clip_image{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: relative;
+}
+.thumbnail_image_wrap{
+  width: 100%;
+  height: 100%;
+}
+.clip_thumbnail_image{
+  position: absolute;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  transform: scale(1.178);
+
+  transition: 0.7s;
+}
+.clip_thumbnail_play_icon{
+  position: absolute;
+  width: 15%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+  .clip_thumbnail_wrap:hover .clip_thumbnail_image{
+    transform: scale(1.3);
+  }
+  .clip_thumbnail_wrap:hover .clip_thumbnail_play_icon{
+    animation-name: expand-play-icon;
+    animation-duration: 0.5s;
+    animation-timing-function : linear;
+    animation-iteration-count : 1;
+  }
+  @-webkit-keyframes expand-play-icon {
+    0% {
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    33%{
+      transform: translate(-50%,-50%) rotate(-10deg);
+    }
+    66% {
+      transform: translate(-50%,-50%) rotate(10deg);
+    }
+    100% {
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+  }
+.clip_left_image{
+  position: absolute;
+  height: 45%;
+  width: auto;
+  left: -10%;
+  z-index: 5;
+  bottom: 5%;
+
+  /* 애니메이션 */
+  animation-name: up-and-down;
+  animation-duration:4s;
+  animation-timing-function : linear;
+  animation-iteration-count : infinite;
+}
+.clip_left_image.reverse{
+  transform: scaleX(-1);
+  left: -20%;
+}
+.clip_left_image.up_scale{
+  transform: scale(1.3);
+}
+@-webkit-keyframes up-and-down {
+  0% {
+    bottom: 5%;
+  }
+  50%{
+    bottom : 10%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+.clip_top_image{
+  position: absolute;
+  width: auto;
+  height: 65%;
+  right: -10%;
+  top: 0%;
+  transform: translate(0%,-50%);
+  z-index: 5;
+}
+.clip_top_image.reverse{
+  transform: translate(30%,-50%) scaleX(-1);
+}
+.clip_right_image{
+  position: absolute;
+  width: auto;
+  height: 50%;
+  top: 0%;
+  z-index: 3;
+  transform: translate(0%,-50%);
+}
+.clip_right_image.editional01{
+  right: 13%;
+}
+.clip_right_image.editional02{
+  right: 10%;
+}
