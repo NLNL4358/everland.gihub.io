@@ -226,10 +226,26 @@ timetableArrPro.forEach(item => {
   timetable.appendChild(listItem); // 생성한 <li> 요소를 .timetable에 추가
 })
 
+/* textcopy */
+let copyLocation = document.querySelector(".copy_location");
+let copyTelephone = document.querySelector(".copy_telephone");
 
 
+function copyLocationText(){ 
+  //inputTag라는 변수에 담긴 input 태그의 value(텍스트)를 클립보드에 쓰기
+  navigator.clipboard.writeText("경기도 용인시 에버랜드로 199").then((res)=>{
+    alert("주소가 복사되었습니다!");
+  });
+}
+copyLocation.addEventListener("click", ()=>{copyLocationText()});
 
-
+function copyTelephoneText(){ 
+  //inputTag라는 변수에 담긴 input 태그의 value(텍스트)를 클립보드에 쓰기
+  navigator.clipboard.writeText("031-320-5000").then((res)=>{
+    alert("전화번호가 복사되었습니다!");
+  });
+}
+copyTelephone.addEventListener("click", ()=>{copyTelephoneText()});
 
 
 

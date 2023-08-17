@@ -255,9 +255,22 @@ main img,
 }
 .text_area ul li p {
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 .text_area ul li p:nth-of-type(1) {
   margin-bottom: 15px;
+}
+.telephone p,
+.location p {
+  cursor: pointer;
+}
+.text_area ul li p i {
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  background-image: url(../img/icon/copy.png);
+  margin-left: 10px;
 }
 /* close */
 .close {
