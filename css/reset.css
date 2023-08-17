@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+
+/* 영어는 Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+/* 한글은 noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto+Sans+KR';
+}
+html, body {
+  width:100%;
+}
+ul, ol, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+input {
+  font-family: "";
+  outline: none;
+}
+button {
+  font-family: "";
+  outline: none;
+  cursor: pointer;
+}
+
+.section_main_name,.section_main_name>point1, .section_main_name,.section_main_name>point2{
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 100px;
+}
+.section_sub_name{
+  font-size: 2.25rem;
+  letter-spacing: -1.1px;
+}
+point1{
+  color : var(--orange);
+}
+point2{
+  color : var(--blue)
+}
