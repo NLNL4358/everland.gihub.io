@@ -35,6 +35,16 @@ $(document).ready(function(){
     toggleSearchBar();
   })
 
+
+  /* 마우스 휠 다운하여 상단에서 일정 떨어졌을때 헤더가 위에 붙고 전체 */
+  $(window).on("wheel", function (event){
+    let screenHeight = $(document).scrollTop();
+    console.log(screenHeight);
+
+    screenHeight > 50 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
+  })
+
+
   /* 함수 */
   function toggleSearchBar(){
     $(modalSearchBar).toggleClass("visible");

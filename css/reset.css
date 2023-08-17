@@ -38,7 +38,7 @@ button {
   cursor: pointer;
 }
 
-.section_main_name,.section_main_name>point1{
+.section_main_name,.section_main_name>point1, .section_main_name,.section_main_name>point2{
   font-family: 'Montserrat';
   font-weight: 900;
   font-size: 100px;
