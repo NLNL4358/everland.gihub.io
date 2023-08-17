@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans+KR&display=swap');
 body, input, button {
   font-family: 'Montserrat', 'Noto Sans KR';
@@ -8,9 +7,6 @@ main img,
 .weather_map_api img,
 .map_modal img,
 .smart_reservation img {
-=======
-.main img {
->>>>>>> b504436de1faaf8bdb523f1673943a364475d63a
   width: 100%;
   height: 100%;
   object-fit: cover;

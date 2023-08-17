@@ -23,5 +23,5 @@
 ### 5) 개발목표 : 와이어프레임, 디자인한 대로 웹페이지를 완성함과 별개로 위치, 날씨의 API를 이용하여 실시간 정보를 웹페이지에서 확인할 수 있도록 하여 API사용법을 익히는 것을 목표로함 
 
 
-### 6) 브래인스토밍 - 피그잼 Link : [피그잼Link](https://www.figma.com/file/78Gss8xUi1W4L0yMunGvoa/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=whiteboard&node-id=18%3A499&t=GuRr72l2A5jehlXk-1)
-### 6) 와이어프레임 - 피그마 Link : [피그마Link](https://www.figma.com/file/lrqwTBSZuE59In8cgsEnSU/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=design&node-id=0%3A1&mode=design&t=SdHJad1JlIrq2UP8-1)
+#### 6) 브래인스토밍 - 피그잼 Link : [피그잼Link](https://www.figma.com/file/78Gss8xUi1W4L0yMunGvoa/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=whiteboard&node-id=18%3A499&t=GuRr72l2A5jehlXk-1)
+#### 6) 와이어프레임 - 피그마 Link : [피그마Link](https://www.figma.com/file/lrqwTBSZuE59In8cgsEnSU/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=design&node-id=0%3A1&mode=design&t=SdHJad1JlIrq2UP8-1)
