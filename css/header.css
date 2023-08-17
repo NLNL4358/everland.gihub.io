@@ -21,6 +21,7 @@
 
   transition: 0.5s;
 }
+
   .header.scrolled{
     top: 0rem;
     height: 5.625rem;
@@ -256,3 +257,9 @@
 
 }
 
+
+
+/* 모바일 */
+.mobile{
+  display: none;
+}

@@ -20,12 +20,18 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/editorsClip.css">
   <link rel="stylesheet" href="./css/everland_app.css">
+
+  <!-- 반응형 Css -->
+  <link rel="stylesheet" href="./css/responsive/header_responsive.css">
 </head>
 <body>
   <!-- Header  -->
-  <header class="header">
+  <header class="header hamburger"> <!-- 햄버거 클릭시 hamburger 클래스 -->
     <div class="inner header_inner">
       <div class="header_wrap">
+        <div class="mobile weather_wrap">
+          <button>API</button>
+        </div>
         <div class="logo_wrap">
           <a href="#">
             <img src="img/logo/MainLogopng.png" alt="" class="header_logo">
@@ -182,6 +188,35 @@
             로그인
           </button>
         </div>
+        <div class="mobile mobile_hamburger">
+          <button class="mobile_nav_button">
+            <i class="xi-bars hamburger_open"></i>
+          </button>
+          <button class="mobile_nav_button">
+            <i class="xi-close hamburger_close"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile mobile_nav">
+        <div class="mobile_top_menu">
+          <ul>
+            <a href="#">
+              <li>
+                상담 센터
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                회원 가입
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                로그인
+              </li>
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -217,9 +252,15 @@
       </div>
       <div class="tab_video_wrap">
         <div class="tab_button_wrap">
-          <button class="tab_button selected"></button>
-          <button class="tab_button"></button>
-          <button class="tab_button"></button>
+          <button class="tab_button selected">
+            <img class="tab_button_top_image" src="img/editorsClip/tab_01_top.png" alt="">
+          </button>
+          <button class="tab_button">
+            <img class="tab_button_top_image" src="img/editorsClip/tab_02_left.png" alt="">
+          </button>
+          <button class="tab_button">
+            <img class="tab_button_top_image" src="img/editorsClip/tab_03_top.png" alt="">
+          </button>
         </div>
         <div class="clip_image_wrap">
           <div class="tab_inner_contents_wrap selected first_tab">
