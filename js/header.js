@@ -10,6 +10,9 @@ $(document).ready(function(){
   let searchBarCloseButton = document.querySelector(".search_bar_close_button"); /* 데스크탑 서치 x버튼  */
 
 
+  let hamburgerButton = document.querySelectorAll(".mobile_nav_button");
+
+
   /* 이벤트리스너 */
   gnbLi.forEach((item, index) => {  /* Nav */
     $(gnbLi[index]).mouseover(function(event){
@@ -41,9 +44,16 @@ $(document).ready(function(){
     let screenHeight = $(document).scrollTop();
     console.log(screenHeight);
 
-    screenHeight > 50 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
+    screenHeight > 200 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
   })
 
+
+  /* 햄버거 버튼 */
+  for(let i = 0 ; i < hamburgerButton.length ; i++){
+    hamburgerButton[i].addEventListener("click", function(e){
+      hamburgerOnOff(i);
+    })
+  }
 
   /* 함수 */
   function toggleSearchBar(){
@@ -53,6 +63,17 @@ $(document).ready(function(){
     $(modalSearchBar).toggleClass("visible");
   }
   
+  function hamburgerOnOff(index){
+    if(index){ /* 0이면 open, 1이면 close */
+      $(".header").removeClass("hamburger");
+    }
+    else{
+      $(".header").addClass("hamburger");
+    }
+  }
+
+
+
   /* 초기화 */
   gnbLi.forEach((item,index)=>{
     gnbLi[index].classList.remove("on");
