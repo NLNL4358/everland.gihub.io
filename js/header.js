@@ -13,6 +13,20 @@ $(document).ready(function(){
   let hamburgerButton = document.querySelectorAll(".mobile_nav_button");
 
 
+  let mobileGnbLi = document.querySelectorAll(".mobile_gnb_li");
+  let mobileSnbLiHeight = document.querySelector(".mobile_snb_li").offsetHeight;
+  let mobileSnbUl = document.querySelectorAll(".mobile_snb_ul");
+  let mobileSnbUlHeight = new Array;
+  for(let i = 0 ; i < mobileSnbUl.length ; i++){
+    mobileSnbUlHeight[i] = mobileSnbUl[i].dataset.len * mobileSnbLiHeight;
+  }
+
+
+  let bodyHeight = $("body").css("height");
+  console.log(bodyHeight);
+
+
+
   /* 이벤트리스너 */
   gnbLi.forEach((item, index) => {  /* Nav */
     $(gnbLi[index]).mouseover(function(event){
@@ -37,12 +51,12 @@ $(document).ready(function(){
   searchBarSearchButton.addEventListener("click", function(e){
     toggleSearchBar();
   })
+  
 
 
   /* 마우스 휠 다운하여 상단에서 일정 떨어졌을때 헤더가 위에 붙고 전체 */
   $(window).on("wheel", function (event){
     let screenHeight = $(document).scrollTop();
-    console.log(screenHeight);
 
     screenHeight > 200 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
   })
@@ -55,6 +69,23 @@ $(document).ready(function(){
     })
   }
 
+
+  /* 모바일 gnb */
+  for(let i = 0 ; i < mobileGnbLi.length ; i++){
+    mobileGnbLi[i].addEventListener("click", function(e){
+      mobileNavFunc(i);
+    })
+  }
+
+
+
+
+
+
+
+
+
+
   /* 함수 */
   function toggleSearchBar(){
     $(modalSearchBar).toggleClass("visible");
@@ -66,16 +97,47 @@ $(document).ready(function(){
   function hamburgerOnOff(index){
     if(index){ /* 0이면 open, 1이면 close */
       $(".header").removeClass("hamburger");
+      $(".header").css("position", "fixed");
     }
     else{
       $(".header").addClass("hamburger");
+      $(".header").css("position", "relative");
+      window.scrollTo({ top: 0, behavior: "auto" });  
     }
   }
+
+  function mobileNavFunc(index){
+    if(mobileGnbLi[index].classList.contains("selected")){
+      mobileGnbLi[index].classList.remove("selected");
+      setHeightMobileSnbUl(index, false);
+    }
+    else{
+      for(let j= 0 ; j < mobileGnbLi.length ; j++){
+        mobileGnbLi[j].classList.remove("selected");
+        setHeightMobileSnbUl(index, false);
+      }
+      mobileGnbLi[index].classList.add("selected");
+      setHeightMobileSnbUl(index, true);
+    }
+  }
+
+    function setHeightMobileSnbUl(index, boolean){
+      for(let i = 0 ; i < mobileSnbUl.length ; i++){
+        $(mobileSnbUl[i]).css("height" , "0px");
+      }
+      if(boolean){
+        $(mobileSnbUl[index]).css("height" , mobileSnbUlHeight[index] + "px");
+      }
+    }
+
+
 
 
 
   /* 초기화 */
   gnbLi.forEach((item,index)=>{
     gnbLi[index].classList.remove("on");
-  })
+  });
+
+  $(".mobile_div").css("height", bodyHeight);
 })
