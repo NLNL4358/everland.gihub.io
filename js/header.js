@@ -20,7 +20,7 @@ $(document).ready(function(){
   for(let i = 0 ; i < mobileSnbUl.length ; i++){
     mobileSnbUlHeight[i] = mobileSnbUl[i].dataset.len * mobileSnbLiHeight;
   }
-
+  let headerResizeOnce = true;
 
   let bodyHeight = $("body").css("height");
   console.log(bodyHeight);
@@ -78,7 +78,20 @@ $(document).ready(function(){
   }
 
 
-
+  $(window).on("resize", function(e){
+    if(window.innerWidth < 1280 && !headerResizeOnce){
+      headerResizeOnce = true;
+      if(headerResizeOnce){
+        mobileSnbLiHeight = document.querySelector(".mobile_snb_li").offsetHeight;
+        for(let i = 0 ; i < mobileSnbUl.length ; i++){
+          mobileSnbUlHeight[i] = mobileSnbUl[i].dataset.len * mobileSnbLiHeight;
+        }
+      }
+    }
+    else if(window.innerWidth >= 1280){
+      headerResizeOnce =  false;
+    }
+  })
 
 
 

@@ -23,10 +23,11 @@
 
   <!-- 반응형 Css -->
   <link rel="stylesheet" href="./css/responsive/header_responsive.css">
+  <link rel="stylesheet" href="./css/responsive/editorsClip_responsive.css">
 </head>
 <body>
   <!-- Header  -->
-  <header class="header hamburger"> <!-- 햄버거 클릭시 hamburger 클래스 -->
+  <header class="header"> <!-- 햄버거 클릭시 hamburger 클래스 -->
     <div class="inner header_inner">
       <div class="header_wrap">
         <div class="mobile weather_wrap">
@@ -222,10 +223,16 @@
           </div>
           <div class="mobile_app_and_reservation">
             <div class="mobile_app_wrap">
-              <img src="/img/icon/appStore.png" alt="">
+              <a href="#">
+                <img class="mobile_app_img" src="./img/icon/appStore.png" alt=""> 
+                <span class="mobile_app_text">앱 다운로드</span>
+              </a>
             </div>
             <div class="mobile_reservation_wrap">
-              <img src="/img/icon/ticket_icon.png" alt="">
+              <a href="#">
+                <img class="mobile_reservation_img" src="./img/icon/ticket_icon.png" alt="">
+                <span class="mobile_reservation_text">예매 하기</span>
+              </a>
             </div>
           </div>
           <div class="mobile_nav_wrap">
@@ -407,9 +414,44 @@
         <div class="inner name_wrap_inner">
           <h2 class="section_main_name">Everland <point2>App</point2></h2>
           <p class="section_sub_name">에버랜드를 즐기는 추천 꿀팁</p>
+          <button class="Google_Play_download_button">
+            Google Play 다운로드
+          </button>
         </div>
       </div>
-
+      <div class="everland_img_section">
+        <div class="phone_img_wrap">
+          <div class="phone_text_wrap">
+            <h4><point2>에버랜드 APP</point2></h4>
+            <h4>하나의 앱으로 누리는 통합혜택</h4>
+          </div>
+          <img class="app_phone_img" src="./img/everlandApp/everlandApp_home.png" alt="">
+        </div>
+        <div class="smart_line_img_wrap">
+          <div class="circle_img_wrap">
+            <img src="./img/everlandApp/everlandApp_smarLine.jpg" alt="">
+          </div>
+          <p class="circle_text">
+            스마트 줄서기
+          </p>
+        </div>
+        <div class="map_img_wrap">
+          <div class="circle_img_wrap">
+            <img src="./img/everlandApp/everlandApp_map.png" alt="">
+          </div>
+          <p class="circle_text">
+            에버랜드 지도
+          </p>
+        </div>
+        <div class="order_img_wrap">
+          <div class="circle_img_wrap">
+            <img src="./img/everlandApp/everlandApp_order.jpg" alt="">
+          </div>
+          <p class="circle_text">
+            모바일 오더
+          </p>
+        </div>
+      </div>
       
     </div>
 
@@ -434,5 +476,6 @@
   <!-- JavaScript -->
   <script src="js/header.js"></script>
   <script src="js/editorsClip.js"></script>
+  <script src="js/everlandApp.js"></script>
 </body>
 </html>
