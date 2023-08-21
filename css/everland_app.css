@@ -1,10 +1,14 @@
 .everland_app{
   margin-top: 18.75rem;
 }
+.everland_app .mobile{
+  display: none;
+}
 .section_name_wrap.align_right{
   text-align: right;
 }
 .Google_Play_download_button{
+  display: inline-block;
   margin-top: 31px;
   width: 520px;
   height: 98px;
@@ -93,13 +97,14 @@
   transition: 2s;
 }
   .scrolled .phone_img_wrap:before{
-    width: 170%;
-    padding-bottom: 170%;
+    width: clamp(900px,170%,170%) ;
+    padding-bottom: clamp(900px,170%,170%) ;
   }
 .phone_text_wrap{
+  display: block;
   position: absolute;
   width: 150%;
-  top: 0%;
+  top: -4.5%;
   left : 50%;
   text-align: center;
 
@@ -107,9 +112,18 @@
 }
 .phone_text_wrap>h4{
   font-size: 38px;
-  font-weight: bold;
+  font-weight: bolder;
+  color: white;
 }
-
+.phone_text_wrap>h4>point2{
+  font-size : 48px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+}
+.app_phone_img{
+  height: 80%;
+}
 
 .smart_line_img_wrap{
   width: 25.5%;
@@ -130,12 +144,17 @@
   border-radius: 50%;
   overflow: hidden;
   display: flex;
-
+  border : 7px solid white;
 }
+
 .circle_img_wrap>img{
   width: 100%;
   height: 0;
   padding-bottom: 100%;
+  transition: 0.5s;
+}
+.circle_img_wrap:hover>img{
+  transform: scale(1.2);
 }
 .smart_line_img_wrap img{
   background-image: url("../img/everlandApp/everlandApp_smarLine.jpg");
@@ -151,7 +170,7 @@
 }
 
 .circle_text{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-top: 1.5rem;;
 }

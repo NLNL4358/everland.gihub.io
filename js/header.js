@@ -20,7 +20,7 @@ $(document).ready(function(){
   for(let i = 0 ; i < mobileSnbUl.length ; i++){
     mobileSnbUlHeight[i] = mobileSnbUl[i].dataset.len * mobileSnbLiHeight;
   }
-  let headerResizeOnce = true;
+  let headerResizeOnce = false;
 
   let bodyHeight = $("body").css("height");
   console.log(bodyHeight);

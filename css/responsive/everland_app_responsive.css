@@ -1,0 +1,61 @@
+@media screen and (max-width : 1280px) {
+  .smart_line_img_wrap,.map_img_wrap,.order_img_wrap,.phone_text_wrap,.Google_Play_download_button{
+    display: none;
+  }
+
+  .everland_img_section{
+    height: 600px; /* 변경? */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    gap: 0rem;
+    margin-top: 60px;
+  }
+  .everland_app .mobile{
+    display: flex;
+  }
+  .mobile_phone_text_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+
+  }
+  .app_phone_img{
+    height: 90%;
+  }
+  .phone_img_wrap{
+    width: 50%;
+  }
+  
+  .scrolled .phone_img_wrap:before{
+    left: -50%;
+    /* transform: translate(-25%); */
+    width: clamp(750px,170%,170%) ;
+    padding-bottom: clamp(750px,170%,170%) ;
+  }
+  .mobile_app_text_wrap{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile_app_text_wrap eng{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: var(--orange);
+  }
+  .mobile_phone_text_wrap p{
+    width: 200%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+}
+
+@media screen and (max-width : 675px) {
+  .app_phone_img{
+    height: 75%;
+  }
+}

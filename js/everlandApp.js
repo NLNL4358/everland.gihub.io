@@ -13,7 +13,7 @@ $(document).ready(function(e){
   $(document).scroll(function(e){
     pagesHeight = docElem.scrollTop;
     console.log(pagesHeight);
-    if(pagesHeight >= everLandImgHeight-500){
+    if(pagesHeight >= everLandImgHeight-1100){
       $(".everland_app").addClass("scrolled");
     }
     else{
