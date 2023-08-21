@@ -39,7 +39,8 @@ const getJson = function(url, callback) {
   }
   xhr.send();
 }
-getJson("http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=2821934c9ad6c1c2617558f2c234c481&units=metric", function(err, data){
+const WEATHER_API = config.apikey;
+getJson(`http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=${WEATHER_API}&units=metric`, function(err, data){
   if (err !== null) {
     alert("로딩 중" + err)
   } else {
@@ -72,6 +73,14 @@ let close = document.querySelector(".close");
 
 mapMadalOpen.addEventListener("click", function() {
   mapMadal.style.display = "block"; // 모달 열기
+
+  // 지도
+  new daum.roughmap.Lander({
+    "timestamp" : "1692621012629",
+    "key" : "2fwm4",
+    "mapWidth" : "600",
+    "mapHeight" : "600"
+  }).render();
 });
 
 close.addEventListener("click", function() {
@@ -80,138 +89,7 @@ close.addEventListener("click", function() {
 
 /* timetable */
 let timetable = document.querySelector(".timetable");
-const timetableArray = [
-  {
-    _id : "1",
-    name : "씨라이언 빌리지 애니멀톡",
-    time : "13:00",
-  },
-  {
-    _id : "2",
-    name : "장미성 뮤직 워터 BaMM",
-    time : "13:00",
-  },
-  {
-    _id : "3",
-    name : "슈퍼윙스 애니멀 톡",
-    time : "13:30",
-  },
-  {
-    _id : "4",
-    name : "슈팅워터펀&밤밤클럽",
-    time : "13:30",
-  },
-  {
-    _id : "5",
-    name : "씨라이언 빌리지 애니멀톡",
-    time : "14:00",
-  },
-  {
-    _id : "6",
-    name : "장미성 뮤직 워터 BaMM",
-    time : "14:00",
-  },
-  {
-    _id : "7",
-    name : "슈퍼윙스 애니멀 톡",
-    time : "14:30",
-  },
-  {
-    _id : "8",
-    name : "알버트 라이브 톡",
-    time : "14:30",
-  },
-  {
-    _id : "9",
-    name : "씨라이언 빌리지 애니멀톡",
-    time : "15:00",
-  },
-  {
-    _id : "10",
-    name : "장미성 뮤직 워터 BaMM",
-    time : "15:00",
-  },
-  {
-    _id : "11",
-    name : "뿌빠 뱀과 육지거북 애니멀톡",
-    time : "15:00",
-  },
-  {
-    _id : "12",
-    name : "레니의 대모험~ 드래곤 성을 찾아서~",
-    time : "15:00",
-  },
-  {
-    _id : "13",
-    name : "슈퍼윙스 애니멀 톡",
-    time : "15:30",
-  },
-  {
-    _id : "14",
-    name : "알버트 라이브 톡",
-    time : "15:30",
-  },
-  {
-    _id : "15",
-    name : "씨라이언 빌리지 애니멀톡",
-    time : "16:00",
-  },
-  {
-    _id : "16",
-    name : "장미성 뮤직 워터 BaMM",
-    time : "16:00",
-  },
-  {
-    _id : "17",
-    name : "뿌빠 사막여우 애니멀톡",
-    time : "16:00",
-  },
-  {
-    _id : "18",
-    name : "슈퍼윙스 애니멀 톡",
-    time : "16:30",
-  },
-  {
-    _id : "19",
-    name : "슈팅워터펀&밤밤클럽",
-    time : "16:30",
-  },
-  {
-    _id : "20",
-    name : "장미성 뮤직 워터 BaMM",
-    time : "17:00",
-  },
-  {
-    _id : "21",
-    name : "레니의 대모험~ 드래곤 성을 찾아서~",
-    time : "17:30",
-  },
-  {
-    _id : "22",
-    name : "장미성 뮤직 워터 BaMM",
-    time : "18:00",
-  },
-  {
-    _id : "23",
-    name : "장미성 뮤직 워터 BaMM",
-    time : "19:00",
-  },
-  {
-    _id : "24",
-    name : "문라이트 퍼레이드",
-    time : "20:30",
-  },
-  {
-    _id : "25",
-    name : "가든 오브 라이츠 with SHINee",
-    time : "21:00",
-  },
-  {
-    _id : "26",
-    name : "EVERTOPIA - The Origin of Everland",
-    time : "21:30",
-  },
-]
+
 
 const timetableArrPro = timetableArray.map(item => {
   return {
@@ -246,46 +124,3 @@ function copyTelephoneText(){
   });
 }
 copyTelephone.addEventListener("click", ()=>{copyTelephoneText()});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 지도 */
-let mapContainer = document.getElementById("kakao_map");
-let options = { //지도를 생성할 때 필요한 기본 옵션
-	center: new kakao.maps.LatLng(37.2939104, 127.2025664), //지도의 중심좌표.
-	level: 5 //지도의 레벨(확대, 축소 정도)
-};
-let map = new kakao.maps.Map(mapContainer, options);
-
-let content = '<div class ="label">에버랜드</div>';
-
-// 커스텀 오버레이가 표시될 위치입니다 
-let position = new kakao.maps.LatLng(37.2939104, 127.2025664);  
-
-// 커스텀 오버레이를 생성합니다
-let customOverlay = new kakao.maps.CustomOverlay({
-    position: position,
-    content: content   
-});
-
-// 커스텀 오버레이를 지도에 표시합니다
-customOverlay.setMap(map);

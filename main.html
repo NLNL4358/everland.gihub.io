@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="common.css">
+  
+  <!-- 카카오맵 스크립트 -->
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
   <!-- main -->
@@ -76,9 +79,7 @@
   <div class="map_modal">
     <div class="map_modal_inner">
       <div class="map_area">
-        <div id="kakao_map">
-
-        </div>
+        <div id="daumRoughmapContainer1692621012629" class="root_daum_roughmap root_daum_roughmap_landing kakao_map"></div>
       </div>
       <div class="text_area">
         <ul>
@@ -256,13 +257,13 @@
     </div>
   </section>
 
-  <!-- kakaoMap -->
-  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=3e615b4fbdbb8f9484347fb16bd099ab&libraries=services,clusterer"></script> 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- jQuery cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- js -->
+  <script src="js/time.js"></script>
+  <script type ="text/javascript" src="js/apikey.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
