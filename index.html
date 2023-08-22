@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
+  <!-- Swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <!-- Css -->
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/reset.css">
@@ -20,13 +21,19 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/editorsClip.css">
   <link rel="stylesheet" href="./css/everland_app.css">
+  <link rel="stylesheet" href="./css/withEverland.css">
+  <link rel="stylesheet" href="./css/whatsNew.css">
+  <link rel="stylesheet" href="./css/footer.css">
 
   <!-- 반응형 Css -->
   <link rel="stylesheet" href="./css/responsive/header_responsive.css">
+  <link rel="stylesheet" href="./css/responsive/editorsClip_responsive.css">
+  <link rel="stylesheet" href="./css/responsive/everland_app_responsive.css">
+  <link rel="stylesheet" href="./css/responsive/whatsNew_responsive.css">
 </head>
 <body>
   <!-- Header  -->
-  <header class="header hamburger"> <!-- 햄버거 클릭시 hamburger 클래스 -->
+  <header class="header"> <!-- 햄버거 클릭시 hamburger 클래스 -->
     <div class="inner header_inner">
       <div class="header_wrap">
         <div class="mobile weather_wrap">
@@ -222,10 +229,16 @@
           </div>
           <div class="mobile_app_and_reservation">
             <div class="mobile_app_wrap">
-              <img src="/img/icon/appStore.png" alt="">
+              <a href="#">
+                <img class="mobile_app_img" src="./img/icon/appStore.png" alt=""> 
+                <span class="mobile_app_text">앱 다운로드</span>
+              </a>
             </div>
             <div class="mobile_reservation_wrap">
-              <img src="/img/icon/ticket_icon.png" alt="">
+              <a href="#">
+                <img class="mobile_reservation_img" src="./img/icon/ticket_icon.png" alt="">
+                <span class="mobile_reservation_text">예매 하기</span>
+              </a>
             </div>
           </div>
           <div class="mobile_nav_wrap">
@@ -309,9 +322,247 @@
 
   <!-- Main 김소희-->
   <section class="main">
-    <div class="inner main_inner"></div>
+    <div class="swiper main_slide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#none">
+            <img class="main_slide_bg" src="img/main/main/main_slide_bg_01.png" alt="슬라이드 배경">
+            <img class="main_slide_img" src="img/main/main_slide_img_01.png" alt="슬라이드 이미지">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none">
+            <img class="main_slide_bg" src="img/main/main_slide_bg_02.png" alt="슬라이드 배경">
+            <img class="main_slide_img" src="img/main/main_slide_img_02.png" alt="슬라이드 이미지">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none">
+            <img class="main_slide_bg" src="img/main/main_slide_bg_03.png" alt="슬라이드 배경">
+            <img class="main_slide_img" src="img/main/main_slide_img_03.png" alt="슬라이드 이미지">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none">
+            <img class="main_slide_bg" src="img/main/main_slide_bg_04.png" alt="슬라이드 배경">
+            <img class="main_slide_img" src="img/main/main_slide_img_04.png" alt="슬라이드 이미지">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none">
+            <img class="main_slide_bg" src="img/main/main_slide_bg_05.png" alt="슬라이드 배경">
+            <img class="main_slide_img" src="img/main/main_slide_img_05.png" alt="슬라이드 이미지">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#none">
+            <img class="main_slide_bg" src="img/main/main_slide_bg_06.png" alt="슬라이드 배경">
+            <img class="main_slide_img" src="img/main/main_slide_img_06.png" alt="슬라이드 이미지">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="main_castle_img">
+      <img src="img/main/main_castle_img.png" alt="">
+    </div>
   </section>
-
+  <!-- weather_map_api 김소희 -->
+  <div class="weather_map_api">
+    <div class="weather">
+      <div class="CurrIcon">
+        <img src="" alt="">
+      </div>
+      <div class="CurrTemp"><span></span>℃</div>
+    </div>
+    <div class="map">
+      <p>오시는 길</p>
+      <img src="img/icon/map_icon.png" alt="">
+    </div>
+  </div>
+  <!-- modal 김소희 -->
+  <div class="map_modal">
+    <div class="map_modal_inner">
+      <div class="map_area">
+        <div id="daumRoughmapContainer1692621012629" class="root_daum_roughmap root_daum_roughmap_landing kakao_map"></div>
+      </div>
+      <div class="text_area">
+        <ul>
+          <li class="subway">
+            <img src="img/icon/subway_icon.png" alt="지하철 아이콘">
+            <div>
+              <h4>지하철</h4>
+              <p>
+                분당선 기흥역까지 오셔서
+                <br>
+                에버라인(경전철)으로 환승하세요!
+              </p>
+              <p>
+                - 에버라인 종점에 내려서 셔틀버스(무료)로 
+                <br>
+                에버랜드, 캐리비안 베이까지 이동
+                <br>
+                - 에버라인 운행시간 05:30~23:30
+              </p>
+            </div>
+          </li>
+          <li class="bus">
+            <img src="img/icon/bus_icon.png" alt="버스 아이콘">
+            <div>
+              <h4>버스</h4>
+              <p>
+                서울 출발
+                <br>
+                일반버스
+                <br>
+                5002번, 5700번, 1500-2번, 1113번
+              </p>
+              <p>
+                인천 및 경기도 출발
+                <br>
+                직행버스
+                <br>
+                8862번, 8839번
+                <br>
+                일반버스
+                <br>
+                66번, 66-4번, 670번
+              </p>
+            </div>
+          </li>
+          <li class="location">
+            <img src="img/icon/location_icon.png" alt="주소 아이콘">
+            <div>
+              <h4>주소</h4>
+              <p class="copy_location" title="복사">
+                경기도 용인시 에버랜드로 199 <i></i>
+              </p>
+            </div>
+          </li>
+          <li class="telephone">
+            <img src="img/icon/phone_icon.png" alt="전화번호 아이콘">
+            <div>
+              <h4>전화번호</h4>
+              <p class="copy_telephone" title="복사">
+                031-320-5000 <i></i>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="close">
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <!-- smart_reservation 김소희 -->
+  <section class="smart_reservation">
+    <div class="smart_reservation_inner inner">
+      <div class="reservation">
+        <div class="smart_reservation_img">
+          <img class="ticket" src="img/main/ticket/smart_reservation_bg_01_top.png" alt="티켓 이미지">
+          <img class="ticket" src="img/main/ticket/smart_reservation_bg_01_middle.png" alt="티켓 이미지">
+          <img class="ticket" src="img/main/ticket/smart_reservation_bg_01_bottom.png" alt="티켓 이미지">
+        </div>
+        <div class="smart_link">
+          <ul>
+            <li><a href="#none">
+              <div class="utilization">
+                <img src="img/icon/smart_reservation_icon_01.png" alt="이용권 아이콘">
+              </div>
+              <p>이용권</p>
+            </a></li>
+            <li><a href="#none">
+              <div class="year_utilization">
+                <img src="img/icon/smart_reservation_icon_02.png" alt="정기권 아이콘">
+              </div>
+              <p>정기권</p>
+            </a></li>
+            <li><a href="#none">
+              <div class="restaurant">
+                <img src="img/icon/smart_reservation_icon_03.png" alt="레스토랑 테라스 아이콘">
+              </div>
+              <p>레스토랑 테라스</p>
+            </a></li>
+            <li><a href="#none">
+              <div class="experience">
+                <img src="img/icon/smart_reservation_icon_04.png" alt="체험프로그램 아이콘">
+              </div>
+              <p>체험프로그램</p>
+            </a></li>
+            <li><a href="#none">
+              <div class="valet_parking">
+                <img src="img/icon/smart_reservation_icon_05.png" alt="발레파킹 아이콘">
+              </div>
+              <p>발레파킹</p>
+            </a></li>
+            <li><a href="#none">
+              <div class="
+              dream_tour">
+                <img src="img/icon/smart_reservation_icon_06.png" alt="드림투어 아이콘">
+              </div>
+              <p>드림투어</p>
+            </a></li>
+          </ul>
+          <div class="mobile">
+            <button>스페셜 프로모션<br>자세히보기 →</button>
+            <button>공연시간 더보기</button>
+            <button>어트랙션 운휴안내</button>
+          </div>
+        </div>
+        <div class="today">
+          <!-- today 상단 -->
+          <div class="time">
+            <h3 class="reservation_title">Today
+              <span>오늘의 운영시간</span>
+            </h3>
+            <button>공연시간 더보기</button>
+            <button>어트랙션 운휴안내</button>
+            <h4 class="getToday">8월 3일 (목)</h4>
+            <h2>10 : 00 - 22 : 00</h2>
+          </div>
+          <!-- 어트랙션시간표 -->
+          <div class="attraction_timetable">
+            <ul class="timetable"></ul>
+          </div>
+          <!-- 스마트 예약 버튼 -->
+          <button class="smart_reservation_btn">스마트 예약</button>
+        </div>
+      </div>
+      <div class="promotion">
+        <div class="smart_reservation_img">
+          <img class="ticket" src="img/main/ticket/smart_reservation_bg_02_top.png" alt="티켓 이미지">
+          <img class="ticket" src="img/main/ticket/smart_reservation_bg_02_middle.png" alt="티켓 이미지">
+          <img class="ticket" src="img/main/ticket/smart_reservation_bg_02_bottom.png" alt="티켓 이미지">
+        </div>
+        <h3 class="reservation_title">Ticket Promotion</h3>
+        <ul class="promotion_btn">
+          <li><a href="#none">
+            <span>스마트예약</span>
+            <span>본인 54%</span>
+          </a></li>
+          <li><a href="#none">
+            <span>제휴카드</span>
+            <span>50% 우대</span>
+          </a></li>
+          <li><a href="#none">
+            <span>모니모<br>신규가입 시</span>
+            <span>대인 54% 우대</span>
+          </a></li>
+          <li><a href="#none">
+            <span>키즈패키지<br>2인권</span>
+            <span>53,000원~</span>
+          </a></li>
+          <li><a href="#none">
+            <span>홈페이지<br>신규가입 우대</span>
+            <span>32,000원~</span>
+          </a></li>
+        </ul>
+        <button>스페셜 프로모션 자세히보기</button>
+      </div>
+    </div>
+  </section>
 
   <!-- Weather_Map_api 김소희-->
   <section class="weather_map_api"></section>
@@ -323,7 +574,68 @@
 
   <!-- whats_new 김정수-->
   <section class="whats_new">
-    <div class="inner whats_new_inner"></div>
+    <div class="whats_new_wrap">
+      <div class="whats_new_title">
+        <h2>What’s <strong>New</strong></h2>
+        <p>꿈과 환상의 나라로 어서오세요!</p>
+      </div>
+      <img src="img/whats_new/whats_new_unit_white.png" alt="" class="unit_white">
+      <img src="img/whats_new/whats_new_unit_brown.png" alt="" class="unit_brown">
+      <!-- Swiper -->
+      <div class="swiper what_is_new">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img">
+              <img src="img/whats_new/whats_new_resize(1).png" alt="">
+            </a>
+            <a href="#none" class="whats_new_text">슈팅워터펀&밤밤클럽</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img">
+              <img src="img/whats_new/whats_new_resize(2).png" alt="">
+            </a>
+            <a href="#none" class="whats_new_text">워터 플레이 야드</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(3).png" alt=""></a>
+            <a href="#none" class="whats_new_text">수의사가 되어요!</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(4).png" alt=""></a>
+            <a href="#none" class="whats_new_text">에버랜드 AR필터</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(5).png" alt=""></a>
+            <a href="#none" class="whats_new_text">Let's SHINEE bLAND</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(6).png" alt=""></a>
+            <a href="#none" class="whats_new_text">여름방학 패키지</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(7).png" alt=""></a>
+            <a href="#none" class="whats_new_text">썸머 가족 패키지</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(8).png" alt=""></a>
+            <a href="#none" class="whats_new_text">오운완 챌린지</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+          <div class="swiper-slide">
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(9).png" alt=""></a>
+            <a href="#none" class="whats_new_text">쌍둥이 판다 바오둥이</a>
+            <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Editors_Clip 강진수-->
@@ -407,9 +719,53 @@
         <div class="inner name_wrap_inner">
           <h2 class="section_main_name">Everland <point2>App</point2></h2>
           <p class="section_sub_name">에버랜드를 즐기는 추천 꿀팁</p>
+          <button class="Google_Play_download_button">
+            Google Play 다운로드
+          </button>
         </div>
       </div>
-
+      <div class="everland_img_section">
+        <div class="phone_img_wrap">
+          <div class="phone_text_wrap">
+            <h4><point2>Everland APP</point2></h4>
+            <h4>하나의 앱으로 누리는 통합혜택</h4>
+          </div>
+          <div class="mobile mobile_phone_text_wrap">
+            <p>이용권 등록,확인 및</p>
+            <p>스마트줄서기를 할 수 있어요</p>
+          </div>
+          <img class="app_phone_img" src="./img/everlandApp/everlandApp_home.png" alt="">
+        </div>
+        <div class="smart_line_img_wrap">
+          <div class="circle_img_wrap">
+            <img src="./img/everlandApp/everlandApp_smarLine.jpg" alt="">
+          </div>
+          <p class="circle_text">
+            스마트 줄서기
+          </p>
+        </div>
+        <div class="map_img_wrap">
+          <div class="circle_img_wrap">
+            <img src="./img/everlandApp/everlandApp_map.png" alt="">
+          </div>
+          <p class="circle_text">
+            에버랜드 지도
+          </p>
+        </div>
+        <div class="order_img_wrap">
+          <div class="circle_img_wrap">
+            <img src="./img/everlandApp/everlandApp_order.jpg" alt="">
+          </div>
+          <p class="circle_text">
+            모바일 오더
+          </p>
+        </div>
+        <div class="mobile mobile_app_text_wrap">
+          <p>에버랜드 <eng>App!</eng></p>
+          <span>하나의 앱으로 누리는 통합 혜택</span>
+          <button class="app_section_play_store_button">Play Store <img src="./img/icon/right_arrow.png" alt=""> </button>
+        </div>
+      </div>
       
     </div>
 
@@ -417,12 +773,141 @@
 
   <!-- With_everland 김정수 -->
   <section class="with_everland">
-    <div class="inner with_everland_inner"></div>
+    <div class="with_everland_wrap">
+      <div class="with_everland_title">
+        <h2>With <strong>Everland</strong></h2>
+        <p>환상의 나라🧚‍♀️ 환상의 채널💝!</p>
+      </div>
+      <img src="img/with_everland/unit_cheese.png" alt="" class="unit_cheese">
+      <div class="with_everland_board_wrap">
+        <div class="with_everland_board">
+          <div class="with_everland_contents">
+            <h3>에버랜드 <strong>SNS</strong> 소식</h3>
+            <div class="with_everland_contents_flex">
+              <div class="with_everland_content01">
+                <a href="#none">
+                  <img src="img/with_everland/with_everland_content_img1.png" alt="" id="with_everland_1">
+                  <div class="content_hover">
+                    <p>에버랜드 공식 채널</p>
+                    <h6>100만 구독자 달성기념!</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="with_everland_content02">
+                <a href="#none">
+                  <img src="img/with_everland/with_everland_content_img2.png" alt="" id="with_everland_2">
+                  <div class="content_hover">
+                    <p>푸바오&러바오</p>
+                    <h6>바오둥이들의 하루</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="with_everland_content03">
+                <a href="#none">
+                  <img src="img/with_everland/with_everland_content_img3.png" alt="" id="with_everland_3">
+                  <div class="content_hover">
+                    <p>푸바오&러바오</p>
+                    <h6>이 세계에 온걸 환영해!</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="with_everland_content04">
+                <a href="#none">
+                  <img src="img/with_everland/with_everland_content_img4.png" alt="" id="with_everland_4">
+                  <div class="content_hover">
+                    <p>케리비안베이</p>
+                    <h6>시원해! 해적폭포!</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer 김정수 -->
-  <footer class="footer">
-    <div class="inner footer_inner"></div>
+  <footer>
+    <div class="footer_illust">
+      <img src="img/footer/footer_illust.png" alt="">
+    </div>
+    <div class="footer_bg_wrap">
+      <div class="inner">
+        <div class="footer_top">
+          <div class="footer_top_left">
+            <a href="#" id="logo">
+              <img src="img/footer/footer_everland_logo(white).svg" alt="">
+            </a>
+            <div class="footer_sns">
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_youtube_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_instagram_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_facebook_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_undefind_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_tstory_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_twitter_icon.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_right">
+            <select name="" id="">
+              <option value="">리조트 내 시설</option>
+              <option value="">리조트 외 시설</option>
+            </select>
+            <select name="" id="">
+              <option value="">FAMILY SITE</option>
+              <option value="">FRIEND SITE</option>
+            </select>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_menu">
+            <ul>
+              <li><a href="#none">에버랜드 리조트 소개</a> </li>
+              <li><a href="#none">이용약관</a> </li>
+              <li><a href="#none">이메일주소 무단수집 거부</a> </li>
+              <li><a href="#none">CAST참여</a> </li>
+              <li><a href="#none">사이트맵</a> </li>
+            </ul>
+          </div>
+          <div class="footer_address">
+            <p>
+              경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)<br>
+              대표이사 : 정해린 | 사업자등록번호 : 135-85-04288 | 통신판매업 신고번호 : 제2006-용인처인-0216호 | 사업자정보확인<br>
+              손님상담센터 : 031-320-5000(유료) | 개인정보처리방침 | 방침 개정 안내 | 입찰공고
+            </p>
+          </div>
+          <div class="footer_copyright">
+            <p>
+              Copyright © Samsung C&T Corporation. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
 
@@ -430,9 +915,17 @@
 
 
 
-
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- jQuery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- JavaScript -->
   <script src="js/header.js"></script>
+  <script src="js/time.js"></script>
+  <script type ="text/javascript" src="js/apikey.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/editorsClip.js"></script>
+  <script src="js/everlandApp.js"></script>
+  <script src="js/whatsNew.js"></script>
 </body>
 </html>

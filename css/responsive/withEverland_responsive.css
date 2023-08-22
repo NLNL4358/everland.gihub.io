@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .with_everland_title {
+    margin-bottom: 50px;
+  }
+
+  .with_everland_title h2 {
+    font-size: 23px;
+  }
+
+  .with_everland_title p {
+    font-size: 12px;
+  }
+
+  .unit_cheese {
+    width: 30%;
+  }
+}

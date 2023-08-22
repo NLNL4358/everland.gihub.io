@@ -155,7 +155,7 @@
 /* 클립 섬네일 */
 .clip_thumbnail_wrap{
   position: absolute;
-  width: 45%;
+  width: clamp(750px,45%,45%);
   height: 70%;
   right: 10%;
   bottom : 5%;

@@ -1,0 +1,164 @@
+/* font-family: 'Montserrat', sans-serif; */
+/*font-family: 'Noto Sans KR', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+.whats_new_wrap {
+  margin: auto;
+  width: 88.54%;
+  position: relative;
+  height: 100%;
+  padding-bottom: 100px;
+  color: var(--black);
+}
+
+.whats_new_title {
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+.whats_new_title h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.whats_new_title h2 strong {
+  color: var(--blue);
+}
+
+.whats_new_title p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+}
+
+.unit_white,
+.unit_brown {
+  position: absolute;
+  z-index: 10;
+  animation: unitAni 2s infinite ease-in-out
+}
+
+@keyframes unitAni {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.unit_white {
+  right: 15%;
+  top: 17%;
+}
+
+.unit_brown {
+  bottom: 0;
+  left: 5%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.what_is_new .swiper-wrapper {
+  height: 784px;
+  padding: 40px;
+}
+
+.what_is_new .swiper-slide {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.what_is_new .swiper-slide:nth-child(1),
+.what_is_new .swiper-slide:nth-child(4),
+.what_is_new .swiper-slide:nth-child(7) {
+  margin-top: 0;
+  transition: 0.3s;
+}
+
+.what_is_new .swiper-slide:nth-child(2),
+.what_is_new .swiper-slide:nth-child(5),
+.what_is_new .swiper-slide:nth-child(8) {
+  padding-top: 150px;
+  transition: 0.3s;
+}
+
+.what_is_new .swiper-slide:nth-child(3),
+.what_is_new .swiper-slide:nth-child(6),
+.what_is_new .swiper-slide:nth-child(9) {
+  padding-top: 300px;
+  transition: 0.3s;
+}
+
+.what_is_new .swiper-slide:hover .whats_new_img img {
+  border-radius: 400px 50px 130px 50px;
+  box-shadow: 0px 0px 15px var(--blue);
+}
+
+.what_is_new .swiper-slide:hover .whats_new_text {
+  opacity: 100;
+}
+
+.what_is_new .swiper-slide:hover .whats_new_arrow {
+  opacity: 100;
+  right: 0;
+}
+
+/* .whats_new_img:hover img {
+  border-radius: 400px 50px 130px 50px;
+  box-shadow: 0px 0px 15px #009CEA;
+}
+
+.whats_new_img:hover .whats_new_text a {
+  opacity: 100;
+}
+
+.whats_new_img:hover .whats_new_arrow img {
+  opacity: 100;
+  right: 0;
+} */
+
+.whats_new_text {
+  margin-top: 1rem;
+  opacity: 0;
+  transition: 0.3s;
+  color: var(--black)
+}
+
+.what_is_new .swiper-slide img {
+  display: block;
+  border-radius: 80px;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.what_is_new .swiper-slide a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.whats_new_arrow {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px #0000003d;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 100;
+}
