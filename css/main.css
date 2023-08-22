@@ -299,7 +299,7 @@ main img,
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 /* smart_reservation */
-.smart_reservation {
+.smart_reservation_inner {
   display: flex;
   height: 621px;
   justify-content: space-between;
@@ -317,15 +317,15 @@ main img,
   justify-content: space-between;
   height: 100%;
 }
-.smart_reservation .ticket:nth-of-type(1) {
+.smart_reservation_inner .ticket:nth-of-type(1) {
   object-fit: contain;
   height: auto;
   transform: translateY(2px);
 }
-.smart_reservation .ticket:nth-of-type(2) {
+.smart_reservation_inner .ticket:nth-of-type(2) {
   object-fit: fill;
 }
-.smart_reservation .ticket:nth-of-type(3) {
+.smart_reservation_inner .ticket:nth-of-type(3) {
   object-fit: contain;
   height: auto;
   transform: translateY(-2px);
@@ -689,7 +689,7 @@ main img,
     display: none;
   }
   /* smart_reservation */
-  .smart_reservation {
+  .smart_reservation_inner {
     transform: translateY(-30px);
     max-height: 400px;
     height: auto;
@@ -701,7 +701,7 @@ main img,
   .reservation_title {
     font-size: clamp(2vw,28px,4vw);
   }
-  .smart_reservation .ticket:nth-of-type(2) {
+  .smart_reservation_inner .ticket:nth-of-type(2) {
     object-fit: fill;
     min-height: 60%;
   }
