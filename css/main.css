@@ -1,9 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans+KR&display=swap');
-body, input, button {
+.main,
+.weather_map_api,
+.map_modal,
+.smart_reservation {
   font-family: 'Montserrat', 'Noto Sans KR';
-  color: var(--black);
 }
-main img,
+.smart_reservation h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.main body,
+.main input,
+.main button,
+.weather_map_api body,
+.weather_map_api input,
+.weather_map_api button,
+.map_modal body,
+.map_modal input,
+.map_modal button,
+.smart_reservation body,
+.smart_reservation input,
+.smart_reservation button {
+  font-family: 'Montserrat', 'Noto Sans KR';
+}
+.main img,
 .weather_map_api img,
 .map_modal img,
 .smart_reservation img {
@@ -11,6 +31,9 @@ main img,
   height: 100%;
   object-fit: cover;
 }
+.smart_reservation button {
+  border: 0;
+} 
 /* style */
 .main {
   width: 100%;
