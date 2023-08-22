@@ -99,7 +99,11 @@
     transition: 0.5s;
   }
 }
-
+@media screen and (max-width: 965px) {
+  .everland_app{
+    margin-top: 0px;
+  }
+}
 @media screen and (max-width : 675px) {
   .app_phone_img{
     height: 75%;
