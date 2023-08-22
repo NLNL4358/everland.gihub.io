@@ -34,7 +34,7 @@ main img,
 }
 .main .main_slide_img {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 0;
   width: 100%;
   animation: move 2s infinite alternate-reverse linear;
