@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+  /* With Everland */
+  .with_everland_board_wrap {
+    display: none;
+  }
+
   .with_everland_title {
     margin-bottom: 50px;
   }
@@ -12,6 +17,90 @@
   }
 
   .unit_cheese {
+    top: -10%;
     width: 30%;
   }
+
+  .with_everland_responsive {
+    display: block;
+    padding-top: 2rem;
+  }
+
+  .with_everland_responsive_contents {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab__item {
+    width: 85px;
+    height: 85px;
+    border-radius: 3rem;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+
+  .tab__item img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .tab__item.active {
+    display: inline-block;
+    box-shadow: 0px 0px 8px #7f13d67e;
+    color: #fff;
+  }
+
+  /* 탭의 콘텐츠 영역 */
+  .tab__content-wrapper {
+    padding-left: 7px;
+    order: -1;
+  }
+
+  .tab__content-wrapper p {
+    color: #ffffff;
+    margin-top: 20px;
+    width: 250px;
+    padding-left: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .tab__content span {
+    font-size: 0.8rem;
+    color: #66a8ff;
+    padding-left: 1rem;
+  }
+
+  .tab__content {
+    display: none;
+
+  }
+
+  .tab__content img {
+    margin-top: 45px;
+    width: 290px;
+    height: 300px;
+  }
+
+  .tab__content.active {
+    display: block;
+  }
+
+  #phone_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* With Everland --- End */
+  /* Footer */
 }

@@ -12,13 +12,16 @@ $(document).ready(function(e){
   /* 이벤트 */
   $(document).scroll(function(e){
     pagesHeight = docElem.scrollTop;
-    console.log(pagesHeight);
     if(pagesHeight >= everLandImgHeight-1100){
       $(".everland_app").addClass("scrolled");
     }
     else{
       $(".everland_app").removeClass("scrolled");
     }
+  })
+
+  $(window).resize(function(e){
+    everLandImgHeight = $(".phone_img_wrap").position().top;
   })
 
   /* 초기화 */
