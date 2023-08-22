@@ -1,5 +1,6 @@
 .everland_app{
   margin-top: 18.75rem;
+  margin-bottom : 100px;
 }
 .everland_app .mobile{
   display: none;
@@ -172,5 +173,5 @@
 .circle_text{
   font-size: 1.4rem;
   font-weight: bold;
-  margin-top: 1.5rem;;
+  margin-top: 1.5rem;
 }

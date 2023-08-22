@@ -15,6 +15,7 @@ main img,
 .main {
   width: 100%;
   height: 930px;
+  overflow: hidden;
   position: relative;
 }
 .main .main_slide {
@@ -33,7 +34,7 @@ main img,
 }
 .main .main_slide_img {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 0;
   width: 100%;
   animation: move 2s infinite alternate-reverse linear;
@@ -199,16 +200,31 @@ main img,
   width: 100%;
   height: 100%;
 }
-.map_modal .label {
+.map_modal .roughmap_maker_label {
+  position: relative;
+  border: 0;
+  border-color: transparent;
+  border-radius: 0;
+  top: 0px !important;
+  text-decoration: none;
+}
+.map_modal .roughmap_maker_label .roughmap_lebel_text {
+  display: block;
+  position: relative;
+  z-index: 10;
   width: 200px;
   height: 80px;
-  background-color: #FF9000;
+  padding: 0;
   border-radius: 80px;
-  font-size: 28px;
   font-weight: bold;
-  line-height: 50px;
+  font-size: 28px;
+  line-height: 80px;
+  background-color: #FF9000;
   text-align: center;
   color: #fff;
+}
+.map_modal .roughmap_maker_label:after {
+  display: none;
 }
 /* text_area */
 .map_modal .text_area {
@@ -272,7 +288,7 @@ main img,
   display: inline-block;
   width: 18px;
   height: 20px;
-  background-image: url(../img/icon/copy.png);
+  background-image: url(../img/main/icon/copy.png);
   margin-left: 10px;
 }
 /* close */
@@ -657,7 +673,12 @@ main img,
   .main .swiper-slide {
     overflow: hidden;
   }
-  .main_slide_img {
+  .main .main_slide_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main .main_slide_img {
     top: 25%;
     left: 50%;
     width: auto;
@@ -676,7 +697,7 @@ main img,
       transform: translateX(-50%) rotate(-2deg);
     }
   }
-  .main_castle_img {
+  .main .main_castle_img {
     display: none;
   }
   .main .swiper-horizontal>.swiper-pagination-bullets, 

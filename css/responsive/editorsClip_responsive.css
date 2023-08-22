@@ -11,6 +11,9 @@
     top: 10%;
     width: clamp(220px, 25% , 25%);
   }
+  .section_name_wrap{
+    height: 20%;
+  }
 }
 @media screen and (max-width : 965px) {
   .editors_clip{
@@ -53,6 +56,9 @@
 @media screen and (max-width : 675px) {
   .editors_clip_inner{
     width: 100%;
+  }  
+  .section_name_wrap{
+    height: 15%;
   }
   .clip_thumbnail_wrap{
     width: 90%;
