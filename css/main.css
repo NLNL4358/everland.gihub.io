@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans+KR&display=swap');
-body, input, button {
+.main,
+.weather_map_api,
+.map_modal,
+.smart_reservation {
   font-family: 'Montserrat', 'Noto Sans KR';
-  color: var(--black);
 }
-main img,
+.main body,
+.main input,
+.main button,
+.weather_map_api body,
+.weather_map_api input,
+.weather_map_api button,
+.map_modal body,
+.map_modal input,
+.map_modal button,
+.smart_reservation body,
+.smart_reservation input,
+.smart_reservation button {
+  font-family: 'Montserrat', 'Noto Sans KR';
+}
+.main img,
 .weather_map_api img,
 .map_modal img,
 .smart_reservation img {
@@ -11,34 +27,38 @@ main img,
   height: 100%;
   object-fit: cover;
 }
+.smart_reservation button {
+  border: 0;
+} 
 /* style */
 .main {
   width: 100%;
   height: 930px;
+  overflow: hidden;
   position: relative;
 }
-.main_slide {
+.main .main_slide {
   height: 100%;
 }
-.main_slide .swiper-wrapper {
+.main .main_slide .swiper-wrapper {
   height: 100%;
 }
-.main_slide .swiper-wrapper .swiper-slide {
+.main .main_slide .swiper-wrapper .swiper-slide {
   height: 100%;
 }
-.main_slide_bg {
+.main .main_slide_bg {
   position: absolute;
   top: 0;
   left: 0;
 }
-.main_slide_img {
+.main .main_slide_img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   animation: move 2s infinite alternate-reverse linear;
 }
-.swiper-slide:last-child .main_slide_img {
+.main .swiper-slide:last-child .main_slide_img {
   animation: none;
 }
 @keyframes move {
@@ -49,7 +69,7 @@ main img,
     transform: rotate(-2deg);
   }
 }
-.main_castle_img {
+.main .main_castle_img {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -59,10 +79,13 @@ main img,
   z-index: 1;
 }
 /* 메인 슬라이드 커스텀 */
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.main .swiper-horizontal>.swiper-pagination-bullets,
+.main .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.main .swiper-pagination-custom, 
+.main .swiper-pagination-fraction {
   bottom: 12%;
 }
-.main_slide .swiper-pagination-bullet {
+.main .main_slide .swiper-pagination-bullet {
   width: 25px;
   height: 25px;
   display: inline-block;
@@ -70,7 +93,7 @@ main img,
   background: var(--blue);
   opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
 }
-.main_slide .swiper-pagination-bullet-active {
+.main .main_slide .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(--orange);
 }
@@ -99,34 +122,34 @@ main img,
   
 }
 /* weather */
-.weather {
+.weather_map_api .weather {
   width: 100%;
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.CurrIcon {
+.weather_map_api .CurrIcon {
   width: 60px;
   height: 60px;
   margin-right: 15px;
 }
-.CurrIcon img {
+.weather_map_api .CurrIcon img {
   width: 100%;
   object-fit: contain;
 }
-.CurrTemp {
+.weather_map_api .CurrTemp {
   font-size: 14px;
   font-weight: bold;
   color: var(--blue);
 }
-.CurrTemp span {
+.weather_map_api .CurrTemp span {
   font-size: 30px;
   color: var(--black);
   font-family: 'Montserrat';
 }
 /* map */
-.map {
+.weather_map_api .map {
   width: 100%;
   height: 50%;
   display: flex;
@@ -134,14 +157,14 @@ main img,
   justify-content: center;
   cursor: pointer;
 }
-.map p {
+.weather_map_api .map p {
   margin-right: 15px;
   font-size: 20px;
   font-weight: bold;
   padding-bottom: .5rem;
   position: relative;
 }
-.map p::after {
+.weather_map_api .map p::after {
   content: "";
   position: absolute;
   width: 0;
@@ -153,7 +176,7 @@ main img,
   transform: translateX(-50%);
   transition: .3s;
 }
-.map img {
+.weather_map_api .map img {
   width: auto;
   height: 50px;
   object-fit: contain;
@@ -169,7 +192,7 @@ main img,
   background-color: #0000007c;
   display: none;
 }
-.map_modal_inner {
+.map_modal .map_modal_inner {
   width: 67.71%;
   height: 800px;
   position: absolute;
@@ -184,7 +207,7 @@ main img,
   align-items: center;
 }
 /* map_area */
-.map_area {
+.map_modal .map_area {
   width: 46.15%;
   height: 600px;
   border: 10px solid var(--blue);
@@ -192,88 +215,103 @@ main img,
   margin-right: 50px;
   overflow: hidden;
 }
-.kakao_map {
+.map_modal .kakao_map {
   width: 100%;
   height: 100%;
 }
-.label {
+.map_modal .roughmap_maker_label {
+  position: relative;
+  border: 0;
+  border-color: transparent;
+  border-radius: 0;
+  top: 0px !important;
+  text-decoration: none;
+}
+.map_modal .roughmap_maker_label .roughmap_lebel_text {
+  display: block;
+  position: relative;
+  z-index: 10;
   width: 200px;
   height: 80px;
-  background-color: #FF9000;
+  padding: 0;
   border-radius: 80px;
-  font-size: 28px;
   font-weight: bold;
-  line-height: 50px;
+  font-size: 28px;
+  line-height: 80px;
+  background-color: #FF9000;
   text-align: center;
   color: #fff;
 }
+.map_modal .roughmap_maker_label:after {
+  display: none;
+}
 /* text_area */
-.text_area {
+.map_modal .text_area {
   width: 35%;
 }
-.text_area ul {
+.map_modal .text_area ul {
   display: grid;
   grid-template-areas: 
   "subway subway"
   "bus bus"
   "location telephone";
 }
-.text_area ul li {
+.map_modal .text_area ul li {
   display: flex;
   margin-bottom: 25px;
 }
-.subway {
+.map_modal .subway {
   grid-area: subway;
 }
-.bus {
+.map_modal .bus {
   grid-area: bus;
 }
-.location {
+.map_modal .location {
   grid-area: location;
 }
-.telephone {
+.map_modal .telephone {
   grid-area: telephone;
 }
-.text_area ul li img {
+.map_modal .text_area ul li img {
   margin-right: 15px;
   margin-top: 5px;
 }
-.text_area ul li:nth-of-type(1) img {
+.map_modal .text_area ul li:nth-of-type(1) img {
   width: auto;
   height: 40px;
   object-fit: cover;
 }
-.text_area ul li:not(:nth-of-type(1)) img {
+.map_modal .text_area ul li:not(:nth-of-type(1)) img {
   width: auto;
   height: 30px;
   object-fit: cover;
 }
-.text_area ul li h4 {
+.map_modal .text_area ul li h4 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
 }
-.text_area ul li p {
+.map_modal .text_area ul li p {
   font-weight: bold;
   display: flex;
   align-items: center;
 }
-.text_area ul li p:nth-of-type(1) {
+.map_modal .text_area ul li p:nth-of-type(1) {
   margin-bottom: 15px;
 }
-.telephone p,
-.location p {
+.map_modal .telephone p,
+.map_modal .location p {
   cursor: pointer;
 }
-.text_area ul li p i {
+.map_modal .text_area ul li p i {
   display: inline-block;
   width: 18px;
   height: 20px;
-  background-image: url(../img/icon/copy.png);
+  background-image: url(../img/main/icon/copy.png);
   margin-left: 10px;
 }
 /* close */
-.close {
+.map_modal .close {
   width: 80px;
   height: 80px;
   background-color: var(--purple);
@@ -283,7 +321,7 @@ main img,
   right: 50px;
   cursor: pointer;
 }
-.close p {
+.map_modal .close p {
   width: 40px;
   height: 10px;
   border-radius: 10px;
@@ -292,14 +330,14 @@ main img,
   top: 50%;
   left: 50%;
 }
-.close p:nth-child(1) {
+.map_modal .close p:nth-child(1) {
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.close p:nth-child(2) {
+.map_modal .close p:nth-child(2) {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 /* smart_reservation */
-.smart_reservation_inner {
+.smart_reservation .smart_reservation_inner {
   display: flex;
   height: 621px;
   justify-content: space-between;
@@ -307,7 +345,7 @@ main img,
   position: relative;
   z-index: 2;
 }
-.smart_reservation_img {
+.smart_reservation .smart_reservation_img {
   position: absolute;
   top: 0;
   left: 0;
@@ -317,58 +355,58 @@ main img,
   justify-content: space-between;
   height: 100%;
 }
-.smart_reservation_inner .ticket:nth-of-type(1) {
+.smart_reservation .smart_reservation_inner .ticket:nth-of-type(1) {
   object-fit: contain;
   height: auto;
   transform: translateY(2px);
 }
-.smart_reservation_inner .ticket:nth-of-type(2) {
+.smart_reservation .smart_reservation_inner .ticket:nth-of-type(2) {
   object-fit: fill;
 }
-.smart_reservation_inner .ticket:nth-of-type(3) {
+.smart_reservation .smart_reservation_inner .ticket:nth-of-type(3) {
   object-fit: contain;
   height: auto;
   transform: translateY(-2px);
 }
-.reservation_title {
+.smart_reservation .reservation_title {
   font-size: 36px;
 }
 /* reservation */
-.reservation {
+.smart_reservation .reservation {
   position: relative;
   width: 61.53%;
   padding: .5rem .5rem 1.5rem .5rem;
   display: flex;
 }
-.mobile {
+.smart_reservation .mobile {
   display: none;
 }
-.smart_link {
+.smart_reservation .smart_link {
   width: 36%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.smart_link ul {
+.smart_reservation .smart_link ul {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, auto);
   /* grid-gap: 3rem; */
 }
-.smart_link ul li:nth-child(1),
-.smart_link ul li:nth-child(3) {
+.smart_reservation .smart_link ul li:nth-child(1),
+.smart_reservation .smart_link ul li:nth-child(3) {
   margin-bottom: 3rem;
 }
-.smart_link ul li {
+.smart_reservation .smart_link ul li {
   text-align: center;
 }
-.smart_link ul li a {
+.smart_reservation .smart_link ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.smart_link ul li div {
+.smart_reservation .smart_link ul li div {
   width: 80px;
   height: 80px;
   border: 5px solid var(--blue);
@@ -378,7 +416,7 @@ main img,
   margin-bottom: .5rem;
   transition: .3s;
 }
-.smart_link ul li div img {
+.smart_reservation .smart_link ul li div img {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -387,29 +425,29 @@ main img,
   height: auto;
 }
 /* img size */
-.utilization img {
+.smart_reservation .utilization img {
   width: 70%;
 }
-.year_utilization img {
+.smart_reservation .year_utilization img {
   width: 60%;
 }
-.restaurant img {
+.smart_reservation .restaurant img {
   width: 60%;
 }
-.experience img {
+.smart_reservation .experience img {
   width: 60%;
 }
-.valet_parking img {
+.smart_reservation .valet_parking img {
   width: 60%;
 }
-.dream_tour img {
+.smart_reservation .dream_tour img {
   width: 70%;
 }
-.smart_link ul li p {
+.smart_reservation .smart_link ul li p {
   font-weight: bold;
 }
 /* today */
-.today {
+.smart_reservation .today {
   width: 64%;
   height: 100%;
   padding: 3rem;
@@ -418,17 +456,17 @@ main img,
   align-items: center;
 }
 /* time */
-.time {
+.smart_reservation .time {
   width: 100%;
   height: 45%;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.time .reservation_title {
+.smart_reservation .time .reservation_title {
   margin-bottom: auto;
 }
-.time .reservation_title span {
+.smart_reservation .time .reservation_title span {
   font-size: 16px;
 }
 @media (max-width: 1520px) {
@@ -436,18 +474,18 @@ main img,
     display: block;
   }
 }
-.time h4 {
+.smart_reservation .time h4 {
   font-size: clamp(.5vw, 28px , 2vw);
   /* font-size: 28px; */
   font-weight: bold;
 }
-.time h2 {
+.smart_reservation .time h2 {
   color: var(--orange);
   font-size: clamp(2vw, 52px , 3vw);
   /* font-size: 52px; */
   line-height: 1;
 }
-.time button {
+.smart_reservation .time button {
   position: absolute;
   right: 0;
   width: clamp(20%,180px,50%);
@@ -459,54 +497,54 @@ main img,
   font-size: 16px;
   transition: .3s;
 }
-.time button:nth-of-type(1) {
+.smart_reservation .time button:nth-of-type(1) {
   top: 0%;
   border: 2px solid var(--purple);
   color: var(--purple);
 }
-.time button:nth-of-type(2) {
+.smart_reservation .time button:nth-of-type(2) {
   top: 35%;
   border: 2px solid var(--blue);
   color: var(--blue);
 }
 /* attraction_timetable */
-.attraction_timetable {
+.smart_reservation .attraction_timetable {
   width: 100%;
   height: 45%;
   padding-top: 2rem;
 }
-.timetable {
+.smart_reservation .timetable {
   height: 100%;
   overflow-y: scroll;
 }
-.timetable::-webkit-scrollbar {
+.smart_reservation .timetable::-webkit-scrollbar {
   width: 10px;  /* 스크롤바의 너비 */
 }
-.timetable::-webkit-scrollbar-thumb {
+.smart_reservation .timetable::-webkit-scrollbar-thumb {
   background-color: var(--blue);
   border-radius: 10px;
 }
-.timetable::-webkit-scrollbar-track {
+.smart_reservation .timetable::-webkit-scrollbar-track {
   background-color: var(--yellow);  /*스크롤바 뒷 배경 색상*/
   border-radius: 10px;
 }
-.timetable li {
+.smart_reservation .timetable li {
   margin-bottom: 18px;
   display: flex;
   align-items: center;
 }
-.timetable li span {
+.smart_reservation .timetable li span {
   font-size: clamp(1vw,28px,2vw);
   /* font-size: 28px; */
   font-weight: bold;
 }
-.timetable_time {
+.smart_reservation .timetable_time {
   display: inline-block;
   width: clamp(20%,100px,30%);
   /* width: 18%; */
   text-align: center;
 }
-.yellow_box {
+.smart_reservation .yellow_box {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -515,7 +553,7 @@ main img,
   margin-left: 5px;
   margin-right: 15px;
 }
-.timetable_name {
+.smart_reservation .timetable_name {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -523,7 +561,7 @@ main img,
   width: 70%;
 }
 /* smart_reservation_btn */
-.smart_reservation_btn {
+.smart_reservation .smart_reservation_btn {
   width: 60%;
   height: 80px;
   margin-top: 1.5rem;
@@ -535,7 +573,7 @@ main img,
   transition: .3s;
 }
 /* promotion */
-.promotion {
+.smart_reservation .promotion {
   position: relative;
   width: 38%;
   padding: 3rem;
@@ -544,36 +582,36 @@ main img,
   justify-content: space-between;
   align-items: flex-end;
 }
-.promotion ul {
+.smart_reservation .promotion ul {
   width: 100%;
   height: 70%;
   position: relative
 }
-.promotion ul li {
+.smart_reservation .promotion ul li {
   width: 28%;
   position: absolute;
 }
-.promotion ul li:nth-child(1){
+.smart_reservation .promotion ul li:nth-child(1){
   top: 0;
 }
-.promotion ul li:nth-child(2) {
+.smart_reservation .promotion ul li:nth-child(2) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.promotion ul li:nth-child(3){
+.smart_reservation .promotion ul li:nth-child(3){
   top: 0;
   right: 0;
 }
-.promotion ul li:nth-child(4){
+.smart_reservation .promotion ul li:nth-child(4){
   bottom: 0;
   left: 0;
 }
-.promotion ul li:nth-child(5){
+.smart_reservation .promotion ul li:nth-child(5){
   bottom: 0;
   right: 0;
 }
-.promotion ul li a {
+.smart_reservation .promotion ul li a {
   display: flex;
   width: 100%;
   height: 150px;
@@ -587,13 +625,13 @@ main img,
   box-shadow: 0 0 10px #1b1d1f20;
   transition: .3s;
 }
-.promotion ul li a span {
+.smart_reservation .promotion ul li a span {
   font-size: clamp(.8vw , 20px , 1.5vw);
   /* font-size: 20px; */
   font-weight: bold;
   width: 80%;
 }
-.promotion ul li a span:nth-child(2) {
+.smart_reservation .promotion ul li a span:nth-child(2) {
   font-size: clamp(.5vw , 18px , 1.5vw);
   /* font-size: 18px; */
   color: var(--blue);
@@ -603,7 +641,7 @@ main img,
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.promotion button {
+.smart_reservation .promotion button {
   width: clamp(45%, 230px ,80%);
   /* width: 45%; */
   height: 50px;
@@ -616,31 +654,31 @@ main img,
 }
 /* hover */
 @media (hover: hover) {
-  .map:hover p::after {
+  .weather_map_api .map:hover p::after {
     width: 100%;
   }
-  .smart_link ul li:hover div {
+  .smart_reservation .smart_link ul li:hover div {
     border: 5px solid var(--yellow);
     box-shadow: 0 0 10px #00000030;
   }
-  .time button:hover {
+  .smart_reservation .time button:hover {
     color: #fff;
     box-shadow: 0 0 5px #00000030;
   }
-  .time button:nth-of-type(1):hover {
+  .smart_reservation .time button:nth-of-type(1):hover {
     background-color: var(--purple);
   }
-  .time button:nth-of-type(2):hover {
+  .smart_reservation .time button:nth-of-type(2):hover {
     background-color: var(--blue);
   }
-  .smart_reservation_btn:hover {
+  .smart_reservation .smart_reservation_btn:hover {
     background-color: var(--blue);
     box-shadow: 0 0 10px #00000050;
   }
-  .promotion ul li a:hover {
+  .smart_reservation .promotion ul li a:hover {
     background-color: var(--yellow);
   }
-  .promotion button:hover {
+  .smart_reservation .promotion button:hover {
     background-color: var(--blue);
     box-shadow: 0 0 10px #00000050;
   }
@@ -654,13 +692,18 @@ main img,
   .main .swiper-slide {
     overflow: hidden;
   }
-  .main_slide_img {
+  .main .main_slide_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main .main_slide_img {
     top: 25%;
     left: 50%;
     width: auto;
     height: 60%;
   }
-  .swiper-slide:last-child .main_slide_img {
+  .main .swiper-slide:last-child .main_slide_img {
     transform: translateX(-50%);
     height: 50%;
     right: 0;
@@ -673,13 +716,16 @@ main img,
       transform: translateX(-50%) rotate(-2deg);
     }
   }
-  .main_castle_img {
+  .main .main_castle_img {
     display: none;
   }
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  .main .swiper-horizontal>.swiper-pagination-bullets, 
+  .main .swiper-pagination-bullets.swiper-pagination-horizontal, 
+  .main .swiper-pagination-custom, 
+  .main .swiper-pagination-fraction {
     bottom: 8%;
   }
-  .main_slide .swiper-pagination-bullet {
+  .main .main_slide .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     border-radius: 5px;
@@ -689,51 +735,51 @@ main img,
     display: none;
   }
   /* smart_reservation */
-  .smart_reservation_inner {
+  .smart_reservation .smart_reservation_inner {
     transform: translateY(-30px);
     max-height: 400px;
     height: auto;
   }
-  .smart_reservation_img {
+  .smart_reservation .smart_reservation_img {
     height: 100%;
     width: 100%;
   }
-  .reservation_title {
+  .smart_reservation .reservation_title {
     font-size: clamp(2vw,28px,4vw);
   }
-  .smart_reservation_inner .ticket:nth-of-type(2) {
+  .smart_reservation .smart_reservation_inner .ticket:nth-of-type(2) {
     object-fit: fill;
     min-height: 60%;
   }
   /* reservation */
-  .reservation {
+  .smart_reservation .reservation {
     width: 100%;
     height: 100%;
     padding: 0;
   }
-  .smart_link ul {
+  .smart_reservation .smart_link ul {
     display: none;
   }
-  .smart_link {
+  .smart_reservation .smart_link {
     height: 100%;
     align-self: center;
   }
-  .mobile {
+  .smart_reservation .mobile {
     width: clamp(80%,200px,100%);
     display: flex;
     flex-direction: column;
     padding: clamp(10%,2rem,5%);
   }
-  .mobile button:not(:nth-child(3)) {
+  .smart_reservation .mobile button:not(:nth-child(3)) {
     margin-bottom: clamp(2vw, 1rem, 1vw);
   }
-  .mobile button {
+  .smart_reservation .mobile button {
     border-radius: 15px;
     padding: .8rem 0;
     font-size: 12px;
     font-weight: bold;
   }
-  .mobile button:nth-child(1) {
+  .smart_reservation .mobile button:nth-child(1) {
     background-color: #fff;
     box-sizing: border-box;
     border: 5px solid var(--yellow);
@@ -741,60 +787,52 @@ main img,
     inset -3px -3px 15px var(--orange),
     0 0 10px #00000030; */
   }
-  .mobile button:nth-child(2) {
+  .smart_reservation .mobile button:nth-child(2) {
     background-color: var(--purple);
     color: #fff;
   }
-  .mobile button:nth-child(3) {
+  .smart_reservation .mobile button:nth-child(3) {
     background-color: var(--blue);
     color: #fff;
   }
   /* time */
-  .today {
+  .smart_reservation .today {
     padding: 5%;
     height: 100%;
   }  
-  .time {
+  .smart_reservation .time {
     height: 70%;
   }
-  .time .reservation_title span {
+  .smart_reservation .time .reservation_title span {
     font-size: clamp(1vw,18px,2.5vw);
     /* font-size: 12px; */
   }
-  .time h4 {
+  .smart_reservation .time h4 {
     font-size: clamp(1vw,23px,3vw);
     line-height: 2;
     margin-top: .5rem;
     /* font-size: 14px; */
   }
-  .time h2 {
+  .smart_reservation .time h2 {
     font-size: clamp(5vw,28px,1vw);
     /* font-size: 23px; */
   }
-  .time button {
+  .smart_reservation .time button {
     display: none;
   }
   /* timetable */
-  .attraction_timetable {
+  .smart_reservation .attraction_timetable {
     display: none;
   }
   /* smart_reservation_btn */
-  .smart_reservation_btn {
+  .smart_reservation .smart_reservation_btn {
     width: clamp(50%,250px,100%);
     height: 50px;
     border-radius: 20px;
     font-size: 23px;
   }
-
-
-
-
-
-
-
-
   /* promotion */
-  .promotion {
+  .smart_reservation .promotion {
     display: none;
   }
 }
