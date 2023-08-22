@@ -1,0 +1,229 @@
+/* font-family: 'Montserrat', sans-serif; */
+/*font-family: 'Noto Sans KR', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+.with_everland_wrap {
+  margin: auto;
+  width: 88.54%;
+  position: relative;
+  height: 100%;
+  padding-bottom: 100px;
+  color: var(--black);
+}
+
+.with_everland_title {
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.with_everland_title h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.with_everland_title h2 strong {
+  color: var(--purple)
+}
+
+.with_everland_title p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+}
+
+.unit_white,
+.unit_cheese,
+.unit_brown {
+  position: absolute;
+  z-index: 10;
+  animation: unitAni 2s infinite ease-in-out
+}
+
+@keyframes unitAni {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.unit_cheese {
+  right: 0;
+  top: 0;
+}
+
+.with_everland_board_wrap {
+  border: 1px solid #bbb;
+  padding: 25px 45px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px #00000057;
+}
+
+.with_everland_board h3 {
+  font-size: 42px;
+  color: var(--black);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.with_everland_board h3::before {
+  content: '';
+  width: 400px;
+  height: 1px;
+  background-color: #bbb;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 20%;
+}
+
+.with_everland_board h3::after {
+  content: '';
+  width: 400px;
+  height: 1px;
+  background-color: #bbb;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 80%;
+}
+
+.with_everland_board strong {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.with_everland_contents {
+  border: 1px solid #bbb;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 6px #00000057;
+  padding: 20px;
+}
+
+.with_everland_contents_flex {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.with_everland_contents img {
+  width: 100%;
+}
+
+.content_hover {
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  transition: 0.3s;
+  opacity: 0;
+  width: 100%;
+}
+
+.content_hover h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.with_everland_contents_flex a {
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.with_everland_content01,
+.with_everland_content02,
+.with_everland_content03,
+.with_everland_content04 {
+  position: relative;
+}
+
+.with_everland_content01:after {
+  content: url(img/cloberPin\(!\).png);
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+}
+
+.with_everland_content02:after {
+  content: url(img/cloberPin\(3\).png);
+  position: absolute;
+  width: 45px;
+  height: 69px;
+  top: -18%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-45deg);
+}
+
+.with_everland_content03:after {
+  content: url(img/cloberPin\(2\).png);
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+}
+
+.with_everland_content04:after {
+  content: url(img/cloberPin\(4\).png);
+  width: 45px;
+  height: 69px;
+  position: absolute;
+  top: -18%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-45deg);
+}
+
+.with_everland_contents_flex a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.with_everland_content01:hover a::before,
+.with_everland_content02:hover a::before,
+.with_everland_content03:hover a::before,
+.with_everland_content04:hover a::before {
+  opacity: 50%;
+}
+
+.with_everland_content01:hover .content_hover,
+.with_everland_content02:hover .content_hover,
+.with_everland_content03:hover .content_hover,
+.with_everland_content04:hover .content_hover {
+  opacity: 100;
+}
+
+.with_everland_content02,
+.with_everland_content04 {
+  margin-top: 270px;
+}
+
+.with_everland_contents_flex:hover .with_everland_content04:hover a {
+  background-color: #000;
+}
