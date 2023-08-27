@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티켓&요금</title>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- 공통CSS -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- 개별CSS -->
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" href="./css/sub_page/ticketFee.css">
+
+  <!-- 반응형CSS -->
+  <link rel="stylesheet" href="./css/responsive/footer_responsive.css">
+  <link rel="stylesheet" href="./css/responsive/header_responsive.css">
+</head>
+<body>
+  <header class="header"> <!-- 햄버거 클릭시 hamburger 클래스 -->
+    <div class="inner header_inner">
+      <div class="header_wrap">
+        <div class="mobile weather_wrap">
+          <button>API</button>
+        </div>
+        <div class="logo_wrap">
+          <a href="#">
+            <img src="img/logo/MainLogopng.png" alt="" class="header_logo">
+          </a>
+        </div>
+        <div class="nav_wrap">
+          <ul class="gnb_ul">
+            <li class="gnb_li">
+              <a href="#">
+                <p>이용정보</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#"> 뉴스공지</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 이용방법</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 운영시간</a>
+                </li> 
+                <li class="snb_li">
+                  <a href="#"> 운휴안내</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 교통정보</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 편의시설</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 가이드맵</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">모바일앱</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>요금&프로모션</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#">이용요금</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">제휴카드</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">스페셜 프로모션</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">드림투어</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">체험 프로그램</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>즐길거리</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#">추천 코스</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">어트랙션</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">엔터테인먼트</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">주토피아(동물원)</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">플랜테피아(정원)</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">레스토랑</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">온라인 굿즈샵</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">글램핑</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>멤버십</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#"> 정기권</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 동물 사랑단</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 식물 사랑단</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>에버랜드 더 알아보기</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#">Editor's Pick</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">에버랜드 스토리</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">에버랜드 테마뮤직</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">스피드웨이</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">캐리비안 베이</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">홈브리지</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header_right">
+          <div class="modal modal_search_bar">
+            <p class="modal_arrow"></p>
+            <div class="search_bar_wrap">
+              <input type="text"placeholder="검색어를 입력하세요" class="search_bar"/>
+              <button class="search_bar_search_button">검색</button>
+              <button class="search_bar_close_button"><i class="xi-close"></i></button>
+            </div>
+          </div>
+          <button class="search_button">
+            <i class="xi-search"></i>
+          </button>
+          <a href="#">
+            손님상담센터
+          </a>
+          <a href="#">
+            회원가입
+          </a>
+          <button class="login_button">
+            로그인
+          </button>
+        </div>
+        <div class="mobile mobile_hamburger">
+          <button class="mobile_nav_button">
+            <img class="hamburger_open" src="./img/icon/hamburger.png" alt="">
+            <!-- <i class="xi-bars hamburger_open"></i> -->
+          </button>
+          <button class="mobile_nav_button">
+            <img class="hamburger_close" src="./img/icon/x_icon.png" alt="">
+            <!-- <i class="xi-close hamburger_close"></i> -->
+          </button>
+        </div>
+      </div>
+      <div class="mobile mobile_div">
+        <div class="mobile_menu_wrap">
+          <div class="mobile_top_menu">
+            <ul>
+              <a href="#">
+                <li>
+                  상담 센터
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  회원 가입
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  로그인
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="mobile_app_and_reservation">
+            <div class="mobile_app_wrap">
+              <a href="#">
+                <img class="mobile_app_img" src="./img/icon/appStore.png" alt=""> 
+                <span class="mobile_app_text">앱 다운로드</span>
+              </a>
+            </div>
+            <div class="mobile_reservation_wrap">
+              <a href="#">
+                <img class="mobile_reservation_img" src="./img/icon/ticket_icon.png" alt="">
+                <span class="mobile_reservation_text">예매 하기</span>
+              </a>
+            </div>
+          </div>
+          <div class="mobile_nav_wrap">
+            <ul class="mobile_gnb_ul">
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 이용정보 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul" data-len=8>
+                  <li class="mobile_snb_li">뉴스공지</li>
+                  <li class="mobile_snb_li">이용방법</li>
+                  <li class="mobile_snb_li">운영시간</li>
+                  <li class="mobile_snb_li">운휴안내</li>
+                  <li class="mobile_snb_li">교통정보</li>
+                  <li class="mobile_snb_li">편의시설</li>
+                  <li class="mobile_snb_li">가이드맵</li>
+                  <li class="mobile_snb_li">모바일앱</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 요금&프로모션 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=5>
+                  <li class="mobile_snb_li">이용요금</li>
+                  <li class="mobile_snb_li">제휴카드</li>
+                  <li class="mobile_snb_li">스페셜 프로모션</li>
+                  <li class="mobile_snb_li">드림투어</li>
+                  <li class="mobile_snb_li">체험 프로그램</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 즐길거리 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=8>
+                  <li class="mobile_snb_li">추천코스</li>
+                  <li class="mobile_snb_li">어트랙션</li>
+                  <li class="mobile_snb_li">엔터테이먼트</li>
+                  <li class="mobile_snb_li">주토피아</li>
+                  <li class="mobile_snb_li">플랜토피아</li>
+                  <li class="mobile_snb_li">레스토랑</li>
+                  <li class="mobile_snb_li">온라인 굿즈샵</li>
+                  <li class="mobile_snb_li">글램핑</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 멤버십 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=3>
+                  <li class="mobile_snb_li">정기권</li>
+                  <li class="mobile_snb_li">동물 사랑단</li>
+                  <li class="mobile_snb_li">식물 사랑단</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 에버랜드 더 알아보기 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=6>
+                  <li class="mobile_snb_li">Editors Pick</li>
+                  <li class="mobile_snb_li">에버랜드 스토리</li>
+                  <li class="mobile_snb_li">에버랜드 테마뮤직</li>
+                  <li class="mobile_snb_li">스피드 웨이</li>
+                  <li class="mobile_snb_li">캐리비안 베이</li>
+                  <li class="mobile_snb_li">홈 브릿지</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="ticket_main">
+    <div class="ticket_main_text_wrap">
+      <h1 class="ticket_main_H1">이용 요금</h1>
+    </div>
+  </div>
+
+  <section class="ticket_type_area">
+    <div class="sub_page_side_nav">
+      <div class="side_nav_button_wrap">
+        <button class="side_nav_button selected">이용 요금</button>
+        <button class="side_nav_button">제휴 카드</button>
+        <button class="side_nav_button">스페셜 프로모션</button>
+        <button class="side_nav_button">드림 투어</button>
+        <button class="side_nav_button">체험 프로그램</button>
+      </div>
+    </div>
+
+    <div class="ticket_contents_wrap">
+      <div class="ticket_type_wrap one_day">
+        <h2 class="ticket_type_name">1일 이용권</h2>
+        <p class="ticket_type_sub_name">에버랜드 입장 및 놀이시설 이용</p>
+        <div class="calender_wrap">
+          <span class="calender_name"> 캘린더 : </span>
+          <button class="calender_button A selected">A</button>
+          <button class="calender_button B">B</button>
+          <button class="calender_button C">C</button>
+          <button class="calender_button D">D</button>
+        </div>
+        <div class="calender_sub_text">
+          <button class="calender_open_button">캘린더 확인하기</button>
+          <p>캘린더에 표시된 날마다 요금이 상이합니다.</p>
+        </div>
+
+        <div class="ticket_graph_wrap">
+          <div class="ticket_graph multi A selected">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>62,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>52,000원</span>
+            </div>
+          </div>
+          <div class="ticket_graph multi B">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>52,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>42,000원</span>
+            </div>
+          </div>
+          <div class="ticket_graph multi C">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>46,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>36,000원</span>
+            </div>
+          </div>
+          <div class="ticket_graph multi D">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>68,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>58,000원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="ticket_type_wrap standard_365">
+        <h2 class="ticket_type_name">365 스탠다드</h2>
+        <p class="ticket_type_sub_name">1년 365일 이용가능한 정기권</p>
+
+        <div class="calender_sub_text">
+          <p>대인 : 만 13세 ~ 만 59세</p>
+          <p>소인 : 만 3세 ~ 만 12세</p>
+          <p>재가입 요금은 만기 후 1년이내 재가입시 적용됩니다.</p>
+        </div>
+
+        <div class="ticket_graph_wrap">
+          <div class="ticket_graph standard_365">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>신규 가입 요금</span>
+              <span>요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>290,000원</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>240,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>230,000원</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>180,000원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket_type_wrap standard_350">
+        <h2 class="ticket_type_name">350 스탠다드</h2>
+        <p class="ticket_type_sub_name">1년중 극성수기 제외 약 350일</p>
+
+        <div class="calender_sub_text">
+          <p>대인 : 만 13세 ~ 만 59세</p>
+          <p>소인 : 만 3세 ~ 만 12세</p>
+          <p>재가입 요금은 만기 후 1년이내 재가입시 적용됩니다.</p>
+        </div>
+
+        <div class="ticket_graph_wrap">
+          <div class="ticket_graph standard_350">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>신규 가입 요금</span>
+              <span>요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>240,000원</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>190,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>190,000원</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>140,000원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket_type_wrap standard_320">
+        <h2 class="ticket_type_name">320 스탠다드</h2>
+        <p class="ticket_type_sub_name">1년중 성수기 제외 약 320일</p>
+
+        <div class="calender_sub_text">
+          <p>대인 : 만 13세 ~ 만 59세</p>
+          <p>소인 : 만 3세 ~ 만 12세</p>
+          <p>동일 권종 신규 요금 가입 또는 360/350 스탠다드 권종으로 재가입 가능합니다.</p>
+        </div>
+
+        <div class="ticket_graph_wrap">
+          <div class="ticket_graph standard_320">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>신규 가입 요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>190,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>150,000원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket_type_wrap workDay_250">
+        <h2 class="ticket_type_name">250 워크데이</h2>
+        <p class="ticket_type_sub_name">1년중 주말/ 공휴일/ 샌드위치데이 제외 평일 약 250일</p>
+
+        <div class="calender_sub_text">
+          <p>대인 : 만 13세 ~ 만 59세</p>
+          <p>소인 : 만 3세 ~ 만 12세</p>
+          <p>동일 권종 신규 요금 가입 또는 360/350 스탠다드 권종으로 재가입 가능합니다.</p>
+        </div>
+
+        <div class="ticket_graph_wrap">
+          <div class="ticket_graph workDay_250">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>신규 가입 요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>대인 / 청소년</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>140,000원</span>
+            </div>
+            <div class="ticket_row">
+              <span>소인 / 경로</span>
+              <div class="gap_dash_area two_column"></div>
+              <span>110,000원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket_type_wrap senior_365">
+        <h2 class="ticket_type_name">365 시니어</h2>
+        <p class="ticket_type_sub_name">만 60세 이상 고객님이라면 365일 언제나</p>
+
+        <div class="calender_sub_text">
+          <p>&nbsp</p>
+          <p>&nbsp</p>
+          <p>&nbsp</p>
+        </div>
+
+        <div class="ticket_graph_wrap">
+          <div class="ticket_graph senior_365">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>신규 가입 요금</span>
+              <span>재가입 요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>만 60세 이상</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>130,000원</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>130,000원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ticket_type_wrap baby_365">
+        <h2 class="ticket_type_name">365 베이비</h2>
+        <p class="ticket_type_sub_name">24개월 ~ 35개월 사이 고객님이라면 365일 언제나</p>
+
+        <div class="calender_sub_text">
+          <p>&nbsp</p>
+          <p>&nbsp</p>
+          <p>&nbsp</p>
+        </div>
+
+        <div class="ticket_graph_wrap">
+          <div class="ticket_graph baby_365">
+            <div class="ticket_row name">
+              <span>구분</span>
+              <span>신규 가입 요금</span>
+              <span>재가입 요금</span>
+            </div>
+            <div class="ticket_row">
+              <span>만 3세 미만</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>90,000원</span>
+              <div class="gap_dash_area three_column"></div>
+              <span>다른 권종으로만 <br> 재가입 가능</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ticket_notice_section">
+    <h2 class="pls_notice">✔꼭 확인해주세요!</h2>
+
+    <div class="registration_guide">
+      <div class="guide_name_wrap">
+        <img src="./img/sub_ticket/orange_circle.png" alt="">
+        <h3 class="guide_name">가입안내</h3>
+      </div>
+      <div class="notice_contents">
+        <p>입장 제한일이 있는 권종은, 입장 제한일에 방문할 경우 매표소에서 정기권과 신분증을 제시하시고 <br>1일 이용권을 해당일자의 정상금액에서 40% 할인하여 구입하실 수 있습니다.</p>
+      </div>
+
+      <div class="notice_contents">
+        <p>365시니어/ 365베이비 가입 시 주의사항</p>
+        <p>- 가입 대상임을 증멸할 수 있는 증빙서류 제출 필수 ( 스마트 예약 결제시 + 현장방문 결제 선택 필수)</p>
+        <p>- 베이비 확인 서류 : 주민등록등본, 건강보험증</p>
+        <p>- 시니어 확인 서류 : 주민등록등본, 자동차 운전 면허증, 여권 단, 재가입시에는 스마트 예약에서 별도 확인없이 가입 가능</p>
+        <p>- 베이비패스는 생애 1회 한해 가입 가능하며, 만기 이전 해지할 경우 해당 권종으로 재가입은 불가능합니다.</p>
+      </div>
+
+      <button class="ticket_notice_button commuter_pass_promotion">
+        정기권 프로모션
+      </button>
+    </div>
+
+    <div class="registration_guide">
+      <div class="guide_name_wrap">
+        <img src="./img/sub_ticket/orange_circle.png" alt="">
+        <h3 class="guide_name">우대 정보</h3>
+      </div>
+
+      <div class="notice_contents">
+        <p>타 제휴카드 및 프로모션 등과 중복 우대 적용 불가</p>
+      </div>
+      <div class="notice_contents noMargin">
+        <p>신분증 / 서류 확인이 필요한 경우 현장매표소에서만 구입 가능합니다.</p>
+      </div>
+
+
+      <div class="registration_inner_wrap">
+        <div class="guide_name_wrap">
+          <img src="./img/sub_ticket/orange_circle.png" alt="">
+          <h3 class="guide_name">연령에 따른 우대 ( 나이 확인이 가능한 신분증 또는 서류 제시)</h3>
+        </div>
+        <div class="registration_contents">
+          <p>경로 : 만 65세 이상</p>
+          <p>청소년 : 만 13세 ~ 만 18세</p>
+          <p>소인 : 36개월 ~ 만 12세 <br> 6개월 미만 : 무료이용 ( 유료시설의 경우 이용권 별도 구입 필요) <br>유아이용권 : 6,000원(붕붕카, 로보트카, 자동차왕국 모두 이용가능) <br>* 대인요금은 청소년과 통합하여, 청소년 대상 프로모션은 ‘요금&프로모션 > 스페셜 프로모션’ 참조</p>
+        </div>
+
+        <div class="guide_name_wrap">
+          <img src="./img/sub_ticket/orange_circle.png" alt="">
+          <h3 class="guide_name">장애인 우대 ( 장애인 등록증 제시) <small>- 1일 이용권 우대가로 구입가능</small> </h3>
+        </div>
+        <div class="registration_contents">
+          <p>장애의 정도가 심한 장애인의 경우<br>본인 :  우대가 적용<br>동반인 : 우대가 적용 ( 최대 1명까지 )</p>
+          <p>장애의 정도가 심하지 않은 장애인의 경우<br>본인 :  우대가 적용</p>
+        </div>
+
+        <button class="ticket_notice_button preferential_treatment Disabled">
+          상세 우대 내용 보기
+        </button>
+
+
+        <div class="guide_name_wrap">
+          <img src="./img/sub_ticket/orange_circle.png" alt="">
+          <h3 class="guide_name">국가유공자 우대 ( 증명서류 제시 ) </h3>
+        </div>
+        <div class="registration_contents">
+          <p>본인 : 1일 이용권 50% 우대가로 구입 가능</p>
+          <p>동반인 : 최대 1명까지 1일 이용권 50% 우대가로 구입가능 </p>
+        </div>
+        <div class="ticket_notice_button_wrap">
+          <button class="ticket_notice_button preferential_treatment national_merit">
+            상세 우대 내용 보기
+          </button>
+          <button class="ticket_notice_button proof_documents">
+            적용대상 / 증명서류 보기
+          </button>
+        </div>
+
+
+        <div class="guide_name_wrap">
+          <img src="./img/sub_ticket/orange_circle.png" alt="">
+          <h3 class="guide_name">3자녀 이상 가정 우대 <small>( 건강보험증, 등본 등 3자녀 이상 가정 증명서류 제시 )</small></h3>
+        </div>
+        <div class="registration_contents">
+          <p>1일 이용권 우대가로 구입 가능</p>
+          <p>우대 대상 : 막내 자녀가 만 15세 이하인 3명 이상의 3자녀 이상 가정의 부부와 직계자녀 </p>
+          <p>해당가정 내 일부 가족만 이용시에도 혜택 적용</p>
+        </div>
+        <button class="ticket_notice_button preferential_price multiple_children">
+          우대가격 확인
+        </button>
+
+
+        <div class="guide_name_wrap">
+          <img src="./img/sub_ticket/orange_circle.png" alt="">
+          <h3 class="guide_name">임산부 우대 <small>( 산모수첩 혹은 임신확인서 제시 )</small></h3>
+        </div>
+        <div class="registration_contents">
+          <p>1일 이용권 (임산부 본인) 우대가로 구입 가능</p>
+        </div>
+
+        <button class="ticket_notice_button preferential_price pregnant_woman">
+          우대가격 확인
+        </button>
+      </div>
+      
+      <div class="everland_season_ticket_wrap">
+        <a href="#none" class="everland_season_ticket_a">
+          <img class="everland_season_ticket_img" src="./img/sub_ticket/seasonTicketImg.jpg" alt="">
+        </a>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <footer>
+    <div class="footer_illust">
+      <img src="img/footer/footer_illust.png" alt="">
+    </div>
+    <div class="footer_bg_wrap">
+      <div class="inner">
+        <div class="footer_top">
+          <div class="footer_top_left">
+            <a href="#" id="logo">
+              <img src="img/footer/footer_everland_logo(white).svg" alt="">
+            </a>
+            <div class="footer_sns">
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_youtube_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_instagram_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_facebook_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_undefind_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_tstory_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_twitter_icon.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_right">
+            <select name="" id="">
+              <option value="">리조트 내 시설</option>
+              <option value="">리조트 외 시설</option>
+            </select>
+            <select name="" id="">
+              <option value="">FAMILY SITE</option>
+              <option value="">FRIEND SITE</option>
+            </select>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_menu">
+            <ul>
+              <li><a href="#none">에버랜드 리조트 소개</a> </li>
+              <li><a href="#none">이용약관</a> </li>
+              <li><a href="#none">이메일주소 무단수집 거부</a> </li>
+              <li><a href="#none">CAST참여</a> </li>
+              <li><a href="#none">사이트맵</a> </li>
+            </ul>
+          </div>
+          <div class="footer_address">
+            <p>
+              경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)<br>
+              대표이사 : 정해린 | 사업자등록번호 : 135-85-04288 | 통신판매업 신고번호 : 제2006-용인처인-0216호 | 사업자정보확인<br>
+              손님상담센터 : 031-320-5000(유료) | 개인정보처리방침 | 방침 개정 안내 | 입찰공고
+            </p>
+          </div>
+          <div class="footer_copyright">
+            <p>
+              Copyright © Samsung C&T Corporation. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- JS -->
+  <script src="js/header.js"></script>
+  <script src="js/sub_page/ticketFee.js"></script>
+</body>
+</html>
