@@ -195,6 +195,9 @@
   font-weight: bold;
   font-family: 'Montserrat', 'Noto Sans KR';
 }
+.theme_story_side_bar button br {
+  display: none;
+}
 .theme_story_side_bar button:not(:last-child) {
   margin-bottom: 10px;
 }
