@@ -1,0 +1,160 @@
+.modalPage{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+
+  display: none;
+}
+.modalPage.opened{
+  display: block;
+}
+.modal_wrap{
+  width: 100%;
+  height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_inner{
+  width: 895px;
+  height: calc(100vh - 300px);
+
+  position: relative;
+
+  box-shadow: 5px 8px 7px rgba(30, 30, 30, 0.3);
+}
+.modal_name, .modal_close{
+  position: absolute;
+}
+
+.modal_name{
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 60px;
+
+  background-color: #009cea;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+  .ABCDCalender .modal_name,
+  .price_for_multiple_children .modal_name{
+    background-color: var(--orange);
+  }
+  .price_for_national_merit .modal_name,
+  .application_of_merit  .modal_name{
+    background-color: var(--purple);
+  }
+.modal_close{
+  right: 20px;
+  top: -50px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: none;
+
+  background-color: transparent;
+}
+.modal_close i{
+  font-size: 25px;
+  font-weight: 900;
+  pointer-events: none;
+
+  color: white;
+}
+
+.modal_contents_wrap{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-color: white;
+  
+  padding: 30px 50px;
+}
+
+.modal_name_text{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.modal_contents_name{
+  display: block;
+  font-size: 21px;
+  font-weight: 900;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #ccc;
+}
+.ticket_calender_img{
+  width: 100%;
+}
+
+.modal_contents_inner{
+  margin-top : 25px;
+  /* border: 3px solid var(--blue); */
+  border-radius: 15px;
+  overflow: hidden;
+}
+.modal_contents{
+  padding: 20px;
+}
+
+.modal_text_p{
+  margin-bottom : 20px;
+}
+
+.grid_wrap{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+
+  margin-top: 25px;
+}
+.application_of_merit .grid_wrap{
+  grid-template : repeat(9, auto)  / repeat(2, auto);
+}
+.grid_contents{
+  padding: 15px 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+.top_row{
+  border-top: 1px solid;
+  background-color: #009cea1c;
+}
+.left_column{
+  border-left: 1px solid;
+}
+
+.grid_contents_img_wrap{
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 90%;
+}
+

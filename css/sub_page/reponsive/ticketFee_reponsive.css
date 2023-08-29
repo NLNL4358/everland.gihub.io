@@ -1,0 +1,89 @@
+@media screen and (max-width : 1600px){
+  .ticket_contents_wrap,.ticket_notice_section{
+    width: 95%;
+  }
+
+  .ticket_graph_wrap{
+    width: 100%;
+  }
+}
+@media screen and (max-width : 1240px){
+  .ticket_main{
+    height: 720px;
+  }
+
+  .ticket_main_H1{
+    font-size: 50px;
+  }
+  .side_nav_button{
+    font-size: 24px;
+  }
+  .ticket_type_name{
+    font-size: 28px;
+  }
+  .ticket_type_sub_name{
+    font-size: 12px;
+  }
+  .calender_name{
+    font-size: 21px;
+  }
+  .calender_button{
+    font-size: 21px;
+  }
+  .calender_open_button{
+    font-size: 15px;
+  }
+  .calender_sub_text p{
+    font-size: 12px;
+  }
+  .ticket_row span{
+    font-size: 15px;
+  }
+  .pls_notice{
+    font-size: 32px;
+  }
+  .guide_name{
+    font-size: 18px;
+  }
+  .guide_name small{
+    font-size: 14px;
+  }
+  .notice_contents::before{
+    font-size: 14px;
+  }
+  .notice_contents p{
+    font-size: 14px;
+  }
+  .ticket_notice_button{
+    font-size: 14px;
+  }
+  .registration_contents p{
+    font-size: 14px;
+  }
+
+  .everland_season_ticket_wrap{
+    width: 80%;
+  }
+}
+@media screen and (max-width : 675px){
+  .calender_button{
+    width: 35px;
+    height: 35px;
+  }
+  .ticket_main{
+    height: 480px;
+  }
+  .ticket_contents_wrap,.ticket_notice_section{
+    width: 100%;
+  }
+  .ticket_type_wrap{
+    padding: 25px 30px;
+  }
+  .registration_inner_wrap{
+    padding: 25px 30px;
+  }
+  .everland_season_ticket_wrap{
+    width: 100%;
+  }
+
+}

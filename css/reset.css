@@ -6,13 +6,17 @@
 /* 한글은 noto Sans KR */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+/* 둥글둥글한 폰트 나눔스퀘어 라운드 */
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
 
 /* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto+Sans+KR';
+  /* font-family: 'Noto+Sans+KR'; */
+  font-family: 'NanumSquareRound',sans-serif;
 }
 html, body {
   width:100%;

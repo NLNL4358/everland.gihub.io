@@ -58,7 +58,7 @@ $(document).ready(function(){
   $(window).on("wheel", function (event){
     let screenHeight = $(document).scrollTop();
 
-    screenHeight > 200 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
+    screenHeight > 100 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
   })
 
 
