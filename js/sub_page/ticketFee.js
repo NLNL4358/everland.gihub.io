@@ -22,32 +22,32 @@ $(document).ready(function(e){
       modalClose();
     }
 
-    if($(event.target).hasClass("calender_open_button")){
+    else if($(event.target).hasClass("calender_open_button")){
       /* ABCD 캘린더 오픈 */
       $(".ABCDCalender").addClass("opened");
     }
 
-    if($(event.target).hasClass("preferential_treatment Disabled")){
+    else if($(event.target).hasClass("preferential_treatment Disabled")){
       /* 장애인 우대 내용 오픈 */
       $(".price_for_disabled").addClass("opened");
     }
 
-    if($(event.target).hasClass("preferential_treatment national_merit")){
+    else if($(event.target).hasClass("preferential_treatment national_merit")){
       /* 국가유공자 우대가 내용 오픈 */
       $(".price_for_national_merit").addClass("opened");
     }
 
-    if($(event.target).hasClass("proof_documents")){
+    else if($(event.target).hasClass("proof_documents")){
       /* 국가유공자 적용대상 / 증명서류 오픈 */
       $(".application_of_merit").addClass("opened");
     }
 
-    if($(event.target).hasClass("preferential_price multiple_children")){
+    else if($(event.target).hasClass("preferential_price multiple_children")){
       /* 다자녀 가정 우대가 내용 오픈 */
       $(".price_for_multiple_children").addClass("opened");
     }
 
-    if($(event.target).hasClass("preferential_price pregnant_woman")){
+    else if($(event.target).hasClass("preferential_price pregnant_woman")){
       /* 임산부 우대가 내용 오픈 */
       $(".price_for_pregnant_women").addClass("opened");
     }

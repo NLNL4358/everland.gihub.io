@@ -1,5 +1,6 @@
 *{
-  font-family: 'Noto+Sans+KR';
+  /* font-family: 'Noto+Sans+KR'; */
+  font-family: 'NanumSquareRound',sans-serif;
 }
 .ticket_main{
   width: 100vw;
@@ -29,7 +30,7 @@
   font-size: 70px;
   color: white;
   font-weight: 900;
-  letter-spacing: -10px;
+  letter-spacing: -5px;
 }
 
 .ticket_type_area{
@@ -87,8 +88,7 @@
 }
 .ticket_type_sub_name{
   margin-top: 10px;
-  font-size: 13px;
-  font-weight: lighter;
+  font-size: 15px;
 }
 .calender_wrap{
   margin-top: 30px;
@@ -131,7 +131,16 @@
     animation-name: button-up-and-down;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+
+    position: relative;
   }
+  .calender_wrap .calender_button.selected::before{
+    position: absolute;
+    content: "\2714";
+    right: 0;
+    top: 0;
+  }
+
 @keyframes button-up-and-down{
   0%{
     transform: scale(1.0);
@@ -154,7 +163,8 @@
   padding: 10px 25px;
   border-radius: 30px;
   border: none;
-  background: linear-gradient(#FFC329, #FF9000);
+  /* background: linear-gradient(#FFC329, #FF9000); */
+  background-color: #FF9000;
   color: white;
 }
 .calender_sub_text p{
@@ -314,17 +324,20 @@
 }
 .ticket_notice_button.commuter_pass_promotion, .ticket_notice_button.preferential_price.multiple_children{
   /* background-color: var(--orange); */
-  background: linear-gradient(#FFC329 , #FF9000);
+  /* background: linear-gradient(#FFC329 , #FF9000); */
+  background-color: #FF9000;
 }
 .ticket_notice_button.preferential_treatment,
 .ticket_notice_button.preferential_price.pregnant_woman{
   /* background-color: var(--blue); */
-  background: linear-gradient(#00DCEA , #009CEA);
+  /* background: linear-gradient(#00DCEA , #009CEA); */
+  background-color: #009CEA;
 }
 .ticket_notice_button.preferential_treatment.national_merit, 
 .ticket_notice_button.proof_documents{
   /* background-color: var(--purple); */
-  background: linear-gradient(#B982FF , #801DFF);
+  /* background: linear-gradient(#B982FF , #801DFF); */
+  background-color: #801DFF;
 }
 
 .registration_inner_wrap{
