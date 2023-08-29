@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/responsive/header_responsive.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/responsive/footer_responsive.css">
+  <!-- learn_more css -->
+  <link rel="stylesheet" href="css/learn_more.css">
+</head>
+<body>
+  <!-- Header  -->
+  <header class="header"> <!-- 햄버거 클릭시 hamburger 클래스 -->
+    <div class="inner header_inner">
+      <div class="header_wrap">
+        <div class="mobile weather_wrap">
+          <button>API</button>
+        </div>
+        <div class="logo_wrap">
+          <a href="#">
+            <img src="img/logo/MainLogopng.png" alt="" class="header_logo">
+          </a>
+        </div>
+        <div class="nav_wrap">
+          <ul class="gnb_ul">
+            <li class="gnb_li">
+              <a href="#">
+                <p>이용정보</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#"> 뉴스공지</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 이용방법</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 운영시간</a>
+                </li> 
+                <li class="snb_li">
+                  <a href="#"> 운휴안내</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 교통정보</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 편의시설</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 가이드맵</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">모바일앱</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>요금&프로모션</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#">이용요금</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">제휴카드</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">스페셜 프로모션</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">드림투어</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">체험 프로그램</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>즐길거리</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#">추천 코스</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">어트랙션</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">엔터테인먼트</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">주토피아(동물원)</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">플랜테피아(정원)</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">레스토랑</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">온라인 굿즈샵</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">글램핑</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>멤버십</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#"> 정기권</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 동물 사랑단</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 식물 사랑단</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="learn_more.html">
+                <p>에버랜드 더 알아보기</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#">Editor's Pick</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">에버랜드 스토리</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">에버랜드 테마뮤직</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">스피드웨이</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">캐리비안 베이</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">홈브리지</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header_right">
+          <div class="modal modal_search_bar">
+            <p class="modal_arrow"></p>
+            <div class="search_bar_wrap">
+              <input type="text"placeholder="검색어를 입력하세요" class="search_bar"/>
+              <button class="search_bar_search_button">검색</button>
+              <button class="search_bar_close_button"><i class="xi-close"></i></button>
+            </div>
+          </div>
+          <button class="search_button">
+            <i class="xi-search"></i>
+          </button>
+          <a href="#">
+            손님상담센터
+          </a>
+          <a href="#">
+            회원가입
+          </a>
+          <button class="login_button">
+            로그인
+          </button>
+        </div>
+        <div class="mobile mobile_hamburger">
+          <button class="mobile_nav_button">
+            <img class="hamburger_open" src="./img/icon/hamburger.png" alt="">
+            <!-- <i class="xi-bars hamburger_open"></i> -->
+          </button>
+          <button class="mobile_nav_button">
+            <img class="hamburger_close" src="./img/icon/x_icon.png" alt="">
+            <!-- <i class="xi-close hamburger_close"></i> -->
+          </button>
+        </div>
+      </div>
+      <div class="mobile mobile_div">
+        <div class="mobile_menu_wrap">
+          <div class="mobile_top_menu">
+            <ul>
+              <a href="#">
+                <li>
+                  상담 센터
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  회원 가입
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  로그인
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="mobile_app_and_reservation">
+            <div class="mobile_app_wrap">
+              <a href="#">
+                <img class="mobile_app_img" src="./img/icon/appStore.png" alt=""> 
+                <span class="mobile_app_text">앱 다운로드</span>
+              </a>
+            </div>
+            <div class="mobile_reservation_wrap">
+              <a href="#">
+                <img class="mobile_reservation_img" src="./img/icon/ticket_icon.png" alt="">
+                <span class="mobile_reservation_text">예매 하기</span>
+              </a>
+            </div>
+          </div>
+          <div class="mobile_nav_wrap">
+            <ul class="mobile_gnb_ul">
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 이용정보 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul" data-len=8>
+                  <li class="mobile_snb_li">뉴스공지</li>
+                  <li class="mobile_snb_li">이용방법</li>
+                  <li class="mobile_snb_li">운영시간</li>
+                  <li class="mobile_snb_li">운휴안내</li>
+                  <li class="mobile_snb_li">교통정보</li>
+                  <li class="mobile_snb_li">편의시설</li>
+                  <li class="mobile_snb_li">가이드맵</li>
+                  <li class="mobile_snb_li">모바일앱</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 요금&프로모션 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=5>
+                  <li class="mobile_snb_li">이용요금</li>
+                  <li class="mobile_snb_li">제휴카드</li>
+                  <li class="mobile_snb_li">스페셜 프로모션</li>
+                  <li class="mobile_snb_li">드림투어</li>
+                  <li class="mobile_snb_li">체험 프로그램</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 즐길거리 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=8>
+                  <li class="mobile_snb_li">추천코스</li>
+                  <li class="mobile_snb_li">어트랙션</li>
+                  <li class="mobile_snb_li">엔터테이먼트</li>
+                  <li class="mobile_snb_li">주토피아</li>
+                  <li class="mobile_snb_li">플랜토피아</li>
+                  <li class="mobile_snb_li">레스토랑</li>
+                  <li class="mobile_snb_li">온라인 굿즈샵</li>
+                  <li class="mobile_snb_li">글램핑</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 멤버십 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=3>
+                  <li class="mobile_snb_li">정기권</li>
+                  <li class="mobile_snb_li">동물 사랑단</li>
+                  <li class="mobile_snb_li">식물 사랑단</li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 에버랜드 더 알아보기 </p> <i class="xi-arrow-down"></i>
+                </div>
+                <ul class="mobile_snb_ul"
+                data-len=6>
+                  <li class="mobile_snb_li">Editors Pick</li>
+                  <li class="mobile_snb_li">에버랜드 스토리</li>
+                  <li class="mobile_snb_li">에버랜드 테마뮤직</li>
+                  <li class="mobile_snb_li">스피드 웨이</li>
+                  <li class="mobile_snb_li">캐리비안 베이</li>
+                  <li class="mobile_snb_li">홈 브릿지</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- learn_more -->
+  <main class="learn_more_main">
+    <div class="learn_more_main_inner inner">
+      <nav class="side_menu">
+        <h3>에버랜드<br><span>더</span> 알아보기</h3>
+        <ul class="desktop_side_bar">
+          <li>
+            <a class="active" href="#none">
+            에버랜드 스토리
+            </a>
+            <ul>
+              <li><a class="active" href="#none">테마 스토리</a></li>
+              <li><a href="#none">레니와 친구들</a></li>
+            </ul>
+          </li>
+          <li><a href="#none">에버랜드 테마뮤직</a></li>
+        </ul>
+        <ul class="mobile_side_bar">
+          <li class="mobile_btn">
+            <a href="#none">테마 스토리
+              <p><i></i><i></i></p></a>
+            <ul>
+              <li><a href="#none">테마 스토리</a></li>
+              <li><a href="#none">레니와 친구들</a></li>
+            </ul>
+          </li>
+          <li><a href="#none">에버랜드 테마뮤직</a></li>
+        </ul>
+      </nav>
+      <div class="text_area">
+        <h2>
+          마법이 걸린 산 속,<br>
+          영원한 땅에 살고 있는 <span>에버랜더들이 꿈꾸는 세상</span>
+        </h2>
+        <p>
+          마음속에 품고 있는 “소중한 가치”를 담아 모두와 함께 나눌 행복이 머무는 곳, 그 곳이 바로 에버랜드입니다.
+          <br>
+          에버랜드는 <b>글로벌 페어</b>, 
+          <b>아메리칸 어드벤처</b>, <b>매직랜드</b>, <b>유러피언 어드벤처</b>, <b>주토피아</b> 로 구분되어 5개의 행복의
+          공간으로구성되어 있습니다. 
+        </p>
+        <p>
+          각각 테마존별의 특징을 알아볼까요?
+        </p>
+      </div>
+    </div>
+  </main>
+  <section class="theme_story">
+    <!-- img -->
+    <img class="theme_story_bg1" src="img/sub_learn_more/learn_more_bg_1.png" alt="배경 이미지">
+    <img class="theme_story_bg2" src="img/sub_learn_more/learn_more_bg_2.png" alt="배경 이미지">
+    <img class="theme_story_bg3" src="img/sub_learn_more/learn_more_bg_3.png" alt="배경 이미지">
+    <img class="theme_story_bg4" src="img/sub_learn_more/learn_more_bg_4.png" alt="배경 이미지">
+    <img class="character1" src="img/sub_learn_more/character_1.png" alt="에버랜드 캐릭터">
+    <img class="character2" src="img/sub_learn_more/character_2.png" alt="에버랜드 캐릭터">
+    <img class="character3" src="img/sub_learn_more/character_3.png" alt="에버랜드 캐릭터">
+    <img class="character4" src="img/sub_learn_more/character_4.png" alt="에버랜드 캐릭터">
+    <!-- theme_story_side_bar -->
+    <div class="theme_story_side_bar">
+      <button class="active">글로벌 페어</button>
+      <button>아메리칸 <br>어드벤쳐</button>
+      <button>매직랜드</button>
+      <button>유러피안 <br>어드벤쳐</button>
+      <button>주토피아</button>
+    </div>
+    <!-- theme_story_inner -->
+    <div class="theme_story_inner">
+      <div class="tab_content global_fair show">
+        <img src="img/sub_learn_more/theme_story/global_fair.jpg" alt="글로벌 페어 이미지">
+        <p>
+          에버랜드로 향하는 첫 발걸음의 시작과 동시에 추억을 남기고 돌아가는 끝의 발자국을 남길 수 있는 장소입니다.이 곳에서는 모든 이의 꿈과 희망이 신세계로 가는 길을 열어줍니다.글로벌 페어의 메인거리는 전 세계의 문화, 음식, 상점, 건축 양식들이 넘치는 축전입니다.고대 메소포타미아 건축 양식(쿠키&캔디)에서부터 근세 건축 양식인 르네상스(라이브 홀로그램 씨어터) 건축양식과 근대과도기적 건축 양식(오리엔탈)까지 시대별, 지역별 건축 문화를 체험할 수 있는 곳입니다.
+        </p>
+        <div class="flex">
+          <ul>
+            <li>
+              베네치아 레스토랑, 그랜드 엠포리엄 - <span>비잔틴 건축 양식</span>
+            </li>
+            <li>
+              쿠키 & 캔디 - <span>메소포타미아 건축 양식</span>
+            </li>
+            <li>
+              오엔탈 레스토랑 - <span>근대과도기 건축 양식</span>
+            </li>
+            <li>
+              에잇세컨즈 - <span>고딕 건축 양식</span>
+            </li>
+            <li>
+              라시언 메모리엄 - <span>인도 사라센 건축 양식</span>
+            </li>
+            <li>
+              헬로 터닝 어드벤처 - <span>빅토리아 건축 양식</span>
+            </li>
+          </ul>
+          <img src="img/sub_learn_more/theme_story/globalfair_map.gif" alt="글로벌 페어 지도">
+        </div>
+        <h3>Theme Zone Story</h3>
+        <p>
+          <span>글로벌 페어</span>에는 많은 식당과 상점들이 가득합니다. 마법의 향료들, 즐거움을 더해주는 다양한 음식들과 상품들은 이 곳을 방문하는 사람들에게 항상 새로운경험을 만들어 줍니다. <span>글로벌 페어</span>는 아름답고도 매력적인 작은 정원으로 가득한데, 이것은 모두 라라의 작품입니다. 라라는 식물을 자유자재로 자라게 하는 마법을 부립니다. 라라는 인내심이 많고 상냥한 마음씨를 가지고 있어 주민들에게 인기가 높으며, 레니와 함께 최고의 커플로 사랑 받고 있습니다. 레니와 라라는 연인 사이지만, 남을 돕느라여자친구에게 소홀한 레니 탓에 라라의 마음은 항상 편치 않습니다.
+        </p>
+      </div>
+      <div class="tab_content american_adventure">
+        <img src="img/sub_learn_more/theme_story/american_adventure.jpg" alt="아메리칸 어드벤쳐 이미지">
+        <p>
+          강한 비트의 음악이 함께 하는 젊음의 거리입니다.
+          <br>
+          콜럼버스가 신대륙을 발견한 때부터 엘비스 프레슬리가 활동하던 록큰롤 시대인 1960년대까지,
+          500년 미국의 역사를 테마로 한 지역입니다.
+        </p>
+        <div class="flex">
+          <ul>
+            <li>콜럼버스 대탐험</li>
+            <li>허리케인</li>
+            <li>렛츠 트위스트</li>
+            <li>버거카페 아메리카</li>
+            <li>더블 락스핀</li>
+            <li>스카이 웨이</li>
+          </ul>
+          <img src="img/sub_learn_more/theme_story/american_adventure_map.gif" alt="아메리칸 어드벤쳐 지도">
+        </div>
+        <h3>Theme Zone Story</h3>
+        <p>
+          동쪽의 <span>아메리칸 어드벤처</span>에는 콘서트홀, 댄스홀, 극장들이 들어서 있습니다.
+          레니와 라라 역시 이 곳에서 데이트를 즐기는 것을 좋아합니다. 이 곳에서 잭은 자주 영화를 감상하고,
+          베이글은 연극에 참석합니다. <span>아메리칸 어드벤처</span>의 새로운 스타 도나의 뛰어난 춤과 노래 실력은
+          에버랜드 콘서트홀을 순식간에 인기 장소로 만들어 버렸습니다.
+          도나의 인기 상승으로 레니와 라라의 인기가 주춤했고, 잭은 그녀를 자신의 롤모델로 삼았으며,
+          베이글은 밤마다 콘서트의 그녀를 보기 위해 자신의 일과를 바꾸었습니다.
+          도나의 등장은 에버랜드 주민들에게 흥미진진하고 새로운 삶의 시작을 알리는 전주곡이 됐습니다.
+        </p>
+      </div>
+      <div class="tab_content magic_land">
+        <img src="img/sub_learn_more/theme_story/magic_land.jpg" alt="매직랜드 이미지">
+        <p>
+          동화 속 환상의 나라를 구현해 놓는 지역으로 이솝 이야기를 테마로 한 “이솝 빌리지”와 어린이 전용 놀이기구들이
+          모여 있습니다. 특히 이솝빌리지에는 이솝 할아버지의 지혜의 분수와 껑충껑충 토끼 허키와 느릿느릿한 거북이 티미와의
+          경주를 모델로 한 레이싱 코스터 등 실제 이솝 동화를 오감으로 느낄 수 있습니다.
+        </p>
+        <div class="flex">
+          <ul>
+            <li>지혜의 분수</li>
+            <li>플라잉 레스큐</li>
+            <li>플레이 야드</li>
+            <li>하이드 어웨이</li>
+            <li>페이블 가든</li>
+            <li>릴리 댄스</li>
+          </ul>
+          <img src="img/sub_learn_more/theme_story/maginland_map.gif" alt="매직랜드 지도">
+        </div>
+        <h3>Theme Zone Story</h3>
+        <p>
+          북쪽 <span>매직랜드</span> 사람들은 학생들에게 마법을 가르치고 마법을 보존하기 위해 많은 시간을 보냅니다.
+          이 곳은 레니가 좋아하는 장소입니다. 레니는 마법을 사용하는 능력을 가지고 있는 어린 사자로,
+          물건을 바꾸거나 다른 동물로 변신 할 수 있는 능력을 갖고 있습니다. 레니는 착하고, 책임감이 강해
+          뭐든 해결하려 노력합니다.대부분의 주민들이 이런 레니를 좋아합니다.
+          <span>매직랜드</span> 안의 많은 건물들의 생김새가 각각 다르고 우스꽝스러운 이유는 레니의
+          미숙한 마법 때문이지만 주민 모두는 이것이 이 지역의 매력이라고 생각하며 그의 마법을 좋아합니다.
+        </p>
+      </div>
+      <div class="tab_content european_adventure">
+        <img src="img/sub_learn_more/theme_story/european_adventure.jpg" alt="유러피언 어드벤쳐 이미지">
+        <p>
+          365일 향기가 가득한 유럽 마을을 구현해 놓은 지역입니다.
+          튤립, 장미, 국화 등 일년 내내 화려한 꽃들이 만발하는 “포시즌스 가든”과 낭만이 가득한 “장미원”,네덜란드 풍의
+          “홀랜드 빌리지” 그리고 T익스프레스를 비롯한 신나는 어트랙션이 있습니다.
+        </p>
+        <div class="flex">
+          <ul>
+            <li>T익스프레스</li>
+            <li>버거카페 유럽</li>
+            <li>로테이팅 하우스</li>
+            <li>차이나 문</li>
+            <li>슈팅 고스트</li>
+            <li>로얄 쥬빌리 캐로셀</li>
+            <li>페스티벌 트레인</li>
+          </ul>
+          <img src="img/sub_learn_more/theme_story/european_adventure_map.gif" alt="유러피언 어드벤쳐 지도">
+        </div>
+        <h3>Theme Zone Story</h3>
+        <p>
+          서쪽의 <span>유러피언 어드벤처</span>는 다양한 주제의 건축물과 박물관이 가득합니다.
+          이 곳 사람들은 몽상과 사색을 즐기고, 과학과 예술을 사랑하고, 자신들의 꿈과 지혜를 세상과 나누는 것을
+          즐거워 합니다.잭의 집과 작업실도 <span>유러피언 어드벤처</span>에 있습니다.
+          잭은 독창성을 바탕으로 버려진 것들을 이용해 새로운 기계나 장난감을 만드는 뛰어난 능력을 가지고 있습니다.
+          잭과 제일 친한 친구인 레니는 함께 새로운 아이디어와 발명품을 실험하기도 합니다.
+          잭 덕분에 대중교통, 수도시설, 우체국 등 기술이 발전했고 에버랜드는 더 살기 편리한 곳이 됐답니다.
+        </p>
+      </div>
+      <div class="tab_content zootopia">
+        <img src="img/sub_learn_more/theme_story/zootopia.jpg" alt="주토피아 이미지">
+        <p>
+          인간에 의해 황폐화된 지구에 생명의 감동과 신비를 전해주는, 동물들의 지상낙원입니다.
+          사람과 동물이 교감하는 주토피아에서 우리는 자연과 하나가 되는 기쁨과 신비를 느낄 수 있습니다.
+        </p>
+        <div class="flex">
+          <ul>
+            <li>아마존 익스프레스</li>
+            <li>애니멀 원더 월드</li>
+            <li>로스트 밸리</li>
+            <li>사파리 월드</li>
+            <li>타이거 밸리</li>
+          </ul>
+          <img src="img/sub_learn_more/theme_story/zootopia_map.gif" alt="주토피아 지도">
+        </div>
+        <h3>Theme Zone Story</h3>
+        <p>
+          남쪽 <span>주토피아</span>는 다양한 동물들이 보살핌을 받으며 살고 있습니다.
+          동물들이 다치거나 병이 나면 동물을 사랑하는 사람들이 구조에 나서는데, 이 때 베이글은 든든한 조력자 역할을 하곤 하죠.
+          베이글에 대해서는 이 곳 사람들에게 많이 알려져 누구나 궁금한 점이 있으면 망설임 없이 척척박사 베이글에게
+          달려간답니다. 베이글의 친구들도 그에게 많은 조언을 구합니다. 레니는 라라의 기분을 풀어 주기위해,
+          잭은 새로운 아이디어를 발전시키기 위해, 라라는 차를 마시며 꽃과 동물에 대한 생각을 나누기 위해
+          베이글을 찾아 의견을 듣습니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer 김정수 -->
+  <footer class="learn_more_footer">
+    <div class="footer_illust">
+      <img src="img/footer/footer_illust.png" alt="">
+    </div>
+    <div class="footer_bg_wrap">
+      <div class="inner">
+        <div class="footer_top">
+          <div class="footer_top_left">
+            <a href="#" id="logo">
+              <img src="img/footer/footer_everland_logo(white).svg" alt="">
+            </a>
+            <div class="footer_sns">
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_youtube_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_instagram_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_facebook_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_undefind_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_tstory_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_twitter_icon.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_right">
+            <select name="" id="">
+              <option value="">리조트 내 시설</option>
+              <option value="">리조트 외 시설</option>
+            </select>
+            <select name="" id="">
+              <option value="">FAMILY SITE</option>
+              <option value="">FRIEND SITE</option>
+            </select>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_menu">
+            <ul>
+              <li><a href="#none">에버랜드 리조트 소개</a> </li>
+              <li><a href="#none">이용약관</a> </li>
+              <li><a href="#none">이메일주소 무단수집 거부</a> </li>
+              <li><a href="#none">CAST참여</a> </li>
+              <li><a href="#none">사이트맵</a> </li>
+            </ul>
+          </div>
+          <div class="footer_address">
+            <p>
+              경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)<br>
+              대표이사 : 정해린 | 사업자등록번호 : 135-85-04288 | 통신판매업 신고번호 : 제2006-용인처인-0216호 | 사업자정보확인<br>
+              손님상담센터 : 031-320-5000(유료) | 개인정보처리방침 | 방침 개정 안내 | 입찰공고
+            </p>
+          </div>
+          <div class="footer_copyright">
+            <p>
+              Copyright © Samsung C&T Corporation. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- jQuery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- js -->
+  <script src="js/header.js"></script>
+  <!-- learn_more js -->
+  <script src="js/learn_more.js"></script>
+</body>
+</html>
