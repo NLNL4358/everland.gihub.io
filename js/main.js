@@ -21,9 +21,9 @@ let weatherIcon = { // 날씨아이콘 변경
   '04' : 'broken_cloud',
   '09' : 'shower_rain',
   '10' : 'rain',
-  // '11' : 'poo-storm',
-  // '13' : 'snowflake',
-  // '50' : 'smog'
+  '11' : 'thunderstorm',
+  '13' : 'snow',
+  '50' : 'thunderstorm'
 };
 const xhr = new XMLHttpRequest();
 const getJson = function(url, callback) {
@@ -44,12 +44,19 @@ getJson(`http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=${WEATHER_
   if (err !== null) {
     alert("로딩 중" + err)
   } else {
-    let CurrTemp = document.querySelector('.CurrTemp span');
-    let CurrIcon = document.querySelector('.CurrIcon img');
-    CurrTemp.innerText = Math.floor(data.main.temp); // 온도 소수점 없이
+    let CurrTemp = document.querySelectorAll('.CurrTemp span');
+    let CurrIcon = document.querySelectorAll('.CurrIcon img');
+    CurrTemp.forEach(element => {
+      element.innerText = Math.floor(data.main.temp);
+    });
+    //CurrTemp.innerText = Math.floor(data.main.temp); // 온도 소수점 없이
     let Icon = (data.weather[0].icon).substr(0,2);
     let imgURL = `img/main/weather/${weatherIcon[Icon]}.png`; // 날씨 아이콘 이미지
-    CurrIcon.setAttribute("src", imgURL);
+
+    CurrIcon.forEach(element => {
+      element.setAttribute("src", imgURL);
+    });
+    // CurrIcon.setAttribute("src", imgURL);
   }
 });
 
