@@ -61,7 +61,7 @@
 
 ## 페이지 구성 및 주요기능
 
-### :large_blue_circle: 메인페이지
+### :small_blue_diamond: 메인페이지
 #### 헤더
 #### 메인 슬라이드
 - 
