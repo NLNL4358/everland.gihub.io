@@ -944,9 +944,15 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: flex-end;
 }
+.map_modal .text_area p,
+.map_modal .text_area bold,
+.map_modal .text_area small{
+  
+  font-family: 'NanumSquareRound',sans-serif;
+}
 .map_modal .map_modal_inner .text_area_ul{
-  width: 87%;
-  height: 85%;
+  width: 92%;
+  height: 90%;
   margin-left : auto;
   display: flex;
   flex-direction: column;
@@ -1017,5 +1023,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .map_modal .map_modal_inner .text_area_ul li.bus_list{
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
