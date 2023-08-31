@@ -28,7 +28,7 @@
 ## 팀원
 ### :sunglasses: 팀 명 - 5늘도 힘내조
 
-|강진수|김소희|김정수|
+|&nbsp;강진수&nbsp;|&nbsp;김소희&nbsp;|&nbsp;김정수&nbsp;|
 |:---:|:---:|:---:|
 |:eyeglasses:|:beer:|:headphones:|
 |[@LetsGo](https://github.com/NLNL4358)|[@sohui](https://github.com/sohi0000)|[@null-jungsoo](https://github.com/null-jungsoo)|
