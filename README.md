@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=wave&color=0:F208FE,50:8F5FF1,100:1BC4E2&height=300&section=header&text=에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼&fontColor=ffffff&fontSize=60)
+![header](https://capsule-render.vercel.app/api?type=wave&color=0:F208FE,50:8F5FF1,100:1BC4E2&height=300&section=header&text=✨에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼✨&fontColor=ffffff&fontSize=60)
 
 <br>
 
