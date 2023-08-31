@@ -3,17 +3,15 @@
 <br>
 
 ## :page_facing_up: 목차
-1. [프로젝트 정보](##-:book:-프로젝트-정보)
-1. [팀원](##-:sunglasses:-팀원)
-1. [개발환경](##-:computer:-개발환경)
-1. [프로젝트 소개](##-:loudspeaker:-프로젝트-소개)
-1. [페이지 구성 및 주요기능](##-:bookmark_tabs:-페이지-구성-및-주요기능)
-1. [호스팅](##-호스팅)
-1. [산출물](##-산출물)
+1. [프로젝트 정보](#-:book:-프로젝트-정보)
+1. [팀원](#-:sunglasses:-팀원)
+1. [개발환경](#-:computer:-개발환경)
+1. [프로젝트 소개](#-:loudspeaker:-프로젝트-소개)
+1. [페이지 구성 및 주요기능](#-:bookmark_tabs:-페이지-구성-및-주요기능)
+1. [호스팅](#-호스팅)
+1. [산출물](#-산출물)
 
 <br>
-
-***
 
 ## :book: 프로젝트 정보
 ### 에버랜드 웹 페이지의 리뉴얼을 목표로 하는 팀 프로젝트
@@ -27,8 +25,6 @@
 
 <br>
 
-***
-
 ## :sunglasses: 팀원
 ### 팀 명 - 5늘도 힘내조
 
@@ -38,8 +34,6 @@
 |[@LetsGo](https://github.com/NLNL4358)|[@sohui](https://github.com/sohi0000)|[@null-jungsoo](https://github.com/null-jungsoo)|
 
 <br>
-
-***
 
 ## :computer: 개발환경
 
@@ -67,21 +61,15 @@
 
 <br>
 
-***
-
 ## :loudspeaker: 프로젝트 소개 
 - 에버랜드 웹 페이지를 방문한 고객에게 어트랙션 소개 및 행사, 할인등의 정보를 전달하고 빠른 예매기능을 이용하여 에버랜드의 방문을 유도함
 - 정적인 기존 사이트의 리뉴얼로 동적이며 사용자의 접근성과 사용성을 높임
 
 <br>
 
-***
-
 ## :bookmark_tabs: 페이지 구성 및 주요기능
 
 <br>
-
-***
 
 ## 호스팅
 
@@ -92,8 +80,6 @@
 
 <br>
 
-***
-
 ## 산출물
 
 ### [브레인스토밍](https://www.figma.com/file/78Gss8xUi1W4L0yMunGvoa/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=whiteboard&node-id=18%3A499&t=GuRr72l2A5jehlXk-1)
@@ -103,6 +89,3 @@
 ### [깃허브](https://github.com/NLNL4358/everland.gihub.io)
 
 <br>
-
-***
-
