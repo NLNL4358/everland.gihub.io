@@ -85,7 +85,7 @@
 
 ## 호스팅
 
-### :star2: [메인페이지]()
+### :star2: [메인페이지](https://nlnl4358.github.io/everland.gihub.io/)
 ### :star2: [서브페이지1]()
 ### :star2: [서브페이지2]()
 ### :star2: [서브페이지3]()
