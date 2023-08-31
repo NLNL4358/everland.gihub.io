@@ -1,0 +1,21 @@
+@media screen and (max-width : 1240px) {
+  .enjoy_map {
+    display: none;
+  }
+
+  .enjoy_tab {
+    display: none;
+  }
+
+  .enjoy_main_H1 {
+    font-size: 50px;
+  }
+
+  .enjoy_nav {
+    font-size: 16px;
+  }
+
+  .enjoy_wrap {
+    width: 95%;
+  }
+}
