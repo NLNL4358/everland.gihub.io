@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=wave&color=0:F208FE,50:8F5FF1,100:1BC4E2&height=300&section=header&text=✨에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼✨&fontColor=ffffff&fontSize=55)
+![header](https://capsule-render.vercel.app/api?type=wave&color=0:F208FE,50:8F5FF1,100:1BC4E2&height=300&section=header&text=✨에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼&fontColor=ffffff&fontSize=55)
 
 <br>
 
@@ -59,6 +59,26 @@
 <br>
 
 ## 페이지 구성 및 주요기능
+
+### 메인페이지
+#### 헤더
+#### 메인 슬라이드
+#### API 연결
+- 메인페이지의 스크롤이 길기 때문에 따라다니는 형식으로 날씨와 위치정보를 확인 할 수 있게 함
+#### 스마트 예약 & 티켓 프로모션
+#### What’s New
+#### Editor’s Clip
+#### Everland App
+#### With Everland
+#### 푸터
+
+
+### 서브페이지 - 이용요금
+### 서브페이지 - 에버랜드 스토리
+- 테마존별의 설명과 이미지를 탭메뉴 형식으로 만들어 스크롤이 길어지지않게 만듦
+- 스크롤 시 테마존의 사이드 바가 스티키로 따라다니게 해서 올라가서 누르지 않아도 클릭할 수 있게 함
+- 에버랜드 캐릭터 이미지에 애니메이션을 넣어 경직된 느낌을 없앰
+### 서브페이지 - 추천 코스
 
 <br>
 
