@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0000007c;
   display: none;
 }
-/* .map_modal .map_modal_inner {
+.map_modal .map_modal_inner {
   width: 67.71%;
   height: 800px;
   position: absolute;
@@ -209,76 +209,18 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
-.map_modal .map_modal_inner {
-  width: clamp(950px,80%,80%);
-  height: clamp(650px,calc(100vh - 20%),80%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  box-shadow: 0 0 10px #1b1d1f20;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  border-radius: 15px;
-  overflow: hidden;
 }
 /* map_area */
-/* .map_modal .map_area {
+.map_modal .map_area {
   width: 46.15%;
   height: 600px;
   border: 10px solid var(--blue);
   border-radius: 80px;
   margin-right: 50px;
   overflow: hidden;
-} */
-
-.map_modal .map_area_wrap{
-  width: 65%;
-  height: 75%;
-  
-  margin-top: auto;
-  margin-bottom: 1%;
-  position: relative;
 }
-  .map_modal .map_area_wrap::before{
-    position: absolute;
-    content: "에버랜드 오시는 길";
-    font-size: 34px;
-    font-weight: 900;
-    top: -3rem;
-    left: 50%;
-    transform: translate(-50%);
-  }
-.map_modal .map_area {
-  width: 100%;
-  height: 100%;
-  border: 3px solid #231f20 ;
-  border-left: none;
-  border-radius: 0px 20px 20px 0px;
-  /* margin-right: 50px; */
-  overflow: hidden;
-
-
-  z-index: 5;
-}
-  .map_modal .map_area::before {
-    position: absolute;
-    content: "";
-    width: 120px;
-    height: inherit;
-    top: -122px;
-    right: 5%;
-    background-image: url(../img/logo/everlandMascotLenny.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 10;
-  }
 .map_modal .kakao_map {
-  width: 100% !important;
+  width: 100%;
   height: 100%;
 }
 .map_modal .roughmap_maker_label {
@@ -293,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   z-index: 10;
-  /* width: 200px;
+  width: 200px;
   height: 80px;
   padding: 0;
   border-radius: 80px;
@@ -302,43 +244,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 80px;
   background-color: #FF9000;
   text-align: center;
-  color: #fff; */
-  padding: 0px;
+  color: #fff;
 }
-  .map_modal .roughmap_maker_label .roughmap_lebel_text::after {
-    position: absolute;
-    content: "";
-    width: 70px;
-    height: 70px;
-    left: 50%;
-    top: 0%;
-    z-index: 15;
-    background-image: url(../img/logo/everlandMascot.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-
-    animation-name: everland-map-logo-anim;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes everland-map-logo-anim {
-    0%{
-      transform:  translate(-50%, -50%);
-    }
-
-    20%{
-      transform:  translate(-50%, -55%);
-    }
-    30%{
-      transform:  translate(-50%, -50%);
-    }
-
-    100%{
-      transform:  translate(-50%, -50%);
-    }
-  }
 .map_modal .roughmap_maker_label:after {
   display: none;
 }
@@ -355,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .map_modal .text_area ul li {
   display: flex;
-  /* margin-bottom: 25px; */
+  margin-bottom: 25px;
 }
 .map_modal .subway {
   grid-area: subway;
@@ -371,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .map_modal .text_area ul li img {
   margin-right: 15px;
-  /* margin-top: 5px; */
+  margin-top: 5px;
 }
 .map_modal .text_area ul li:nth-of-type(1) img {
   width: auto;
@@ -386,15 +293,15 @@ h1, h2, h3, h4, h5, h6 {
 .map_modal .text_area ul li h4 {
   font-size: 28px;
   font-weight: bold;
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
 }
 .map_modal .text_area ul li p {
-  /* font-weight: bold; */
+  font-weight: bold;
   display: flex;
   align-items: center;
 }
 .map_modal .text_area ul li p:nth-of-type(1) {
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
 }
 .map_modal .telephone p,
 .map_modal .location p {
@@ -409,18 +316,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* close */
 .map_modal .close {
-  width: 50px;
-  height: 50px;
-  background-color: var(--orange);
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: var(--purple);
+  border-radius: 30px;
   position: absolute;
-  top: 35px;
-  right: 35px;
+  top: 50px;
+  right: 50px;
   cursor: pointer;
 }
 .map_modal .close p {
-  width: 35px;
-  height: 7px;
+  width: 40px;
+  height: 10px;
   border-radius: 10px;
   background-color: #fff;
   position: absolute;
@@ -932,90 +839,4 @@ h1, h2, h3, h4, h5, h6 {
   .smart_reservation .promotion {
     display: none;
   }
-}
-
-
-
-
-/* 강진수 추가 css */
-.map_modal .text_area{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.map_modal .map_modal_inner .text_area_ul{
-  width: 87%;
-  height: 85%;
-  margin-left : auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  
-}
-.map_modal .map_modal_inner .text_area_ul li.location,
-.map_modal .map_modal_inner .text_area_ul li.operating_time,
-.map_modal .map_modal_inner .text_area_ul li.telephone,
-.map_modal .map_modal_inner .text_area_ul li.bus_list,
-.map_modal .map_modal_inner .text_area_ul li.subway_list{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.map_modal .map_modal_inner .text_area_ul li.location bold,
-.map_modal .map_modal_inner .text_area_ul li.operating_time bold,
-.map_modal .map_modal_inner .text_area_ul li.telephone bold,
-.map_modal .map_modal_inner .text_area_ul li.bus_list bold,
-.map_modal .map_modal_inner .text_area_ul li.subway_list bold{
-  font-weight: 900;
-}
-.map_modal .map_modal_inner .text_area_ul li.operating_time gray{
-  font-size: 13px;
-  color: #5f5f5f;
-}
-.map_modal .map_modal_inner .text_area_ul li.location small,
-.map_modal .map_modal_inner .text_area_ul li.telephone small,
-.map_modal .map_modal_inner .text_area_ul li.bus_list small,
-.map_modal .map_modal_inner .text_area_ul li.subway_list small{
-  font-size: 14px;
-}
-.map_modal .map_modal_inner .text_area_ul li.location::before,
-.map_modal .map_modal_inner .text_area_ul li.operating_time::before,
-.map_modal .map_modal_inner .text_area_ul li.telephone::before,
-.map_modal .map_modal_inner .text_area_ul li.bus_list::before,
-.map_modal .map_modal_inner .text_area_ul li.subway_list::before{
-  position: absolute;
-  content: "";
-  top: 0%;
-  left: -15px;
-  transform: translate(-50%);
-  width: 15px;
-  height: -webkit-fill-available;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.map_modal .map_modal_inner .text_area_ul li.location::before{
-  background-image: url("../img/main/icon/location_icon.png");
-}
-.map_modal .map_modal_inner .text_area_ul li.operating_time::before{
-  background-image: url("../img/main/icon/time_icon.png");
-}
-.map_modal .map_modal_inner .text_area_ul li.telephone::before{
-  background-image: url("../img/main/icon/phone_icon.png");
-}
-.map_modal .map_modal_inner .text_area_ul li.bus_list::before{
-  background-image: url("../img/main/icon/bus_icon.png");
-}
-.map_modal .map_modal_inner .text_area_ul li.subway_list::before{
-  background-image: url("../img/main/icon/subway_icon.png");
-}
-.text_area_ul li{
-  margin-top: 20px;
-}
-
-.map_modal .map_modal_inner .text_area_ul li.bus_list{
-  margin-top: 3rem;
 }
