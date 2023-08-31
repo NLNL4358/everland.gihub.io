@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=cylinder&color=auto&text=에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼&fontAlignY=55&fontSize=50&height=150&)
+![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=400&section=header&text=에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼&fontSize=75)
 
 <br>
 
@@ -80,3 +80,5 @@
 ### [깃허브](https://github.com/NLNL4358/everland.gihub.io)
 
 <br>
+
+![footer](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=200&section=footer&fontSize=70)
