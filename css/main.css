@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   /* margin-bottom: 15px; */
 }
 .map_modal .text_area ul li p {
-  font-weight: bold;
+  /* font-weight: bold; */
   display: flex;
   align-items: center;
 }
