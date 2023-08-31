@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=wave&color=0:F208FE,50:8F5FF1,100:1BC4E2&height=300&section=header&text=✨에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼&fontColor=ffffff&fontSize=55)
+![header](https://capsule-render.vercel.app/api?type=wave&color=0:F208FE,50:8F5FF1,100:1BC4E2&height=300&section=header&text=✨에버랜드&nbsp;웹&nbsp;페이지&nbsp;리뉴얼✨&fontColor=ffffff&fontSize=55)
 
 <br>
 
@@ -28,11 +28,10 @@
 ## 팀원
 ### :sunglasses: 팀 명 - 5늘도 힘내조
 
-|&nbsp;강진수&nbsp;|&nbsp;김소희&nbsp;|&nbsp;김정수&nbsp;|
+|강진수|김소희|김정수|
 |:---:|:---:|:---:|
 |:eyeglasses:|:beer:|:headphones:|
 |[@LetsGo](https://github.com/NLNL4358)|[@sohui](https://github.com/sohi0000)|[@null-jungsoo](https://github.com/null-jungsoo)|
-|헤더 영역<br>Editor’s Clip 영역<br>에버랜드 앱 영역<br>이용요금 페이지|메인 슬라이드 영역<br>날씨 / 지도 API 영역<br>스마트 예약 / 티켓 프로모션 영역<br>에버랜드 스토리 페이지|What’s New 영역<br>With Everland 영역<br>푸터 영역<br>추천 코스 페이지|
 
 <br>
 
@@ -61,37 +60,11 @@
 
 ## 페이지 구성 및 주요기능
 
-### 메인페이지
-#### 헤더
-#### 메인 슬라이드
-- 
-#### API 연결
-- 메인페이지의 스크롤이 길기 때문에 따라다니는 형식으로 날씨와 위치정보를 확인 할 수 있게 함
-#### 스마트 예약 & 티켓 프로모션
-#### What’s New
-#### Editor’s Clip
-#### Everland App
-#### With Everland
-#### 푸터
-
-
-
-### 서브페이지 - 이용요금
-### 서브페이지 - 에버랜드 스토리
-
-![sub_learn_more_02](https://github.com/NLNL4358/everland.gihub.io/assets/73161027/8d220800-1931-4296-94c2-9e16f9aece92)
-![sub_learn_more_01](https://github.com/NLNL4358/everland.gihub.io/assets/73161027/7d7c78c0-13bb-4233-8c21-298e501049fd)
-
-- 테마존별의 설명과 이미지를 탭메뉴 형식으로 만들어 스크롤이 길어지지않게 만듦
-- 스크롤 시 테마존의 사이드 바가 스티키로 따라다니게 해서 올라가서 누르지 않아도 클릭할 수 있게 함
-- 에버랜드 캐릭터 이미지에 애니메이션을 넣어 경직된 느낌을 없앰
-### 서브페이지 - 추천 코스
-
 <br>
 
 ## 호스팅
 
-### :star2: [메인페이지]
+### :star2: [메인페이지]()
 ### :star2: [서브페이지1]()
 ### :star2: [서브페이지2]()
 ### :star2: [서브페이지3]()
@@ -100,11 +73,11 @@
 
 ## 산출물
 
-#### :link: [브레인스토밍](https://www.figma.com/file/78Gss8xUi1W4L0yMunGvoa/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=whiteboard&node-id=18%3A499&t=GuRr72l2A5jehlXk-1)
-#### :link: [와이어프레임](https://www.figma.com/file/lrqwTBSZuE59In8cgsEnSU/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=design&node-id=0%3A1&mode=design&t=l3vqxxQmRTGyTxmo-1)
-#### :link: [디자인](https://www.figma.com/file/lrqwTBSZuE59In8cgsEnSU/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=design&node-id=1%3A2&mode=design&t=l3vqxxQmRTGyTxmo-1)
-#### :link: [기획서](https://docs.google.com/presentation/d/14E7Ty9qkvG8qko2dNRNXmHtMKKd28b2Pss3romp0DIs/edit?usp=sharing)
-#### :link: [깃허브](https://github.com/NLNL4358/everland.gihub.io)
+### [브레인스토밍](https://www.figma.com/file/78Gss8xUi1W4L0yMunGvoa/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=whiteboard&node-id=18%3A499&t=GuRr72l2A5jehlXk-1)
+### [와이어프레임](https://www.figma.com/file/lrqwTBSZuE59In8cgsEnSU/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=design&node-id=0%3A1&mode=design&t=l3vqxxQmRTGyTxmo-1)
+### [디자인](https://www.figma.com/file/lrqwTBSZuE59In8cgsEnSU/2%EC%B0%A8-%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-5%EC%A1%B0?type=design&node-id=1%3A2&mode=design&t=l3vqxxQmRTGyTxmo-1)
+### [기획서](https://docs.google.com/presentation/d/14E7Ty9qkvG8qko2dNRNXmHtMKKd28b2Pss3romp0DIs/edit?usp=sharing)
+### [깃허브](https://github.com/NLNL4358/everland.gihub.io)
 
 <br>
 
