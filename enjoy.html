@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- github 도메인에서 API를사용하기 위해서는 아래의 meta 태그가 필요하다!  -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>티켓&요금</title>
+
+
+  <!-- xeIcon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- 공통CSS -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- 개별CSS -->
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="stylesheet" href="./css/sub_page/enjoy.css">
+  <!-- 반응형CSS -->
+  <link rel="stylesheet" href="./css/responsive/footer_responsive.css">
+  <link rel="stylesheet" href="./css/responsive/header_responsive.css">
+  <link rel="stylesheet" href="./css/sub_page/reponsive/enjoy_responsive.css">
+
+
+</head>
+
+<body>
+  <header class="header"> <!-- 햄버거 클릭시 hamburger 클래스 -->
+    <div class="inner header_inner">
+      <div class="header_wrap">
+        <div class="mobile weather_wrap">
+          <div class="weather">
+            <div class="CurrIcon">
+              <img src="" alt="">
+            </div>
+            <div class="CurrTemp"><span></span>℃</div>
+          </div>
+        </div>
+        <div class="logo_wrap">
+          <a href="./index.html">
+            <img src="img/logo/MainLogopng.png" alt="" class="header_logo">
+          </a>
+        </div>
+        <div class="nav_wrap">
+          <ul class="gnb_ul">
+            <li class="gnb_li">
+              <a href="#">
+                <p>이용정보</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#"> 뉴스공지</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 이용방법</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 운영시간</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 운휴안내</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 교통정보</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 편의시설</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 가이드맵</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">모바일앱</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="./ticketFee.html">
+                <p>요금&프로모션</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="./ticketFee.html">이용요금</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">제휴카드</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">스페셜 프로모션</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">드림투어</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">체험 프로그램</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="./enjoy.html">
+                <p>즐길거리</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="./enjoy.html">추천 코스</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">어트랙션</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">엔터테인먼트</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">주토피아(동물원)</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">플랜테피아(정원)</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">레스토랑</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">온라인 굿즈샵</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">글램핑</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="#">
+                <p>멤버십</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#"> 정기권</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 동물 사랑단</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#"> 식물 사랑단</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_li">
+              <a href="./learn_more.html">
+                <p>에버랜드 더 알아보기</p>
+              </a>
+              <ul class="snb_ul">
+                <li class="snb_li">
+                  <a href="#">Editor's Pick</a>
+                </li>
+                <li class="snb_li">
+                  <a href="./learn_more.html">에버랜드 스토리</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">에버랜드 테마뮤직</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">스피드웨이</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">캐리비안 베이</a>
+                </li>
+                <li class="snb_li">
+                  <a href="#">홈브리지</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header_right">
+          <div class="modal modal_search_bar">
+            <p class="modal_arrow"></p>
+            <div class="search_bar_wrap">
+              <input type="text" placeholder="검색어를 입력하세요" class="search_bar" />
+              <button class="search_bar_search_button">검색</button>
+              <button class="search_bar_close_button"><i class="xi-close"></i></button>
+            </div>
+          </div>
+          <button class="search_button">
+            <i class="xi-search"></i>
+          </button>
+          <a href="#">
+            손님상담센터
+          </a>
+          <a href="#">
+            회원가입
+          </a>
+          <button class="login_button">
+            로그인
+          </button>
+        </div>
+        <div class="mobile mobile_hamburger">
+          <button class="mobile_nav_button">
+            <img class="hamburger_open" src="./img/icon/hamburger.png" alt="">
+            <!-- <i class="xi-bars hamburger_open"></i> -->
+          </button>
+          <button class="mobile_nav_button">
+            <img class="hamburger_close" src="./img/icon/x_icon.png" alt="">
+            <!-- <i class="xi-close hamburger_close"></i> -->
+          </button>
+        </div>
+      </div>
+      <div class="mobile mobile_div">
+        <div class="mobile_menu_wrap">
+          <div class="mobile_top_menu">
+            <ul>
+              <a href="#">
+                <li>
+                  상담 센터
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  회원 가입
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  로그인
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="mobile_app_and_reservation">
+            <div class="mobile_app_wrap">
+              <a href="#">
+                <img class="mobile_app_img" src="./img/icon/appStore.png" alt="">
+                <span class="mobile_app_text">앱 다운로드</span>
+              </a>
+            </div>
+            <div class="mobile_reservation_wrap">
+              <a href="#">
+                <img class="mobile_reservation_img" src="./img/icon/ticket_icon.png" alt="">
+                <span class="mobile_reservation_text">예매 하기</span>
+              </a>
+            </div>
+          </div>
+          <div class="mobile_nav_wrap">
+            <ul class="mobile_gnb_ul">
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 이용정보 </p> <i class="xi-angle-down"></i>
+                </div>
+                <ul class="mobile_snb_ul" data-len=8>
+                  <li class="mobile_snb_li"> <a href="#"> 뉴스공지 </a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 이용방법 </a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 운영시간 </a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 운휴안내 </a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 교통정보 </a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 편의시설 </a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 가이드맵 </a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 모바일앱 </a></li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 요금&프로모션 </p> <i class="xi-angle-down"></i>
+                </div>
+                <ul class="mobile_snb_ul" data-len=5>
+                  <li class="mobile_snb_li"> <a href="./ticketFee.html"> 이용요금</a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 제휴카드</a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 스페셜 프로모션</a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 드림투어</a></li>
+                  <li class="mobile_snb_li"> <a href="#"> 체험 프로그램</a></li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 즐길거리 </p> <i class="xi-angle-down"></i>
+                </div>
+                <ul class="mobile_snb_ul" data-len=8>
+                  <li class="mobile_snb_li"> <a href="./enjoy.html"> 추천코스 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 어트랙션 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 엔터테이먼트 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 주토피아 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 플랜토피아 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 레스토랑 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 온라인 굿즈샵 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 글램핑 </a> </li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 멤버십 </p> <i class="xi-angle-down"></i>
+                </div>
+                <ul class="mobile_snb_ul" data-len=3>
+                  <li class="mobile_snb_li"> <a href="#"> 정기권 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 동물 사랑단 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 식물 사랑단 </a> </li>
+                </ul>
+              </li>
+              <li class="mobile_gnb_li">
+                <div class="mobile_gnb_name">
+                  <p> 에버랜드 더 알아보기 </p> <i class="xi-angle-down"></i>
+                </div>
+                <ul class="mobile_snb_ul" data-len=6>
+                  <li class="mobile_snb_li"> <a href="#"> Editors Pick </a> </li>
+                  <li class="mobile_snb_li"> <a href="./learn_more.html"> 에버랜드 스토리 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 에버랜드 테마뮤직 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 스피드 웨이 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 캐리비안 베이 </a> </li>
+                  <li class="mobile_snb_li"> <a href="#"> 홈 브릿지 </a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="enjoy_main">
+    <div class="enjoy_main_text_wrap">
+      <h1 class="enjoy_main_H1">즐길거리</h1>
+    </div>
+  </div>
+
+  <section class="enjoy">
+    <img src="img/sub_enjoy/sub_enjoy_backmap.png" alt="enjoyMap" class="enjoy_map">
+    <div class="enjoy_wrap">
+      <div class="enjoy_nav">
+        <p><select>
+            <option value="">즐길거리</option>
+            <option value="">이용정보</option>
+            <option value="">요금&프로모션</option>
+            <option value="">멤버십</option>
+            <option value="">에버랜드 더 알아보기</option>
+          </select>
+          <select>
+            <option value="">추천코스</option>
+            <option value="">어트랙션</option>
+            <option value="">엔터테인먼트</option>
+            <option value="">주토피아</option>
+            <option value="">플렌토피아</option>
+            <option value="">레스토랑</option>
+            <option value="">온라인 굿즈샵</option>
+            <option value="">글램핑</option>
+          </select>
+        </p>
+      </div>
+
+      <div class="enjoy_tab">
+        <!-- 탭 버튼 영역 -->
+        <ul class="tab">
+          <li class="tab__item active">
+            <a href="#tab1">
+              우천 코스
+            </a>
+          </li>
+          <li class="tab__item">
+            <a href="#tab2">
+              유아/가족 코스
+            </a>
+          </li>
+          <li class="tab__item">
+            <a href="#tab3">
+              스릴 코스
+            </a>
+          </li>
+          <li class="tab__item">
+            <a href="#tab4">
+              연인 코스
+            </a>
+          </li>
+        </ul>
+        <!-- 탭 내용 영역 -->
+        <div class="tab__content-wrapper">
+          <div id="tab1" class="tab__content active">
+            <div class="rain_cos">
+              <a href="#none" class="content_link" id="e1"><img src="img/sub_enjoy/sub_hurricane.png" alt="">
+                <p>허리케인</p>
+              </a>
+              <a href="" class="content_link" id="e2"><img src="img/sub_enjoy/sub_great exploration of Columbus.png"
+                  alt="">
+                <p>콜럼버스 대탐험</p>
+              </a>
+              <a href="" class="content_link" id="e3"><img src="img/sub_enjoy/sub_Thunder Falls.png" alt="">
+                <p>썬더폴스</p>
+              </a>
+              <a href="" class="content_link" id="e4"><img src="img/sub_enjoy/sub_Amazon Express.png" alt="">
+                <p>아마존 익스프레스</p>
+              </a>
+              <a href="" class="content_link" id="e5"><img src="img/sub_enjoy/sub_bumper car.png" alt="">
+                <p>범퍼카</p>
+              </a>
+              <a href="" class="content_link" id="e6"><img src="img/sub_enjoy/sub_double lock spin.png" alt="">
+                <p>더블 락스핀</p>
+              </a>
+              <a href="" class="content_link" id="e7"><img src="img/sub_enjoy/sub_Rolling X Train.png" alt="">
+                <p>롤링 X 트레인</p>
+              </a>
+              <a href="" class="content_link" id="e8"><img src="img/sub_enjoy/sub_Sky Cruise.png" alt="">
+                <p>스카이 크루즈</p>
+              </a>
+              <a href="" class="content_link" id="e9"><img src="img/sub_enjoy/sub_Let's twist.png" alt="">
+                <p>렛츠 트위스트</p>
+              </a>
+              <a href="" class="content_link" id="e10"><img src="img/sub_enjoy/sub_T Express.png" alt="">
+                <p>티 익스프레스</p>
+              </a>
+            </div>
+          </div>
+          <div id="tab2" class="tab__content">
+          </div>
+          <div id="tab3" class="tab__content">
+          </div>
+          <div id="tab4" class="tab__content">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer_illust">
+      <img src="img/footer/footer_illust.png" alt="">
+    </div>
+    <div class="footer_bg_wrap">
+      <div class="inner">
+        <div class="footer_top">
+          <div class="footer_top_left">
+            <a href="#" id="logo">
+              <img src="img/footer/footer_everland_logo(white).svg" alt="">
+            </a>
+            <div class="footer_sns">
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_youtube_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_instagram_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_facebook_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_undefind_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_tstory_icon.svg" alt="">
+                </a>
+              </div>
+              <div class="sns_round">
+                <a href="#none">
+                  <img src="img/footer/footer_twitter_icon.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_right">
+            <select name="" id="">
+              <option value="">리조트 내 시설</option>
+              <option value="">리조트 외 시설</option>
+            </select>
+            <select name="" id="">
+              <option value="">FAMILY SITE</option>
+              <option value="">FRIEND SITE</option>
+            </select>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_menu">
+            <ul>
+              <li><a href="#none">에버랜드 리조트 소개</a> </li>
+              <li><a href="#none">이용약관</a> </li>
+              <li><a href="#none">이메일주소 무단수집 거부</a> </li>
+              <li><a href="#none">CAST참여</a> </li>
+              <li><a href="#none">사이트맵</a> </li>
+            </ul>
+          </div>
+          <div class="footer_address">
+            <p>
+              경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)<br>
+              대표이사 : 정해린 | 사업자등록번호 : 135-85-04288 | 통신판매업 신고번호 : 제2006-용인처인-0216호 | 사업자정보확인<br>
+              손님상담센터 : 031-320-5000(유료) | 개인정보처리방침 | 방침 개정 안내 | 입찰공고
+            </p>
+          </div>
+          <div class="footer_copyright">
+            <p>
+              Copyright © Samsung C&T Corporation. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/header.js"></script>
+  <script src="./js/sub_page/enjoy.js"></script>
+  <script src="js/time.js"></script>
+  <script type="text/javascript" src="js/apikey.js"></script>
+  <script src="js/sub_page/subPage_weather.js"></script>
+
+</body>
+
+</html>
