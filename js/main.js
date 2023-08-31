@@ -94,6 +94,12 @@ close.addEventListener("click", function() {
   mapMadal.style.display = "none"; // 모달 닫기
 });
 
+$(document).keydown(function(event) {
+  if ( event.keyCode == 27 || event.which == 27 ) {
+    mapMadal.style.display = "none"; // 모달 닫기
+  }
+});
+
 /* timetable */
 let timetable = document.querySelector(".timetable");
 

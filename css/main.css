@@ -839,4 +839,97 @@ h1, h2, h3, h4, h5, h6 {
   .smart_reservation .promotion {
     display: none;
   }
+
 }
+
+
+/* 강진수 추가 css */
+.map_modal .text_area{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.map_modal .text_area p,
+.map_modal .text_area bold,
+.map_modal .text_area small{
+  
+  font-family: 'NanumSquareRound',sans-serif;
+}
+.map_modal .map_modal_inner .text_area_ul{
+  width: 92%;
+  height: 90%;
+  margin-left : auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+.map_modal .map_modal_inner .text_area_ul li.location,
+.map_modal .map_modal_inner .text_area_ul li.operating_time,
+.map_modal .map_modal_inner .text_area_ul li.telephone,
+.map_modal .map_modal_inner .text_area_ul li.bus_list,
+.map_modal .map_modal_inner .text_area_ul li.subway_list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.map_modal .map_modal_inner .text_area_ul li.location bold,
+.map_modal .map_modal_inner .text_area_ul li.operating_time bold,
+.map_modal .map_modal_inner .text_area_ul li.telephone bold,
+.map_modal .map_modal_inner .text_area_ul li.bus_list bold,
+.map_modal .map_modal_inner .text_area_ul li.subway_list bold{
+  font-weight: 900;
+}
+.map_modal .map_modal_inner .text_area_ul li.operating_time gray{
+  font-size: 13px;
+  color: #5f5f5f;
+}
+.map_modal .map_modal_inner .text_area_ul li.location small,
+.map_modal .map_modal_inner .text_area_ul li.telephone small,
+.map_modal .map_modal_inner .text_area_ul li.bus_list small,
+.map_modal .map_modal_inner .text_area_ul li.subway_list small{
+  font-size: 14px;
+}
+.map_modal .map_modal_inner .text_area_ul li.location::before,
+.map_modal .map_modal_inner .text_area_ul li.operating_time::before,
+.map_modal .map_modal_inner .text_area_ul li.telephone::before,
+.map_modal .map_modal_inner .text_area_ul li.bus_list::before,
+.map_modal .map_modal_inner .text_area_ul li.subway_list::before{
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: -15px;
+  transform: translate(-50%);
+  width: 15px;
+  height: -webkit-fill-available;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.map_modal .map_modal_inner .text_area_ul li.location::before{
+  background-image: url("../img/main/icon/location_icon.png");
+}
+.map_modal .map_modal_inner .text_area_ul li.operating_time::before{
+  background-image: url("../img/main/icon/time_icon.png");
+}
+.map_modal .map_modal_inner .text_area_ul li.telephone::before{
+  background-image: url("../img/main/icon/phone_icon.png");
+}
+.map_modal .map_modal_inner .text_area_ul li.bus_list::before{
+  background-image: url("../img/main/icon/bus_icon.png");
+}
+.map_modal .map_modal_inner .text_area_ul li.subway_list::before{
+  background-image: url("../img/main/icon/subway_icon.png");
+}
+.text_area_ul li{
+  margin-top: 20px;
+}
+
+.map_modal .map_modal_inner .text_area_ul li.bus_list{
+  margin-top: 1rem;
+}
+
+
