@@ -14,11 +14,11 @@
 <br>
 
 ## 프로젝트 정보
-### 에버랜드 웹 페이지의 리뉴얼을 목표로 하는 팀 프로젝트
+### :pushpin: 에버랜드 웹 페이지의 리뉴얼을 목표로 하는 팀 프로젝트
 
-### 개발 기간 - 2023.08.01 ~ 2023.09.05 (5주)
+### :pushpin: 개발 기간 - 2023.08.01 ~ 2023.09.05 (5주)
 
-### 개발 목적
+### :pushpin: 개발 목적
 - 와이어프레임, 디자인 결과물에 대한 웹페이지 완성
 - API를 이용하여 실시간 위치, 날씨 정보를 웹페이지에서 확인할 수 있도록 하여 API사용법을 익힘
 - 기획부터 퍼블리싱까지 전반적인 프로젝트 과정에 참여하여 본인의 특기분야뿐만 아닌 다양한 영역의 능력치 향상
@@ -26,7 +26,7 @@
 <br>
 
 ## 팀원
-### 팀 명 - 5늘도 힘내조
+### :sunglasses: 팀 명 - 5늘도 힘내조
 
 |강진수|김소희|김정수|
 |:---:|:---:|:---:|
@@ -37,33 +37,24 @@
 
 ## 개발환경
 
-####   ★ 개발 환경
+####   :star: 개발 환경
 <img src="https://img.shields.io/badge/Windows10-0078D6?style=flat-square&logo=windows10&logoColor=white"/>
 
-####   ★ 개발에 사용된 프로그램
-<img src="https://img.shields.io/badge/VS_code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
-<img src="https://img.shields.io/badge/Adobe_Illustrator-FF9A00?style=flat-square&logo=adobeillustrator&logoColor=white"/>
-<img src="https://img.shields.io/badge/Adobe_photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white"/>
+####   :star: 개발에 사용된 프로그램
+<img src="https://img.shields.io/badge/VS_code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/><img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/><img src="https://img.shields.io/badge/Adobe_Illustrator-FF9A00?style=flat-square&logo=adobeillustrator&logoColor=white"/><img src="https://img.shields.io/badge/Adobe_photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white"/>
 
-####   ★ 개발 언어
-<img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
-<img src="https://img.shields.io/badge/jquery-0769AD?style=flat-square&logo=jquery&logoColor=white"/>
-<img src="https://img.shields.io/badge/swiper-6332F6?style=flat-square&logo=swiper&logoColor=white"/>
-<img src="https://img.shields.io/badge/kakaoMap_API-FFCD00?style=flat-square&logo=kakao&logoColor=white"/>
-<img src="https://img.shields.io/badge/OpenWeatherMap_API-3693F3?style=flat-square&logo=icloud&logoColor=white"/>
+####   :star: 개발 언어
+<img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"/><img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white"/><img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/><img src="https://img.shields.io/badge/jquery-0769AD?style=flat-square&logo=jquery&logoColor=white"/><img src="https://img.shields.io/badge/swiper-6332F6?style=flat-square&logo=swiper&logoColor=white"/><img src="https://img.shields.io/badge/kakaoMap_API-FFCD00?style=flat-square&logo=kakao&logoColor=white"/><img src="https://img.shields.io/badge/OpenWeatherMap_API-3693F3?style=flat-square&logo=icloud&logoColor=white"/>
 
-####   ★ 소통
-<img src="https://img.shields.io/badge/slack-4A154B?style=flat-square&logo=slack&logoColor=white"/>
-<img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white"/>
+####   :star: 소통
+<img src="https://img.shields.io/badge/slack-4A154B?style=flat-square&logo=slack&logoColor=white"/><img src="https://img.shields.io/badge/notion-000000?style=flat-square&logo=notion&logoColor=white"/>
 
 <br>
 
 ## 프로젝트 소개 
-- 에버랜드 웹 페이지를 방문한 고객에게 어트랙션 소개 및 행사, 할인등의 정보를 전달하고 빠른 예매기능을 이용하여 에버랜드의 방문을 유도함
-- 정적인 기존 사이트의 리뉴얼로 동적이며 사용자의 접근성과 사용성을 높임
+:pencil2: 에버랜드 웹 페이지를 방문한 고객에게 어트랙션 소개 및 행사, 할인등의 정보를 전달하고 빠른 예매기능을 이용하여 에버랜드의 방문을 유도함
+
+:pencil2: 정적인 기존 사이트의 리뉴얼로 동적이며 사용자의 접근성과 사용성을 높임
 
 <br>
 
@@ -73,10 +64,10 @@
 
 ## 호스팅
 
-### [메인페이지]()
-### [서브페이지1]()
-### [서브페이지2]()
-### [서브페이지3]()
+### :star2: [메인페이지]()
+### :star2: [서브페이지1]()
+### :star2: [서브페이지2]()
+### :star2: [서브페이지3]()
 
 <br>
 
