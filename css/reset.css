@@ -15,8 +15,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Noto+Sans+KR'; */
-  font-family: 'NanumSquareRound',sans-serif;
+  font-family: 'Noto+Sans+KR';
+  /* font-family: 'NanumSquareRound',sans-serif; */
 }
 html, body {
   width:100%;

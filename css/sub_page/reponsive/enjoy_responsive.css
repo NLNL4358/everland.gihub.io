@@ -18,7 +18,6 @@
   .enjoy_wrap {
     width: 95%;
   }
-
   .enjoy_main {
     height: 480px;
   }
@@ -83,4 +82,5 @@
     font-weight: 800;
     color: var(--orange);
   }
+
 }
