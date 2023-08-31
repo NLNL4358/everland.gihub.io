@@ -1,0 +1,164 @@
+* {
+  /* font-family: 'Noto+Sans+KR'; */
+  font-family: 'NanumSquareRound', sans-serif;
+}
+
+.enjoy_main {
+  width: 100vw;
+  height: 796px;
+  background-image: url("../../img/sub_enjoy/sub_enjoy_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.enjoy_main_text_wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.enjoy_main_H1 {
+  font-size: 70px;
+  color: white;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.enjoy {
+  position: relative;
+  height: 2180px;
+}
+
+.enjoy_map {
+  position: absolute;
+  top: 16%;
+  left: 0;
+}
+
+.enjoy_wrap {
+  width: 1280px;
+  margin: auto;
+}
+
+.enjoy_nav {
+  margin: 1.5rem 0;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.tab .tab__item {
+  width: 275px;
+  height: 70px;
+  text-align: center;
+  border-radius: 3rem;
+  overflow: hidden;
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.tab .tab__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 70px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.tab__item.active {
+  display: inline-block;
+  box-shadow: 0px 0px 8px #00000059;
+  color: #fff;
+  background-color: var(--blue);
+}
+
+.tab__content-wrapper {
+  height: 2000px;
+  width: 1280px;
+  position: relative;
+}
+
+.tab__content img {
+  width: 275px;
+  height: 275px;
+  transition: 0.3s;
+}
+
+.content_link {
+  display: block;
+  text-align: center;
+  width: 275px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content_link p {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0.6rem 0;
+}
+
+#e1,
+#e2,
+#e3 {
+  top: 3%;
+}
+
+#e2,
+#e6,
+#e9 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#e3,
+#e5,
+#e7,
+#e10 {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+#e4 {
+  top: 37%;
+}
+
+#e5 {
+  top: 26%;
+}
+
+#e6,
+#e7 {
+  top: 47%;
+}
+
+#e8 {
+  top: 62%;
+}
+
+#e9,
+#e10 {
+  top: 77%;
+}
+
+.content_link:hover img {
+  box-shadow: 0px 0px 7px #00000080;
+}
