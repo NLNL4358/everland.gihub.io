@@ -2,6 +2,10 @@
 /*font-family: 'Noto Sans KR', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 
+.with_everland {
+  padding-bottom: 6rem;
+}
+
 .whats_new_wrap {
   margin: auto;
   width: 88.54%;

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- github 도메인에서 API를사용하기 위해서는 아래의 meta 태그가 필요하다!  -->
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>Ever Land</title>
 
 
@@ -38,8 +39,10 @@
   <link rel="stylesheet" href="./css/responsive/footer_responsive.css">
 
   <!-- 카카오 map API -->
-  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script charset="UTF-8" class="daum_roughmap_loader_script"
+    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
+
 <body>
   <!-- Header  -->
   <header class="header"> <!-- 햄버거 클릭시 hamburger 클래스 -->
@@ -73,7 +76,7 @@
                 </li>
                 <li class="snb_li">
                   <a href="#"> 운영시간</a>
-                </li> 
+                </li>
                 <li class="snb_li">
                   <a href="#"> 운휴안내</a>
                 </li>
@@ -114,12 +117,12 @@
               </ul>
             </li>
             <li class="gnb_li">
-              <a href="#">
+              <a href="./enjoy.html">
                 <p>즐길거리</p>
               </a>
               <ul class="snb_ul">
                 <li class="snb_li">
-                  <a href="#">추천 코스</a>
+                  <a href="./enjoy.html">추천 코스</a>
                 </li>
                 <li class="snb_li">
                   <a href="#">어트랙션</a>
@@ -191,7 +194,7 @@
           <div class="modal modal_search_bar">
             <p class="modal_arrow"></p>
             <div class="search_bar_wrap">
-              <input type="text"placeholder="검색어를 입력하세요" class="search_bar"/>
+              <input type="text" placeholder="검색어를 입력하세요" class="search_bar" />
               <button class="search_bar_search_button">검색</button>
               <button class="search_bar_close_button"><i class="xi-close"></i></button>
             </div>
@@ -244,7 +247,7 @@
           <div class="mobile_app_and_reservation">
             <div class="mobile_app_wrap">
               <a href="#">
-                <img class="mobile_app_img" src="./img/icon/appStore.png" alt=""> 
+                <img class="mobile_app_img" src="./img/icon/appStore.png" alt="">
                 <span class="mobile_app_text">앱 다운로드</span>
               </a>
             </div>
@@ -276,8 +279,7 @@
                 <div class="mobile_gnb_name">
                   <p> 요금&프로모션 </p> <i class="xi-angle-down"></i>
                 </div>
-                <ul class="mobile_snb_ul"
-                data-len=5>
+                <ul class="mobile_snb_ul" data-len=5>
                   <li class="mobile_snb_li"> <a href="./ticketFee.html"> 이용요금</a></li>
                   <li class="mobile_snb_li"> <a href="#"> 제휴카드</a></li>
                   <li class="mobile_snb_li"> <a href="#"> 스페셜 프로모션</a></li>
@@ -289,9 +291,8 @@
                 <div class="mobile_gnb_name">
                   <p> 즐길거리 </p> <i class="xi-angle-down"></i>
                 </div>
-                <ul class="mobile_snb_ul"
-                data-len=8>
-                  <li class="mobile_snb_li"> <a href="#"> 추천코스 </a> </li>
+                <ul class="mobile_snb_ul" data-len=8>
+                  <li class="mobile_snb_li"> <a href="./enjoy.html"> 추천코스 </a> </li>
                   <li class="mobile_snb_li"> <a href="#"> 어트랙션 </a> </li>
                   <li class="mobile_snb_li"> <a href="#"> 엔터테이먼트 </a> </li>
                   <li class="mobile_snb_li"> <a href="#"> 주토피아 </a> </li>
@@ -305,8 +306,7 @@
                 <div class="mobile_gnb_name">
                   <p> 멤버십 </p> <i class="xi-angle-down"></i>
                 </div>
-                <ul class="mobile_snb_ul"
-                data-len=3>
+                <ul class="mobile_snb_ul" data-len=3>
                   <li class="mobile_snb_li"> <a href="#"> 정기권 </a> </li>
                   <li class="mobile_snb_li"> <a href="#"> 동물 사랑단 </a> </li>
                   <li class="mobile_snb_li"> <a href="#"> 식물 사랑단 </a> </li>
@@ -316,8 +316,7 @@
                 <div class="mobile_gnb_name">
                   <p> 에버랜드 더 알아보기 </p> <i class="xi-angle-down"></i>
                 </div>
-                <ul class="mobile_snb_ul"
-                data-len=6>
+                <ul class="mobile_snb_ul" data-len=6>
                   <li class="mobile_snb_li"> <a href="#"> Editors Pick </a> </li>
                   <li class="mobile_snb_li"> <a href="./learn_more.html"> 에버랜드 스토리 </a> </li>
                   <li class="mobile_snb_li"> <a href="#"> 에버랜드 테마뮤직 </a> </li>
@@ -397,54 +396,12 @@
   <!-- modal 김소희 -->
   <div class="map_modal">
     <div class="map_modal_inner">
-      <div class="map_area_wrap">
-        <div class="map_area">
-          <div id="daumRoughmapContainer1692621012629" class="root_daum_roughmap root_daum_roughmap_landing kakao_map"></div>
+      <div class="map_area">
+        <div id="daumRoughmapContainer1692621012629" class="root_daum_roughmap root_daum_roughmap_landing kakao_map">
         </div>
       </div>
       <div class="text_area">
-        <ul class="text_area_ul">
-          <li class="location copy_location">
-            <p><bold>경기도 용인시 에버랜드로 199</bold> <i></i></p> 
-            <p><small>199, Everland-ro, Pogok-eup, Cheoin-gu, Yongin-si, Gyeonggi-do, Republic of Korea</small></p>
-          </li>
-          <li class="operating_time">
-            <p><bold>운영시간 : 10:00 ~ 22:00</bold></p>
-            <p><gray>운영시간은 기준 운영시간에서 다소 변경될 수 있습니다.</gray></p>
-            <p><gray>공연 일정은 매주 수요일에 최종 업데이트 되므로, 목요일 이후 방문 손님께서는 참고해 주십시오.</gray></p>
-          </li>
-          <li class="telephone">
-            <p><bold>고객센터 전화번호</bold></p>
-            <p class="copy_telephone" title="복사">
-             <small> 031-320-5000 </small> <i></i>
-            </p>
-          </li>
-          <li class="bus_list">
-            <p><bold>버스를 이용해요</bold></p>
-
-            <br>
-
-            <p>-서울에서 출발</p>
-            <p><small>일반버스 : 5002번 , 5700번 , 1500-2번 , 1113번</small></p>
-
-            <br>
-
-            <p>-인천 및 경기도에서 출발</p>
-            <p><small>일반버스 : 66번 , 66-4번 , 670번</small></p>
-            <p><small>직행버스 : 8862번 , 8839번</small></p>
-
-          </li>
-
-          <li class="subway_list">
-            <p><bold>지하철을 이용해요</bold></p>
-            <br>
-            <p>분당선 기흥역에서 에버라인(경전철)으로 환승하세요</p>
-            <br>
-            <p><small>에버라인 종점에 내려서 셔틀버스(무료)로 에버랜드, 케리비안베이까지 이동</small></p>
-            <p><small>에버라인은 05:30 ~ 23:00 까지 운행합니다.</small></p>
-          </li>
-        </ul>
-        <!-- <ul>
+        <ul>
           <li class="subway">
             <img src="img/main/icon/subway_icon.png" alt="지하철 아이콘">
             <div>
@@ -455,7 +412,7 @@
                 에버라인(경전철)으로 환승하세요!
               </p>
               <p>
-                - 에버라인 종점에 내려서 셔틀버스(무료)로 
+                - 에버라인 종점에 내려서 셔틀버스(무료)로
                 <br>
                 에버랜드, 캐리비안 베이까지 이동
                 <br>
@@ -505,7 +462,7 @@
               </p>
             </div>
           </li>
-        </ul> -->
+        </ul>
       </div>
       <div class="close">
         <p></p>
@@ -525,42 +482,42 @@
         <div class="smart_link">
           <ul>
             <li><a href="#none">
-              <div class="utilization">
-                <img src="img/main/icon/smart_reservation_icon_01.png" alt="이용권 아이콘">
-              </div>
-              <p>이용권</p>
-            </a></li>
+                <div class="utilization">
+                  <img src="img/main/icon/smart_reservation_icon_01.png" alt="이용권 아이콘">
+                </div>
+                <p>이용권</p>
+              </a></li>
             <li><a href="#none">
-              <div class="year_utilization">
-                <img src="img/main/icon/smart_reservation_icon_02.png" alt="정기권 아이콘">
-              </div>
-              <p>정기권</p>
-            </a></li>
+                <div class="year_utilization">
+                  <img src="img/main/icon/smart_reservation_icon_02.png" alt="정기권 아이콘">
+                </div>
+                <p>정기권</p>
+              </a></li>
             <li><a href="#none">
-              <div class="restaurant">
-                <img src="img/main/icon/smart_reservation_icon_03.png" alt="레스토랑 테라스 아이콘">
-              </div>
-              <p>레스토랑 테라스</p>
-            </a></li>
+                <div class="restaurant">
+                  <img src="img/main/icon/smart_reservation_icon_03.png" alt="레스토랑 테라스 아이콘">
+                </div>
+                <p>레스토랑 테라스</p>
+              </a></li>
             <li><a href="#none">
-              <div class="experience">
-                <img src="img/main/icon/smart_reservation_icon_04.png" alt="체험프로그램 아이콘">
-              </div>
-              <p>체험프로그램</p>
-            </a></li>
+                <div class="experience">
+                  <img src="img/main/icon/smart_reservation_icon_04.png" alt="체험프로그램 아이콘">
+                </div>
+                <p>체험프로그램</p>
+              </a></li>
             <li><a href="#none">
-              <div class="valet_parking">
-                <img src="img/main/icon/smart_reservation_icon_05.png" alt="발레파킹 아이콘">
-              </div>
-              <p>발레파킹</p>
-            </a></li>
+                <div class="valet_parking">
+                  <img src="img/main/icon/smart_reservation_icon_05.png" alt="발레파킹 아이콘">
+                </div>
+                <p>발레파킹</p>
+              </a></li>
             <li><a href="#none">
-              <div class="
+                <div class="
               dream_tour">
-                <img src="img/main/icon/smart_reservation_icon_06.png" alt="드림투어 아이콘">
-              </div>
-              <p>드림투어</p>
-            </a></li>
+                  <img src="img/main/icon/smart_reservation_icon_06.png" alt="드림투어 아이콘">
+                </div>
+                <p>드림투어</p>
+              </a></li>
           </ul>
           <div class="mobile">
             <button>스페셜 프로모션<br>자세히보기 →</button>
@@ -596,25 +553,25 @@
         <h3 class="reservation_title">Ticket Promotion</h3>
         <ul class="promotion_btn">
           <li><a href="#none">
-            <span>스마트예약</span>
-            <span>본인 54%</span>
-          </a></li>
+              <span>스마트예약</span>
+              <span>본인 54%</span>
+            </a></li>
           <li><a href="#none">
-            <span>제휴카드</span>
-            <span>50% 우대</span>
-          </a></li>
+              <span>제휴카드</span>
+              <span>50% 우대</span>
+            </a></li>
           <li><a href="#none">
-            <span>모니모<br>신규가입 시</span>
-            <span>대인 54% 우대</span>
-          </a></li>
+              <span>모니모<br>신규가입 시</span>
+              <span>대인 54% 우대</span>
+            </a></li>
           <li><a href="#none">
-            <span>키즈패키지<br>2인권</span>
-            <span>53,000원~</span>
-          </a></li>
+              <span>키즈패키지<br>2인권</span>
+              <span>53,000원~</span>
+            </a></li>
           <li><a href="#none">
-            <span>홈페이지<br>신규가입 우대</span>
-            <span>32,000원~</span>
-          </a></li>
+              <span>홈페이지<br>신규가입 우대</span>
+              <span>32,000원~</span>
+            </a></li>
         </ul>
         <button>스페셜 프로모션 자세히보기</button>
       </div>
@@ -625,7 +582,8 @@
   <section class="whats_new">
     <div class="whats_new_wrap">
       <div class="whats_new_title">
-        <h2 class="section_main_name">What’s <point2>New</point2></h2>
+        <h2 class="section_main_name">What’s <point2>New</point2>
+        </h2>
         <p class="section_sub_name">꿈과 환상의 나라로 어서오세요!</p>
       </div>
       <img src="img/whats_new/whats_new_unit_white.png" alt="" class="unit_white">
@@ -635,50 +593,50 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="#none" class="whats_new_img">
-              <img src="img/whats_new/whats_new_resize(1).png" alt="">
+              <img src="img/whats_new/whats_new_shootingWaterfun.png" alt="">
             </a>
             <a href="#none" class="whats_new_text">슈팅워터펀&밤밤클럽</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
             <a href="#none" class="whats_new_img">
-              <img src="img/whats_new/whats_new_resize(2).png" alt="">
+              <img src="img/whats_new/whats_new_waterPlayYard.png" alt="">
             </a>
             <a href="#none" class="whats_new_text">워터 플레이 야드</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
-            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(3).png" alt=""></a>
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_soodoctor.png" alt=""></a>
             <a href="#none" class="whats_new_text">수의사가 되어요!</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
-            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(4).png" alt=""></a>
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_Arfilter.png" alt=""></a>
             <a href="#none" class="whats_new_text">에버랜드 AR필터</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
-            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(5).png" alt=""></a>
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_Shinee b land.png" alt=""></a>
             <a href="#none" class="whats_new_text">Let's SHINEE bLAND</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
-            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(6).png" alt=""></a>
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_summerVacation.png" alt=""></a>
             <a href="#none" class="whats_new_text">여름방학 패키지</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
-            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(7).png" alt=""></a>
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_Family PKG.png" alt=""></a>
             <a href="#none" class="whats_new_text">썸머 가족 패키지</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
-            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(8).png" alt=""></a>
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_ounwan.png" alt=""></a>
             <a href="#none" class="whats_new_text">오운완 챌린지</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
           <div class="swiper-slide">
-            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_resize(9).png" alt=""></a>
+            <a href="#none" class="whats_new_img"><img src="img/whats_new/whats_new_panda Bao.png" alt=""></a>
             <a href="#none" class="whats_new_text">쌍둥이 판다 바오둥이</a>
             <!-- <a href="#none" class="whats_new_arrow"><img src="img/arrow.svg" alt="" id="arrow"></a> -->
           </div>
@@ -692,7 +650,8 @@
     <div class="inner editors_clip_inner">
       <div class="section_name_wrap">
         <div class="inner name_wrap_inner">
-          <h2 class="section_main_name">Editor’s <point1>Clip</point1></h2>
+          <h2 class="section_main_name">Editor’s <point1>Clip</point1>
+          </h2>
           <p class="section_sub_name">매일매일이 즐거워~ 에버랜드 이야기</p>
         </div>
       </div>
@@ -766,7 +725,8 @@
     <div class="inner everland_app_inner">
       <div class="section_name_wrap align_right">
         <div class="inner name_wrap_inner">
-          <h2 class="section_main_name">Everland <point2>App</point2></h2>
+          <h2 class="section_main_name">Everland <point2>App</point2>
+          </h2>
           <p class="section_sub_name">에버랜드를 즐기는 추천 꿀팁</p>
           <button class="Google_Play_download_button">
             Google Play 다운로드
@@ -776,7 +736,9 @@
       <div class="everland_img_section">
         <div class="phone_img_wrap">
           <div class="phone_text_wrap">
-            <h4><point2>Everland APP</point2></h4>
+            <h4>
+              <point2>Everland APP</point2>
+            </h4>
             <h4>하나의 앱으로 누리는 통합혜택</h4>
           </div>
           <div class="mobile mobile_phone_text_wrap">
@@ -810,12 +772,14 @@
           </p>
         </div>
         <div class="mobile mobile_app_text_wrap">
-          <p>에버랜드 <eng>App!</eng></p>
+          <p>에버랜드 <eng>App!</eng>
+          </p>
           <span>하나의 앱으로 <br>누리는 통합 혜택</span>
-          <button class="app_section_play_store_button">Play Store <img src="./img/icon/right_arrow.png" alt=""> </button>
+          <button class="app_section_play_store_button">Play Store <img src="./img/icon/right_arrow.png" alt="">
+          </button>
         </div>
       </div>
-      
+
     </div>
 
   </section>
@@ -824,13 +788,16 @@
   <section class="with_everland">
     <div class="with_everland_wrap">
       <div class="with_everland_title">
-        <h2 class="section_main_name">With <point3>Everland</point3></h2>
+        <h2 class="section_main_name">With <point3>Everland</point3>
+        </h2>
         <p class="section_sub_name">환상의 나라🧚‍♀️ 환상의 채널💝!</p>
       </div>
       <img src="img/with_everland/with_everland_unit_cheese.png" alt="" class="unit_cheese">
       <div class="with_everland_board_wrap">
         <div class="with_everland_board">
           <div class="with_everland_contents">
+            <img src="img/with_everland/with_everland_board.png" alt="everland_backBoard"
+              class="with_everland_backBoard">
             <h3>에버랜드 <strong>SNS</strong> 소식</h3>
             <div class="with_everland_contents_flex">
               <div class="with_everland_content01">
@@ -899,7 +866,7 @@
               </a>
             </li>
           </ul>
-  
+
           <!-- 탭 내용 영역 -->
           <div class="tab__content-wrapper">
             <div id="tab1" class="tab__content active">
@@ -1019,11 +986,13 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- jQuery cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- JavaScript -->
   <script src="js/header.js"></script>
   <script src="js/time.js"></script>
-  <script type ="text/javascript" src="js/apikey.js"></script>
+  <script type="text/javascript" src="js/apikey.js"></script>
   <script src="js/main.js"></script>
   <script src="js/editorsClip.js"></script>
   <script src="js/everlandApp.js"></script>
@@ -1031,4 +1000,5 @@
   <script src="js/with_everland.js"></script>
 
 </body>
+
 </html>
