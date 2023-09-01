@@ -79,6 +79,7 @@ $(document).ready(function(){
 
 
   $(window).on("resize", function(e){
+    hamburgerOnOff(1);
     if(window.innerWidth < 1280 && !headerResizeOnce){
       headerResizeOnce = true;
       if(headerResizeOnce){
