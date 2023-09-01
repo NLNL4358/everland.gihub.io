@@ -162,3 +162,7 @@
 .content_link:hover img {
   box-shadow: 0px 0px 7px #00000080;
 }
+
+.enjoy_responsive {
+  display: none;
+}
