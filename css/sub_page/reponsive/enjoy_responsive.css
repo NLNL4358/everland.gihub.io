@@ -18,11 +18,13 @@
   .enjoy_wrap {
     width: 95%;
   }
+
   .enjoy_main {
     height: 480px;
   }
 
   .enjoy_responsive {
+    display: block;
     margin: auto;
     width: 90%;
   }
