@@ -78,6 +78,8 @@
 
 
 ### :small_blue_diamond: 서브페이지 - 이용요금
+![sub_ticketFee](https://github.com/NLNL4358/everland.gihub.io/assets/100134222/ee35ed12-eacc-49b3-b545-df3125bb2d9b)
+
 ### :small_blue_diamond: 서브페이지 - 에버랜드 스토리
 
 ![sub_learn_more_02](https://github.com/NLNL4358/everland.gihub.io/assets/73161027/8d220800-1931-4296-94c2-9e16f9aece92)
